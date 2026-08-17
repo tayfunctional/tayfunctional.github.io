@@ -34,6 +34,20 @@
 .ticks.short i{background:var(--bone);opacity:1;height:22px}
 .clock-note{margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid var(--line);color:var(--bone-dim);max-width:60ch}
 
+/* Video: Zwei-Klick-Loesung. Erst nach Klick wird YouTube geladen. */
+.vidwrap{margin-top:3rem;max-width:900px}
+.vidfacade{position:relative;aspect-ratio:16/9;border:1px solid var(--line);overflow:hidden;cursor:pointer;background:var(--ink-3);width:100%;padding:0;display:block}
+.vidfacade img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05) brightness(0.55);transition:filter .3s ease,transform .5s ease}
+.vidfacade:hover img{filter:grayscale(0.3) contrast(1.05) brightness(0.7);transform:scale(1.03)}
+.vidplay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1rem;pointer-events:none;padding:1.5rem;text-align:center}
+.vidplay .disc{width:clamp(56px,9vw,78px);height:clamp(56px,9vw,78px);border-radius:50%;background:var(--red);display:grid;place-items:center;transition:transform .25s ease}
+.vidfacade:hover .vidplay .disc{transform:scale(1.09)}
+.vidplay .disc svg{width:38%;height:38%;fill:#fff;margin-left:8%}
+.vidplay .lbl{font-family:'JetBrains Mono',monospace;font-size:clamp(0.72rem,0.68rem + 0.2vw,0.84rem);font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--bone)}
+.vidfacade iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vidnote{margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;color:var(--bone-dim);line-height:1.8;max-width:62ch}
+.vidnote a{color:var(--red);text-decoration:underline}
+
 /* Pain-Liste */
 .pains{list-style:none;margin-top:2.6rem;display:grid;gap:0;max-width:78ch}
 .pains li{display:flex;gap:1.15rem;align-items:flex-start;padding:1.3rem 0;border-top:1px solid var(--line);font-size:clamp(1.05rem,1rem + 0.5vw,1.24rem)}
@@ -120,12 +134,31 @@
     <p class="hero-lead">Für Berufstätige mit Rückenschmerzen, bei denen Physio, Arzt und Spezialist nicht gereicht haben. Den ersten Unterschied spürst du in vier Wochen. Am Ende weißt du selbst, warum der Schmerz da war und was du tust, damit er wegbleibt.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_hero">Erstgespräch buchen <span class="ico">↗</span></a>
+      <a class="btn btn-ghost" href="#video">Video ansehen</a>
       <a class="btn btn-ghost" href="#ablauf">So läuft es ab</a>
     </div>
   </div>
 </section>
 
 <!-- SIGNATURE: die Zeitrechnung -->
+<!-- VSL -->
+<section class="pad" id="video" style="padding-bottom:0">
+  <div class="wrap">
+    <span class="eyebrow">In 5 Minuten erklärt</span>
+    <h2 style="font-size:clamp(1.6rem,1.3rem + 2vw,2.8rem);margin-top:1.1rem;max-width:22ch">Warum es bisher nicht gehalten hat.</h2>
+    <div class="vidwrap">
+      <button class="vidfacade" id="vsl" type="button" aria-label="Video abspielen. Beim Klick wird eine Verbindung zu YouTube hergestellt.">
+        <img src="assets/img/truth.webp" alt="Tayfun Ertural im Gym" loading="lazy" width="1200" height="675">
+        <span class="vidplay">
+          <span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="lbl">Video starten · ca. 5 Min</span>
+        </span>
+      </button>
+      <p class="vidnote">Mit dem Start wird eine Verbindung zu YouTube hergestellt und Daten an Google übertragen. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    </div>
+  </div>
+</section>
+
 <section class="clock pad">
   <div class="wrap">
     <span class="eyebrow">Die Rechnung</span>
@@ -422,6 +455,21 @@
 </footer>
 
 <script>
+(function(){
+  var f=document.getElementById('vsl');
+  if(!f) return;
+  f.addEventListener('click',function(){
+    var i=document.createElement('iframe');
+    i.setAttribute('src','https://www.youtube-nocookie.com/embed/9T9QrCorBe8?autoplay=1&rel=0&modestbranding=1');
+    i.setAttribute('title','Der 90-Tage Rücken-Reset');
+    i.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share');
+    i.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+    i.setAttribute('allowfullscreen','');
+    f.innerHTML='';
+    f.appendChild(i);
+    f.style.cursor='default';
+  },{once:true});
+})();
 document.addEventListener('scroll',function(){
   document.querySelector('.site-head').classList.toggle('scrolled', window.scrollY > 40);
 },{passive:true});
