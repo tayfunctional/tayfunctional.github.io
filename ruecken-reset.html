@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der 90-Tage Rücken-Reset | Tayfunctional</title>
+<meta name="description" content="In 4 Wochen spürst du den Unterschied. In 12 Wochen bist du raus aus dem Schmerz und weißt selbst, warum er da war. Für Menschen mit jahrelangen Rückenschmerzen, bei denen Physio, Arzt und Spezialist nicht gereicht haben.">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.tayfunctional.de/ruecken-reset.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Tayfunctional">
+<meta property="og:title" content="Der 90-Tage Rücken-Reset | Tayfunctional">
+<meta property="og:description" content="Raus aus dem Rückenschmerz, den du seit Jahren hast. Und du verstehst dabei, warum er da war.">
+<meta property="og:url" content="https://www.tayfunctional.de/ruecken-reset.html">
+<meta property="og:image" content="https://www.tayfunctional.de/assets/img/perf3.webp">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* ---- Seitenspezifische Komponenten ---- */
+
+/* Signature: die Zeitachse. Jahre Schmerz gegen 90 Tage. */
+.clock{background:var(--ink-2);border-block:1px solid var(--line)}
+.clock-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:end}
+.clock-side .num{font-family:'Archivo';font-weight:900;font-size:clamp(3.2rem,2rem + 9vw,7.5rem);line-height:0.82;letter-spacing:-0.04em}
+.clock-side .cap{font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--bone-dim);margin-top:1rem;display:block}
+.clock-side.pain .num{color:var(--red)}
+.ticks{display:flex;flex-wrap:wrap;gap:3px;margin-top:1.4rem;max-width:34ch}
+.ticks i{width:3px;height:22px;background:var(--red);opacity:0.42;display:block}
+.ticks.short i{background:var(--bone);opacity:1;height:22px}
+.clock-note{margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid var(--line);color:var(--bone-dim);max-width:60ch}
+
+/* Pain-Liste */
+.pains{list-style:none;margin-top:2.6rem;display:grid;gap:0;max-width:78ch}
+.pains li{display:flex;gap:1.15rem;align-items:flex-start;padding:1.3rem 0;border-top:1px solid var(--line);font-size:clamp(1.05rem,1rem + 0.5vw,1.24rem)}
+.pains li:last-child{border-bottom:1px solid var(--line)}
+.pains .q{font-family:'JetBrains Mono',monospace;color:var(--red);font-size:0.8rem;font-weight:700;padding-top:0.4em;white-space:nowrap}
+
+/* Leistungstabelle: Was drin ist / Was du davon hast */
+.deliver{margin-top:3rem;border:1px solid var(--line)}
+.deliver-row{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:0;border-bottom:1px solid var(--line)}
+.deliver-row:last-child{border-bottom:0}
+.deliver-row>div{padding:1.35rem clamp(1.1rem,2.2vw,1.8rem)}
+.deliver-row .what{background:var(--ink-2);font-weight:700;border-right:1px solid var(--line)}
+.deliver-row .why{color:var(--bone-dim)}
+.deliver-head{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--bone-dim)}
+.deliver-head .what{font-weight:500;color:var(--bone-dim);background:var(--ink-3)}
+.deliver-head .why{background:var(--ink-3)}
+
+/* Boni */
+.bonus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.bonus{background:var(--ink);padding:clamp(1.7rem,3vw,2.5rem)}
+.bonus .code{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);display:block;margin-bottom:1.1rem}
+.bonus h3{font-size:clamp(1.15rem,1.05rem + 0.7vw,1.5rem);margin-bottom:0.7rem}
+.bonus p{color:var(--bone-dim);font-size:1rem}
+.bonus .kills{display:block;margin-top:1.1rem;padding-top:1.1rem;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--bone-dim);text-transform:none}
+
+/* Proof Wall */
+.wall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;margin-top:3rem}
+.card{background:var(--ink-2);border:1px solid var(--line);padding:clamp(1.4rem,2.4vw,1.9rem);display:flex;flex-direction:column;transition:border-color .25s ease}
+.card:hover{border-color:var(--red)}
+.card .stars{color:var(--red);letter-spacing:0.12em;font-size:0.95rem;margin-bottom:0.9rem}
+.card blockquote{font-size:1.02rem;line-height:1.55}
+.card .who{margin-top:auto;padding-top:1.2rem;font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--bone-dim)}
+
+/* Garantie */
+.guarantee{border:1px solid var(--red);background:var(--ink-2);padding:clamp(1.8rem,4vw,3.2rem);margin-top:3rem;max-width:76ch}
+.guarantee h3{font-size:clamp(1.4rem,1.2rem + 1.2vw,2.2rem);margin-bottom:1.1rem}
+.guarantee p{color:var(--bone-dim)}
+
+/* Preisblock */
+.pricebox{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:3rem;max-width:76ch}
+.pricebox.single{grid-template-columns:minmax(0,1fr);max-width:48ch}
+.pricecard{background:var(--ink-2);border:1px solid var(--line);padding:clamp(1.7rem,3vw,2.4rem)}
+.pricecard.best{border-color:var(--red)}
+.pricecard .tagline{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:1rem}
+.pricecard .amount{font-family:'Archivo';font-weight:900;font-size:clamp(2rem,1.6rem + 2.2vw,3rem);line-height:1;letter-spacing:-0.03em}
+.pricecard .sub{color:var(--bone-dim);font-size:0.95rem;margin-top:0.8rem}
+
+.step .sn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--red);line-height:1;padding-top:0.2em}
+.step h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.6rem);margin-bottom:0.5rem;line-height:1.05}
+.step p{color:var(--bone-dim);font-size:1rem;max-width:60ch}
+
+
+@media (max-width:900px){
+  .clock-grid,.bonus-grid,.wall,.pricebox{grid-template-columns:minmax(0,1fr)}
+  .deliver-row{grid-template-columns:minmax(0,1fr)}
+  .deliver-row .what{border-right:0;border-bottom:1px solid var(--line)}
+  .deliver-head{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="site-head" id="top">
+  <a class="brand" href="index.html">TAYFUNCTIONAL<span>.</span></a>
+  <nav class="nav">
+    <a class="navlink" href="index.html#angebote">Coaching</a>
+    <a class="navlink" href="ruecken-reset.html">Rücken-Reset</a>
+    <a class="navlink" href="ueber.html">Über mich</a>
+    <a class="navlink" href="index.html#kontakt">Kontakt</a>
+    <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_nav">Erstgespräch <span class="ico">↗</span></a>
+  </nav>
+</header>
+
+<!-- 01 HERO: Versprechen + Avatar + Zeitrahmen -->
+<section class="subhero">
+  <div class="subhero-media">
+    <img src="assets/img/perf3.webp" alt="Tayfun Ertural im Gym" fetchpriority="high">
+  </div>
+  <div class="wrap subhero-inner">
+    <div class="crumb"><a href="index.html">Start</a> / Rücken-Reset</div>
+    <span class="eyebrow">Der 90-Tage Rücken-Reset</span>
+    <h1>In 12 Wochen raus aus dem Schmerz, den du seit Jahren hast.</h1>
+    <p class="hero-lead">Für Berufstätige mit Rückenschmerzen, bei denen Physio, Arzt und Spezialist nicht gereicht haben. Den ersten Unterschied spürst du in vier Wochen. Am Ende weißt du selbst, warum der Schmerz da war und was du tust, damit er wegbleibt.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_hero">Erstgespräch buchen <span class="ico">↗</span></a>
+      <a class="btn btn-ghost" href="#ablauf">So läuft es ab</a>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE: die Zeitrechnung -->
+<section class="clock pad">
+  <div class="wrap">
+    <span class="eyebrow">Die Rechnung</span>
+    <div class="clock-grid" style="margin-top:2.4rem">
+      <div class="clock-side pain">
+        <div class="num">6 Jahre</div>
+        <span class="cap">Rückenschmerzen. Physio, Arzt, Spezialisten.</span>
+        <div class="ticks" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+      <div class="clock-side">
+        <div class="num">6 Wochen</div>
+        <span class="cap">Bis sie schmerzfrei war.</span>
+        <div class="ticks short" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </div>
+    <p class="clock-note">Eine echte Klientin. Sechs Jahre Rückenschmerzen, dann sechs Wochen. Später hat sie sich gewundert, dass eine Alltagsbewegung wieder wehtat, weil sie den Unterschied zwischen Schmerz und keinem Schmerz gar nicht mehr kannte. Genau das ist der Punkt: Der Schmerz war nie normal. Du hast dich nur daran gewöhnt.</p>
+  </div>
+</section>
+
+<!-- 02 PAIN -->
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Für wen</span>
+      <h2>Du kennst diese Sätze.</h2>
+    </div>
+    <ul class="pains">
+      <li><span class="q">01</span><span>Du kannst im Alltag kaum etwas machen, ohne dass es irgendwo sticht.</span></li>
+      <li><span class="q">02</span><span>Du wachst nachts auf, weil dein Rücken dich weckt.</span></li>
+      <li><span class="q">03</span><span>Du warst früher sportlich. Dann kam der Job, kamen die Kinder, und alles ist eingeschlafen.</span></li>
+      <li><span class="q">04</span><span>Physio, Arzt, MRT, Chiropraktiker. Kurz war es besser, dann war es wieder da.</span></li>
+      <li><span class="q">05</span><span>Man hat dir gesagt, du sollst dich schonen. Es ist dadurch schlechter geworden, nicht besser.</span></li>
+      <li><span class="q">06</span><span>Du kannst dich auf deinen Körper nicht mehr verlassen und weißt nie, wann es wieder losgeht.</span></li>
+      <li><span class="q">07</span><span>Und im Hinterkopf die Frage, ob du hier überhaupt nochmal rauskommst.</span></li>
+    </ul>
+    <p class="lead" style="margin-top:2.6rem">Das ist keine Einbildung und du bist nicht kaputt. Dir hat nur nie jemand erklärt, was dein Körper eigentlich macht. Alles, was du bisher probiert hast, war passiv: Es wurde etwas mit dir gemacht. Deswegen kam es zurück.</p>
+    <div class="hero-cta" style="margin-top:2.2rem">
+      <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_pain">Erstgespräch buchen <span class="ico">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 03 WAS DU BEKOMMST -->
+<section class="befunde pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Was drin ist</span>
+      <h2>Zehn Bausteine. Ein Ziel.</h2>
+      <p class="lead" style="margin-top:1.4rem">Links steht, was du bekommst. Rechts, was es für dich bedeutet.</p>
+    </div>
+
+    <div class="deliver">
+      <div class="deliver-row deliver-head"><div class="what">Was drin ist</div><div class="why">Was du davon hast</div></div>
+      <div class="deliver-row"><div class="what">Assessment, 90 Minuten</div><div class="why">Zum ersten Mal erklärt dir jemand, <em>warum</em> es wehtut. Nicht nur wo.</div></div>
+      <div class="deliver-row"><div class="what">Kraftmessplatten-Diagnostik</div><div class="why">Schwarz auf weiß, wo links und rechts auseinanderlaufen. Messwerte statt Bauchgefühl.</div></div>
+      <div class="deliver-row"><div class="what">Individuelle Programmierung</div><div class="why">Kein Plan von der Stange. Dein Plan entsteht aus deinem Befund.</div></div>
+      <div class="deliver-row"><div class="what">2 PT-Sessions pro Monat</div><div class="why">Deine Ausführung wird korrigiert, bevor sie sich falsch einschleift. Vor Ort in Ingolstadt oder online, jeweils bis 90 Minuten. Du entscheidest.</div></div>
+      <div class="deliver-row"><div class="what">Loom-Feedback mit Videoanalyse</div><div class="why">Du siehst dich selbst und hörst dazu, was passiert. Kein Text, der Raum für Interpretation lässt.</div></div>
+      <div class="deliver-row"><div class="what">WhatsApp-Support</div><div class="why">Antwort werktags innerhalb von 24 Stunden. Du sitzt nie eine Woche auf einer Frage fest.</div></div>
+      <div class="deliver-row"><div class="what">Morgenroutine</div><div class="why">Ein paar Minuten nach dem Aufstehen, damit dein Rücken nicht schon überspannt in den Tag geht.</div></div>
+      <div class="deliver-row"><div class="what">Wissenstransfer über 90 Tage</div><div class="why">Du lernst zu deuten, was dein Körper meldet. Deshalb brauchst du mich danach für dieses Problem nicht mehr.</div></div>
+      <div class="deliver-row"><div class="what">Phasenweise Anpassung</div><div class="why">Der Plan wächst mit. Nicht zwölf Wochen dasselbe.</div></div>
+      <div class="deliver-row"><div class="what">Zielhierarchie</div><div class="why">Kurz-, mittel- und langfristig. Du weißt jederzeit, woran du gerade arbeitest und warum.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BONI -->
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Ohne Aufpreis</span>
+      <h2>Vier Dinge, die den Start entscheiden.</h2>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus">
+        <span class="code">BONUS 01</span>
+        <h3>Deine erste Woche als Video</h3>
+        <p>Bevor du loslegst, gehe ich deine komplette erste Trainingswoche in einem Video Übung für Übung mit dir durch.</p>
+        <span class="kills">Damit nicht: „Ich weiß ja gar nicht, ob ich das richtig mache."</span>
+      </div>
+      <div class="bonus">
+        <span class="code">BONUS 02</span>
+        <h3>Der Sonntags-Check</h3>
+        <p>Jeden Sonntag fünf Fragen in der App, zwei Minuten. Belastung, Erholung, was schwer war, was gut lief. Montags wird angepasst.</p>
+        <span class="kills">Damit nicht: „Was, wenn ich drei Monate in die falsche Richtung laufe?"</span>
+      </div>
+      <div class="bonus">
+        <span class="code">BONUS 03</span>
+        <h3>Setup direkt im Assessment</h3>
+        <p>App, Belastungssteuerung, Videoaufnahme. Du weißt vom ersten Tag an, wie wir arbeiten, und musst dich um nichts kümmern.</p>
+        <span class="kills">Damit nicht: „Online, ohne dass jemand danebensteht? Das klappt doch nicht."</span>
+      </div>
+      <div class="bonus">
+        <span class="code">BONUS 04</span>
+        <h3>Sofortanpassung bei Schmerz</h3>
+        <p>Wenn zwischendurch etwas wehtut, schreibst du mir und dein Training ist am selben Tag angepasst.</p>
+        <span class="kills">Damit nicht: „Und wenn es wieder losgeht, stehe ich wieder allein da."</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PROOF WALL -->
+<section class="befunde pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Nicht meine Worte</span>
+      <h2>Was meine Leute sagen.</h2>
+    </div>
+    <div class="wall">
+      <div class="card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Ich hatte jahrelang mit Hüft- und Knieproblemen vor allem beim Laufen zu kämpfen. Dank seines Assessments und den daraus resultierenden Übungen bin ich komplett schmerzfrei.</blockquote>
+        <div class="who">K. N.</div>
+      </div>
+      <div class="card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Ich hatte über 4 Monate Schmerzen in der Hüfte. Tayfun hat eine sehr detaillierte Bewegungsanalyse gemacht und konnte mir erklären, woran es liegt. Selbst ein Jahr später sind die Schmerzen weg.</blockquote>
+        <div class="who">L. M.</div>
+      </div>
+      <div class="card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Früher hatte ich teilweise schon Knieschmerzen vom einfachen Stehen. Jetzt bin ich einen Halbmarathon in 2:03 gelaufen. Etwas, das ich mir niemals hätte vorstellen können.</blockquote>
+        <div class="who">D. G.</div>
+      </div>
+      <div class="card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Ursprünglich bin ich wegen langjähriger Hüftprobleme gekommen, die sich durch das individuell angepasste Training bereits deutlich verbessert haben. Gleichzeitig habe ich spürbar an Kraft gewonnen.</blockquote>
+        <div class="who">S. S.</div>
+      </div>
+      <div class="card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Mit Tayfun habe ich nach meiner Schulter-OP trainiert. Die Ärzte haben mich gefragt, was ich gemacht habe, weil meine Schulter so gut verheilt war und so gut funktioniert hat wie noch nie.</blockquote>
+        <div class="who">A. R.</div>
+      </div>
+      <div class="card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Bei Tayfun bekommt man keinen 0815-Trainingsplan. Hier erhält man auf jeden Fall ehrliches Feedback zu den Ausführungen und Trainingseinheiten.</blockquote>
+        <div class="who">P. F.</div>
+      </div>
+    </div>
+    <div class="hero-cta" style="margin-top:2.6rem">
+      <a class="btn btn-ghost" href="https://g.page/r/CUi7IDOH4xq2EAE/review">Alle Bewertungen auf Google ↗</a>
+      <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_proof">Erstgespräch buchen <span class="ico">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 05 SO LÄUFT ES AB -->
+<section class="pad" id="ablauf">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Der Ablauf</span>
+      <h2>Vier Schritte. Neunzig Tage.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="sn">01</span><div><h3>Assessment</h3><p>90 Minuten, online oder vor Ort. Volle Bewegungsanalyse von den Füßen bis zur Schulter, dazu die Messwerte von den Kraftmessplatten. Am Ende weißt du, wo die Kette bricht.</p></div></div>
+      <div class="step"><span class="sn">02</span><div><h3>Ziel definieren</h3><p>Wir legen fest, was du in 90 Tagen wieder können willst. Konkret, nicht „schmerzfrei irgendwann". Daraus wird dein Plan rückwärts gebaut.</p></div></div>
+      <div class="step"><span class="sn">03</span><div><h3>Umsetzen und anpassen</h3><p>Drei Einheiten pro Woche, 60 bis 75 Minuten. Videofeedback zu deiner Ausführung, Sonntags-Check, wöchentliche Korrektur. Der Plan verändert sich mit dir.</p></div></div>
+      <div class="step"><span class="sn">04</span><div><h3>Verstehen</h3><p>Über die gesamte Zeit erkläre ich dir, was passiert und warum. Damit du am Ende selbst weißt, was dein Rücken braucht, und nicht wieder von vorne anfängst.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 GARANTIE -->
+<section class="befunde pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Meine Zusage</span>
+      <h2>Du gehst nicht ins Blaue.</h2>
+    </div>
+    <div class="guarantee">
+      <h3>Die 4-Wochen-Zusage</h3>
+      <p>Wenn du nach vier Wochen keinen Unterschied spürst, mache ich die komplette Analyse neu. Auf meine Kosten. Du zahlst nicht dafür, dass ich mich geirrt habe.</p>
+      <p style="margin-top:1.2rem">In der Praxis kommt die spürbare Veränderung meist nach drei bis vier Wochen, auch bei Leuten, die seit Jahren Schmerzen haben. Aber du musst mir das nicht glauben, bevor du es selbst gemerkt hast.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREIS -->
+<section class="pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Investition</span>
+      <h2>90 Tage. Ein Preis.</h2>
+      <p class="lead" style="margin-top:1.4rem">Verbindliche Laufzeit von drei Monaten, weil ein Rücken, der seit Jahren wehtut, in vier Wochen nicht fertig ist. Bezahlt wird einmal, zum Start.</p>
+    </div>
+    <div class="pricebox single">
+      <div class="pricecard best">
+        <span class="tagline">Einmalzahlung · 90 Tage</span>
+        <div class="amount">1.900 €</div>
+        <p class="sub">Einmal zahlen, drei Monate arbeiten. Keine Raten, keine monatliche Rechnung, keine Verlängerung, die von allein weiterläuft.</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:2.2rem">Danach entscheidest du frei: Wenn du auf Leistung gehen willst, wechseln wir ins <a href="performance.html" class="red" style="text-decoration:underline">Functional Coaching</a> für 450 € im Monat, monatlich kündbar. Wenn nicht, gehst du mit dem Wissen raus, das du brauchst.</p>
+    <div class="hero-cta" style="margin-top:2.2rem">
+      <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_price">Erstgespräch buchen <span class="ico">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="befunde pad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2>Bevor du fragst.</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Ich habe schon alles probiert. Warum sollte das hier funktionieren?</summary>
+        <p>Weil alles, was du bisher probiert hast, passiv war. Massage, Einrenken, Spritze, Schonen: Da wird etwas mit dir gemacht, das Symptom beruhigt sich, die Ursache bleibt. Deshalb kam es zurück. Hier findest du zuerst heraus, warum dein Rücken so reagiert, und dann baust du ihn aktiv um. Das ist ein anderer Weg, kein besseres Pflaster.</p>
+      </details>
+      <details>
+        <summary>Ersetzt das meine Physio oder meinen Arzt?</summary>
+        <p>Nein. Ich stelle keine Diagnosen und ersetze keine medizinische Behandlung. Ich baue dich mit Training und Biomechanik auf, oft genau da weiter, wo klassische Ansätze aufhören. Wenn eine ärztliche Abklärung nötig ist, sage ich dir das offen.</p>
+      </details>
+      <details>
+        <summary>Funktioniert das online wirklich?</summary>
+        <p>Ja, und in einem Punkt sogar besser als vor Ort: Bei einer Videoaufnahme sehe ich deine Bewegung mehrfach, in Zeitlupe und aus mehreren Winkeln. Fünf Minuten Draufschauen im Studio leisten das nicht. Das Setup erkläre ich dir im Assessment, du musst nichts können außer dein Handy hinstellen. Und wenn du in oder um Ingolstadt bist, können wir die PT-Sessions auch vor Ort machen.</p>
+      </details>
+      <details>
+        <summary>Warum gibt es keine Ratenzahlung?</summary>
+        <p>Weil der Rücken-Reset ein abgeschlossenes Programm ist und kein Abo. Du zahlst einmal zum Start, danach ist die Sache erledigt. Gegenüber der monatlichen Buchung im Rehab-Coaching sparst du damit 200 €.</p>
+      </details>
+      <details>
+        <summary>Wie viel Zeit muss ich investieren?</summary>
+        <p>Drei Einheiten pro Woche, jeweils 60 bis 75 Minuten, dazu ein paar Minuten Morgenroutine. Mehr nicht. Wer sechsmal pro Woche trainieren will, ist hier falsch.</p>
+      </details>
+      <details>
+        <summary>Was brauche ich an Ausstattung?</summary>
+        <p>Ein Gym mit Kurzhanteln und Langhantel reicht. Kein Spezialgerät, keine Maschinen.</p>
+      </details>
+      <details>
+        <summary>Was passiert nach den 90 Tagen?</summary>
+        <p>Du entscheidest. Durch den Wissenstransfer weißt du, wie du dranbleibst. Wenn du danach auf Leistung gehen willst, wechseln wir ins Functional Coaching. Wenn nicht, war das hier kein Abo, sondern ein Abschluss.</p>
+      </details>
+      <details>
+        <summary>Für wen ist das nichts?</summary>
+        <p>Für alle, die nur einen Trainingsplan wollen. Für alle, die möchten, dass jemand etwas mit ihnen macht, statt selbst zu verstehen, was los ist. Und für alle, die keine Lust haben, mir zu schreiben, wie es ihnen geht. Ohne Rückmeldung kann ich nichts anpassen.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final pad" id="kontakt">
+  <div class="wrap">
+    <span class="eyebrow">Kontakt</span>
+    <h2 style="font-size:clamp(2rem,1.5rem + 3.5vw,4.4rem);margin-top:1.1rem">Bereit, die Ursache zu finden?</h2>
+    <p class="lead" style="margin-top:1.4rem">Buch dir ein kostenloses Erstgespräch. 30 Minuten, in denen wir ehrlich draufschauen, wo du stehst und ob wir zusammenpassen. Kein Verkaufsgespräch, ein echtes Gespräch.</p>
+    <div class="hero-cta final-cta" style="margin-top:2.2rem">
+      <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_final">Erstgespräch buchen <span class="ico">↗</span></a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/">DM auf Instagram</a>
+    </div>
+    <p style="margin-top:1.4rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--bone-dim)">30 Min · unverbindlich · online</p>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">TAYFUNCTIONAL<span>.</span></div>
+        <p style="color:var(--bone-dim);margin-top:1rem;max-width:38ch">Rehab- und Performance-Coaching aus Ingolstadt. Pain → Performance. Provide. Protect. Love.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Coaching</h4>
+        <a href="performance.html">Performance-Coaching</a>
+        <a href="rehab.html">Rehab-Coaching</a>
+        <a href="ruecken-reset.html">Rücken-Reset</a>
+        <a href="ueber.html">Über mich</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="foot-col">
+        <h4>Mehr</h4>
+        <a href="https://www.instagram.com/tayfunctional/">Instagram</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Tayfun Ertural · Tayfunctional</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('scroll',function(){
+  document.querySelector('.site-head').classList.toggle('scrolled', window.scrollY > 40);
+},{passive:true});
+</script>
+</body>
+</html>
