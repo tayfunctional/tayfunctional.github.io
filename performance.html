@@ -145,7 +145,7 @@ section{position:relative}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 
-@media (max-width:900px){
+@media (max-width:920px){
   .nav .navlink,.nav .btn.desktop-cta{display:none}
   .burger{display:flex} .nav{gap:0}
   .mobile-menu{position:fixed;inset:0;z-index:99;background:var(--ink);display:flex;flex-direction:column;justify-content:center;gap:0.5rem;padding:2rem clamp(1.25rem,5vw,3.5rem);transform:translateX(100%);transition:transform .3s ease}
@@ -162,7 +162,7 @@ section{position:relative}
   .scroll-hint{display:none}
   .hero-inner{padding-top:6.5rem}
 }
-@media (min-width:901px){.mobile-menu{display:none}}
+@media (min-width:921px){.mobile-menu{display:none}}
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none;transition:none}
@@ -237,6 +237,15 @@ section{position:relative}
 .saver .s-big{font-family:'Archivo';font-weight:900;font-size:clamp(1.25rem,1.05rem + 1.2vw,1.9rem);text-transform:uppercase;letter-spacing:-0.02em;line-height:1.05}
 .saver .s-sub{font-family:'JetBrains Mono',monospace;font-size:clamp(0.74rem,0.7rem + 0.2vw,0.85rem);letter-spacing:0.06em;color:rgba(255,255,255,0.9);text-transform:uppercase}
 .saver + .priceblock{margin-top:0;border-top:0}
+
+/* Mittelgrosse Bildschirme: Menue enger statt Burger */
+@media (min-width:921px) and (max-width:1180px){
+  .site-head{padding-inline:1.5rem}
+  .nav{gap:1.15rem}
+  .nav a.navlink{font-size:0.72rem;letter-spacing:0.05em}
+  .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em}
+  .brand{font-size:1rem}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -266,6 +275,7 @@ section{position:relative}
   <a href="index.html" class="brand" aria-label="Tayfunctional Startseite">TAYFUNCTIONAL<span>.</span></a>
   <nav class="nav" aria-label="Hauptnavigation">
     <a class="navlink" href="index.html#angebote">Coaching</a>
+    <a class="navlink" href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener">Programme</a>
     <a class="navlink" href="https://www.tayfunctional.de/pace-calculator/">Pace-Rechner</a>
     <a class="navlink" href="rabatte.html">Spare mit mir</a>
     <a class="navlink" href="ueber.html">Über mich</a>
@@ -275,6 +285,7 @@ section{position:relative}
 </header>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html#angebote" data-close>Coaching</a>
+  <a href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener" data-close>Programme</a>
   <a href="https://www.tayfunctional.de/pace-calculator/" data-close>Pace-Rechner</a>
   <a href="rabatte.html" data-close>Spare mit mir</a>
   <a href="ueber.html" data-close>Über mich</a>
@@ -412,6 +423,7 @@ section{position:relative}
         <h4>Coaching</h4>
         <a href="performance.html">Performance-Coaching</a>
         <a href="rehab.html">Rehab-Coaching</a>
+        <a href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener">Programme</a>
         <a href="ueber.html">Über mich</a>
         <a href="index.html#kontakt">Kontakt</a>
       </div>
