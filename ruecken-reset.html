@@ -328,8 +328,18 @@ section{position:relative}
 .pricecard .amount{font-family:'Archivo';font-weight:900;font-size:clamp(2rem,1.6rem + 2.2vw,3rem);line-height:1;letter-spacing:-0.03em}
 .pricecard .sub{color:var(--bone-dim);font-size:0.95rem;margin-top:0.8rem}
 
-.vsl{margin-top:2.4rem;aspect-ratio:16/9;background:var(--ink-3);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
-.vsl p{font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--bone-dim);max-width:40ch;line-height:1.9}
+.vidwrap{margin-top:3rem;max-width:900px}
+.vidfacade{position:relative;aspect-ratio:16/9;border:1px solid var(--line);overflow:hidden;cursor:pointer;background:var(--ink-3);width:100%;padding:0;display:block}
+.vidfacade img{width:100%;height:100%;object-fit:cover;filter:brightness(0.88);transition:filter .3s ease,transform .5s ease}
+.vidfacade:hover img{filter:brightness(1);transform:scale(1.03)}
+.vidplay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1rem;pointer-events:none;padding:1.5rem;text-align:center}
+.vidplay .disc{width:clamp(56px,9vw,78px);height:clamp(56px,9vw,78px);border-radius:50%;background:var(--red);display:grid;place-items:center;transition:transform .25s ease}
+.vidfacade:hover .vidplay .disc{transform:scale(1.09)}
+.vidplay .disc svg{width:38%;height:38%;fill:#fff;margin-left:8%}
+.vidplay .lbl{font-family:'JetBrains Mono',monospace;font-size:clamp(0.72rem,0.68rem + 0.2vw,0.84rem);font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--bone)}
+.vidfacade iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vidnote{margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;color:var(--bone-dim);line-height:1.8;max-width:62ch}
+.vidnote a{color:var(--red);text-decoration:underline}
 
 @media (max-width:900px){
   .clock-grid,.bonus-grid,.wall,.pricebox{grid-template-columns:minmax(0,1fr)}
@@ -338,6 +348,16 @@ section{position:relative}
   .deliver-head{display:none}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"VideoObject",
+  "name":"Der 90-Tage Rücken-Reset: Warum es bisher nicht gehalten hat",
+  "description":"Tayfun Ertural erklärt, warum Rückenschmerzen nach Physio, Arzt und Schonung immer wiederkommen und wie der 90-Tage Rücken-Reset an der Ursache ansetzt.",
+  "thumbnailUrl":"https://www.tayfunctional.de/assets/img/thumb_ruecken_reset.jpg",
+  "embedUrl":"https://www.youtube-nocookie.com/embed/9T9QrCorBe8",
+  "uploadDate":"2026-08-01"
+}
+</script>
 </head>
 <body>
 
@@ -387,8 +407,16 @@ section{position:relative}
 
   <section class="pad" aria-label="Video">
     <div class="wrap">
-      <div class="vsl reveal">
-        <p>Platz für dein Video.<br>3 bis 5 Minuten: Wer du bist, für wen das ist, warum es anders läuft als beim Physio.</p>
+      <span class="eyebrow">In 5 Minuten erklärt</span>
+      <h2 style="font-size:clamp(1.6rem,1.3rem + 2vw,2.8rem);margin-top:1.1rem;max-width:22ch">Warum es bisher nicht gehalten hat.</h2>
+      <div class="vidwrap reveal">
+        <button class="vidfacade" id="vsl" type="button" aria-label="Video abspielen. Beim Klick wird eine Verbindung zu YouTube hergestellt.">
+          <img src="assets/img/thumb_ruecken_reset.jpg" alt="Warum dein Rücken immer wieder wehtut, Video mit Tayfun Ertural" loading="lazy" width="1200" height="675">
+          <span class="vidplay">
+            <span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </span>
+        </button>
+        <p class="vidnote">Mit dem Start wird eine Verbindung zu YouTube hergestellt und Daten an Google übertragen. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
       </div>
     </div>
   </section>
@@ -647,6 +675,21 @@ section{position:relative}
     var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
   }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+
+  var f=document.getElementById('vsl');
+  if(f){
+    f.addEventListener('click',function(){
+      var i=document.createElement('iframe');
+      i.setAttribute('src','https://www.youtube-nocookie.com/embed/9T9QrCorBe8?autoplay=1&rel=0&modestbranding=1');
+      i.setAttribute('title','Der 90-Tage Rücken-Reset');
+      i.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share');
+      i.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+      i.setAttribute('allowfullscreen','');
+      f.innerHTML='';
+      f.appendChild(i);
+      f.style.cursor='default';
+    },{once:true});
+  }
 })();
 </script>
 </body>
