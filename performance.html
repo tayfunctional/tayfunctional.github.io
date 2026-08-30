@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Functional & Performance Coaching aus Ingolstadt | Tayfunctional</title>
-<meta name="description" content="Individuelles Functional- und Performance-Coaching mit Tayfun Ertural. 3 bis 6x pro Woche über eine App, Loom-Video-Feedback, WhatsApp-Support. Keine Standardprogramme. Erstgespräch buchen.">
+<meta name="description" content="Individuelles Functional- und Performance-Coaching mit Tayfun Ertural. Start mit vollem Assessment und Bewegungsanalyse, vor Ort mit Kraftmessplatten. Training über eine App, Video-Feedback, WhatsApp-Support. Erstgespräch buchen.">
 <meta name="theme-color" content="#0A0A0A">
 <link rel="canonical" href="https://www.tayfunctional.de/performance.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -246,6 +246,15 @@ section{position:relative}
   .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em}
   .brand{font-size:1rem}
 }
+
+/* Betreuungs-Bausteine */
+.care-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.care{background:var(--ink);padding:clamp(1.7rem,3vw,2.4rem);display:flex;flex-direction:column}
+.care .c-tag{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.care h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.6rem);margin:0.9rem 0 0.7rem;line-height:1.05}
+.care p{color:var(--bone-dim);font-size:0.99rem}
+.care .fine{margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.05em;color:var(--bone-dim);line-height:1.7}
+@media (max-width:860px){.care-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
 <script type="application/ld+json">
 {
@@ -264,6 +273,8 @@ section{position:relative}
     {"@type":"Question","name":"Über welche App läuft das?","acceptedAnswer":{"@type":"Answer","text":"Du bekommst deinen Plan strukturiert über eine App, in der du jede Einheit siehst, abhakst und deine Gewichte und Zeiten festhältst. Welche genau, zeige ich dir im Erstgespräch. Wichtig ist nicht das Tool, sondern was drinsteht."}},
     {"@type":"Question","name":"Wie viel Zeit muss ich pro Woche einplanen?","acceptedAnswer":{"@type":"Answer","text":"Das richtet sich nach deinem Ziel und deinem Alltag. Drei bis sechs Einheiten pro Woche sind der Rahmen, den Umfang legen wir gemeinsam so fest, dass er in dein Leben passt und nicht daneben."}},
     {"@type":"Question","name":"Bin ich zu unfit, um damit anzufangen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Ich baue das Training auf deinem aktuellen Stand auf, nicht auf einem Idealbild. Egal ob du seit Jahren raus bist oder schon trainierst, wir starten da, wo du wirklich stehst."}},
+    {"@type":"Question","name":"Werde ich am Anfang allein gelassen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Vor der ersten Einheit gehen wir gemeinsam durch das Setup: App einrichten, RPE und Belastungssteuerung erklaeren, Videoaufnahme zeigen. Das gilt online genauso wie vor Ort."}},
+    {"@type":"Question","name":"Wie schnell bekomme ich eine Antwort?","acceptedAnswer":{"@type":"Answer","text":"Werktags innerhalb von 24 Stunden, am Wochenende innerhalb von 48 Stunden."}},
     {"@type":"Question","name":"Und wenn ich Schmerzen oder eine alte Verletzung habe?","acceptedAnswer":{"@type":"Answer","text":"Dann schauen wir uns das zuerst an. Wenn Schmerz das eigentliche Thema ist, ist mein Rehab-Coaching oft der bessere Startpunkt. Im Erstgespräch finden wir heraus, was für dich passt."}}
   ]
 }
@@ -320,7 +331,7 @@ section{position:relative}
       <div class="prose reveal">
         <span class="eyebrow" style="margin-bottom:1.2rem">Worum es geht</span>
         <p>Die meisten Pläne sind kopiert. Gleiches Programm für den 25-Jährigen wie für den, der nach zehn Jahren zurückkommt. Kein Wunder, dass es nicht hält.</p>
-        <p>Bei mir bekommst du keinen Plan von der Stange. Ich schaue mir an, wo du stehst, wie dein Alltag aussieht und wohin du willst, und baue daraus dein Training. Drei bis sechs Einheiten pro Woche über eine App, mit Video-Feedback zu deiner Technik und direktem Draht, wenn es hakt.</p>
+        <p>Bei mir bekommst du keinen Plan von der Stange. Am Anfang steht immer ein Assessment: eine volle Bewegungsanalyse, damit ich sehe, wie dein Körper wirklich arbeitet und wo er ausweicht. Erst danach entsteht dein Training. Drei bis sechs Einheiten pro Woche über eine App, mit Video-Feedback zu deiner Technik und direktem Draht, wenn es hakt.</p>
         <p>Das Ziel ist nicht, dich müde zu machen. Das Ziel ist, dich besser zu machen. Stärker, belastbarer, und ohne dass dich ständig irgendein Zwicken ausbremst.</p>
       </div>
       <div class="reveal" style="align-self:center">
@@ -333,13 +344,14 @@ section{position:relative}
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="eyebrow">Der Ablauf</span>
-        <h2>In vier Schritten zu deinem Training.</h2>
+        <h2>In fünf Schritten zu deinem Training.</h2>
       </div>
       <div class="steps">
-        <div class="step reveal"><span class="sn">01</span><div><h3>Standortbestimmung</h3><p>Wir klären ehrlich, wo du stehst. Vorgeschichte, Alltag, Ziel, Zeit. Ohne diesen Punkt ist alles danach geraten.</p></div></div>
-        <div class="step reveal"><span class="sn">02</span><div><h3>Dein Plan entsteht</h3><p>Ich baue dein Programm individuell auf. Kein Copy-Paste, sondern abgestimmt auf deinen Körper und dein Ziel, Woche für Woche über die App.</p></div></div>
-        <div class="step reveal"><span class="sn">03</span><div><h3>Umsetzen mit Feedback</h3><p>Du trainierst, ich schaue drauf. Loom-Video-Feedback zu deiner Technik und WhatsApp-Support, wenn es drauf ankommt. So bleibt die Ausführung sauber.</p></div></div>
-        <div class="step reveal"><span class="sn">04</span><div><h3>Anpassen und steigern</h3><p>Dein Plan wächst mit dir. Wir steigern, wenn du bereit bist, und passen an, wenn das Leben dazwischenkommt. Fortschritt statt Stillstand.</p></div></div>
+        <div class="step reveal"><span class="sn">01</span><div><h3>Assessment</h3><p>Jedes Coaching startet mit einer vollen Bewegungsanalyse, von den Füßen bis zur Schulter. Dazu Vorgeschichte, Alltag, Ziel und Zeit. Wenn wir vor Ort arbeiten, kommen die Kraftmessplatten dazu und machen sichtbar, wo links und rechts auseinanderlaufen. Ohne diesen Punkt ist alles danach geraten.</p></div></div>
+        <div class="step reveal"><span class="sn">02</span><div><h3>Onboarding, gemeinsam</h3><p>Wir richten die App zusammen ein und ich erkläre dir, wie ich arbeite: Was RPE bedeutet, wie du Belastung steuerst, wie du deine Videos aufnimmst. Das gilt online genauso wie vor Ort. Du wirst an keiner Stelle allein gelassen und musst dir nichts selbst zusammensuchen.</p></div></div>
+        <div class="step reveal"><span class="sn">03</span><div><h3>Dein Plan entsteht</h3><p>Ich baue dein Programm individuell auf. Kein Copy-Paste, sondern abgestimmt auf deinen Körper und dein Ziel, Woche für Woche über die App.</p></div></div>
+        <div class="step reveal"><span class="sn">04</span><div><h3>Umsetzen mit Feedback</h3><p>Du trainierst, ich schaue drauf. Loom-Video-Feedback zu deiner Technik und WhatsApp-Support, wenn es drauf ankommt. So bleibt die Ausführung sauber.</p></div></div>
+        <div class="step reveal"><span class="sn">05</span><div><h3>Anpassen und steigern</h3><p>Dein Plan wächst mit dir. Wir steigern, wenn du bereit bist, und passen an, wenn das Leben dazwischenkommt. Fortschritt statt Stillstand.</p></div></div>
       </div>
     </div>
   </section>
@@ -351,9 +363,15 @@ section{position:relative}
         <h2>Alles, was du brauchst. Nichts, was du nicht brauchst.</h2>
       </div>
       <ul class="includes">
+        <li class="reveal"><span class="mk">→</span><span>Volles Assessment zum Start, Bewegungsanalyse von Kopf bis Fuß</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Kraftmessplatten-Diagnostik, wenn wir vor Ort arbeiten</span></li>
         <li class="reveal"><span class="mk">→</span><span>Individuelles Training, 3 bis 6x pro Woche über eine App</span></li>
-        <li class="reveal"><span class="mk">→</span><span>Loom-Video-Feedback zu deiner Technik</span></li>
-        <li class="reveal"><span class="mk">→</span><span>WhatsApp-Support, wenn es drauf ankommt</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Onboarding mit App-Einrichtung und RPE-Einweisung, online wie vor Ort</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Loom-Video-Feedback: du siehst dich selbst und hörst dazu, was passiert</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Erreichbarkeit mit festen Zusagen, werktags innerhalb von 24 Stunden</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Field Test für Herzfrequenz- und Pace-Zonen, wenn es für dein Ziel Sinn ergibt</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Hydration- und Supplement-Protokoll auf Wunsch</span></li>
+        <li class="reveal"><span class="mk">→</span><span>Ernährung als Gewohnheiten aufgebaut, nicht als Plan zum Abarbeiten</span></li>
         <li class="reveal"><span class="mk">→</span><span>Kein Standardprogramm, alles auf dich gebaut</span></li>
         <li class="reveal"><span class="mk">→</span><span>Laufende Anpassung an Fortschritt und Alltag</span></li>
         <li class="reveal"><span class="mk">→</span><span>Ein Coach, der nachhakt statt nur Pläne schickt</span></li>
@@ -378,6 +396,66 @@ section{position:relative}
     </div>
   </section>
 
+  <section class="pad" aria-label="Betreuung">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Die Betreuung</span>
+        <h2>Du bekommst nicht nur einen Plan.</h2>
+        <p class="lead" style="margin-top:1.2rem">Ein Plan allein verändert nichts. Was zählt, ist was zwischen den Einheiten passiert.</p>
+      </div>
+      <div class="care-grid">
+        <article class="care reveal">
+          <span class="c-tag">Feedback</span>
+          <h3>Ich schaue dir wirklich zu</h3>
+          <p>Du schickst mir dein Video, ich schicke dir eine Loom-Aufnahme zurück. Du siehst dich selbst und hörst gleichzeitig, was passiert und warum ich etwas ändere. Kein Text, der Raum für Interpretation lässt.</p>
+          <span class="fine">Technik korrigiert, bevor sie sich falsch einschleift.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Erreichbarkeit</span>
+          <h3>Du sitzt nie auf einer Frage fest</h3>
+          <p>Wenn etwas unklar ist oder zwischendurch zwickt, schreibst du mir. Keine Ticketnummer, keine Warteschleife, sondern eine Antwort von mir.</p>
+          <span class="fine">Werktags innerhalb von 24 Stunden.<br>Am Wochenende innerhalb von 48 Stunden.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Onboarding</span>
+          <h3>Kein Sprung ins kalte Wasser</h3>
+          <p>Bevor die erste Einheit läuft, richten wir alles gemeinsam ein und ich erkläre dir mein System: RPE, Belastungssteuerung, Videoaufnahme. Online läuft das genauso wie vor Ort.</p>
+          <span class="fine">Du weißt ab Tag eins, wie wir arbeiten.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad befunde" aria-label="Darüber hinaus">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Wenn du es brauchst</span>
+        <h2>Training ist nicht alles.</h2>
+        <p class="lead" style="margin-top:1.2rem">Nicht jeder braucht jeden dieser Bausteine. Wer ihn braucht, bekommt ihn ohne Aufpreis.</p>
+      </div>
+      <div class="care-grid">
+        <article class="care reveal">
+          <span class="c-tag">Diagnostik</span>
+          <h3>Field Test</h3>
+          <p>Wenn Ausdauer für dein Ziel zählt, bestimmen wir deine Schwellenwerte für Herzfrequenz und Pace oder Leistung. Daraus bekommst du deine echten Trainingszonen, statt nach Gefühl zu laufen.</p>
+          <span class="fine">30 Minuten, laufend oder auf dem Rad. Wiederholbar, damit Fortschritt messbar wird.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Ernährung</span>
+          <h3>Gewohnheiten statt Plan</h3>
+          <p>Ich gebe dir keinen Ernährungsplan, den du nach drei Wochen wegwirfst. Wir bauen eine Gewohnheit nach der anderen auf, und die nächste kommt erst, wenn die erste sitzt. Langsamer im Aufbau, dafür bleibt es.</p>
+          <span class="fine">Kein Alles-oder-nichts. Ein Ausrutscher ist keine verlorene Woche.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Basics</span>
+          <h3>Hydration und Supplements</h3>
+          <p>Nahrungsergänzung ist kein Wundermittel. Wenn Schlaf, Trinken und Essen stehen, schließt sie Lücken. Wenn du willst, bekommst du dazu ein klares Protokoll statt Regalberatung.</p>
+          <span class="fine">Konsequenz schlägt Komplexität.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="pad befunde" aria-label="Fragen">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -388,6 +466,8 @@ section{position:relative}
         <details><summary>Über welche App läuft das?</summary><p class="fa">Du bekommst deinen Plan strukturiert über eine App, in der du jede Einheit siehst, abhakst und deine Gewichte und Zeiten festhältst. Welche genau, zeige ich dir im Erstgespräch. Wichtig ist nicht das Tool, sondern was drinsteht.</p></details>
         <details><summary>Wie viel Zeit muss ich pro Woche einplanen?</summary><p class="fa">Das richtet sich nach deinem Ziel und deinem Alltag. Drei bis sechs Einheiten pro Woche sind der Rahmen, den Umfang legen wir gemeinsam so fest, dass er in dein Leben passt und nicht daneben.</p></details>
         <details><summary>Bin ich zu unfit, um damit anzufangen?</summary><p class="fa">Nein. Ich baue das Training auf deinem aktuellen Stand auf, nicht auf einem Idealbild. Egal ob du seit Jahren raus bist oder schon trainierst, wir starten da, wo du wirklich stehst.</p></details>
+        <details><summary>Werde ich am Anfang allein gelassen?</summary><p class="fa">Nein. Vor der ersten Einheit gehen wir gemeinsam durch das Setup: App einrichten, RPE und Belastungssteuerung erklären, Videoaufnahme zeigen. Das mache ich bei Online-Kunden genauso wie vor Ort. Du startest erst, wenn du weißt, wie alles läuft.</p></details>
+        <details><summary>Wie schnell bekomme ich eine Antwort?</summary><p class="fa">Werktags innerhalb von 24 Stunden, am Wochenende innerhalb von 48 Stunden. Du sitzt also nie tagelang auf einer Frage fest.</p></details>
         <details><summary>Und wenn ich Schmerzen oder eine alte Verletzung habe?</summary><p class="fa">Dann schauen wir uns das zuerst an. Wenn Schmerz das eigentliche Thema ist, ist mein <a href="rehab.html">Rehab-Coaching</a> <a href="ruecken-reset.html">90-Tage Rücken-Reset</a> <a href="ruecken-reset.html">90-Tage Rücken-Reset</a> oft der bessere Startpunkt. Im Erstgespräch finden wir heraus, was für dich passt.</p></details>
       </div>
 
