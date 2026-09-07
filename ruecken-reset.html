@@ -347,6 +347,16 @@ section{position:relative}
   .deliver-row .what{border-right:0;border-bottom:1px solid var(--line)}
   .deliver-head{display:none}
 }
+
+/* Für wen das nichts ist */
+.notfor{background:var(--ink-2);border-block:1px solid var(--line)}
+.notfor-grid{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.notfor-lead p{color:var(--bone-dim);margin-top:1.2rem;max-width:44ch}
+.nolist{list-style:none;display:grid;gap:0;border-top:1px solid var(--line)}
+.nolist li{display:flex;gap:1.1rem;align-items:flex-start;padding:1.15rem 0;border-bottom:1px solid var(--line);font-size:clamp(1rem,0.97rem + 0.4vw,1.15rem)}
+.nolist .x{color:var(--red);font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;line-height:1.5;flex:none}
+.notfor-close{margin-top:2.4rem;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--bone);font-size:clamp(0.95rem,0.9rem + 0.4vw,1.15rem);letter-spacing:0.04em;text-transform:uppercase;border-left:2px solid var(--red);padding-left:1.2rem;line-height:1.5}
+@media (max-width:860px){.notfor-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
 <script type="application/ld+json">
 {
@@ -596,6 +606,30 @@ section{position:relative}
     </div>
   </section>
 
+
+  <section class="notfor pad" aria-label="Für wen das nichts ist">
+    <div class="wrap notfor-grid">
+      <div class="notfor-lead reveal">
+        <span class="eyebrow">Ehrlichkeit vorab</span>
+        <h2 style="font-size:clamp(1.9rem,1.4rem + 3vw,3.6rem);margin-top:1.1rem">Ich nehme nicht jeden.</h2>
+        <p>90 Tage sind eine Ansage, für dich und für mich. Ich stecke in jeden Klienten echte Zeit, deshalb sortiere ich lieber vorher aus, als später zu merken, dass wir nicht zusammenpassen.</p>
+        <p>Lies die Liste ehrlich. Wenn du dich darin wiedererkennst, spar dir das Erstgespräch.</p>
+      </div>
+      <div class="reveal">
+        <ul class="nolist">
+          <li><span class="x">01</span><span>Du willst nur einen Trainingsplan. Den bekommst du woanders billiger.</span></li>
+          <li><span class="x">02</span><span>Du willst, dass jemand etwas mit dir macht, statt selbst zu verstehen, warum dein Rücken so reagiert.</span></li>
+          <li><span class="x">03</span><span>Du hast keine Lust, mir zu schreiben, wie es dir geht. Ohne Rückmeldung kann ich nichts anpassen.</span></li>
+          <li><span class="x">04</span><span>Du erwartest, dass nach vier Wochen alles erledigt ist. Ein Rücken, der seit Jahren wehtut, braucht länger.</span></li>
+          <li><span class="x">05</span><span>Du suchst jemanden, der dir bestätigt, dass Schonen der richtige Weg war.</span></li>
+          <li><span class="x">06</span><span>Du diskutierst jede Anpassung, statt sie erst einmal zu probieren.</span></li>
+          <li><span class="x">07</span><span>Du willst hören, was angenehm ist, statt was stimmt.</span></li>
+        </ul>
+        <p class="notfor-close">Wenn du dich hier nicht wiedererkennst, sind wir wahrscheinlich richtig füreinander.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="befunde pad" aria-label="Häufige Fragen">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -609,7 +643,6 @@ section{position:relative}
         <details><summary>Wie viel Zeit muss ich investieren?</summary><p class="fa">Drei Einheiten pro Woche, jeweils 60 bis 75 Minuten, dazu ein paar Minuten Morgenroutine. Mehr nicht. Wer sechsmal pro Woche trainieren will, ist hier falsch.</p></details>
         <details><summary>Was brauche ich an Ausstattung?</summary><p class="fa">Ein Gym mit Kurzhanteln und Langhantel reicht. Kein Spezialgerät, keine Maschinen.</p></details>
         <details><summary>Was passiert nach den 90 Tagen?</summary><p class="fa">Du entscheidest. Durch den Wissenstransfer weißt du, wie du dranbleibst. Wenn du danach auf Leistung gehen willst, wechseln wir ins Functional Coaching. Wenn nicht, war das hier kein Abo, sondern ein Abschluss.</p></details>
-        <details><summary>Für wen ist das nichts?</summary><p class="fa">Für alle, die nur einen Trainingsplan wollen. Für alle, die möchten, dass jemand etwas mit ihnen macht, statt selbst zu verstehen, was los ist. Und für alle, die keine Lust haben, mir zu schreiben, wie es ihnen geht. Ohne Rückmeldung kann ich nichts anpassen.</p></details>
       </div>
     </div>
   </section>
