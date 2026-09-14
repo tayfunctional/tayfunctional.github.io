@@ -35,6 +35,7 @@
   "@context":"https://schema.org","@type":"FAQPage",
   "mainEntity":[
     {"@type":"Question","name":"Ich habe schon alles probiert. Warum sollte das hier funktionieren?","acceptedAnswer":{"@type":"Answer","text":"Weil alles, was du bisher probiert hast, passiv war. Massage, Einrenken, Spritze, Schonen: Da wird etwas mit dir gemacht, das Symptom beruhigt sich, die Ursache bleibt. Hier findest du zuerst heraus, warum dein Rücken so reagiert, und baust ihn dann aktiv um."}},
+    {"@type":"Question","name":"Was gilt für die 4-Wochen-Zusage?","acceptedAnswer":{"@type":"Answer","text":"Voraussetzung ist, dass du die Einheiten gemacht und deine Rueckmeldungen und Videos geschickt hast. Ist das der Fall und nach vier Wochen kein Unterschied spuerbar, wird die komplette Analyse kostenlos neu gemacht."}},
     {"@type":"Question","name":"Ersetzt das meine Physio oder meinen Arzt?","acceptedAnswer":{"@type":"Answer","text":"Nein. Ich stelle keine Diagnosen und ersetze keine medizinische Behandlung. Ich baue dich mit Training und Biomechanik auf, oft genau da weiter, wo klassische Ansätze aufhören."}},
     {"@type":"Question","name":"Funktioniert das online wirklich?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei einer Videoaufnahme sehe ich deine Bewegung mehrfach, in Zeitlupe und aus mehreren Winkeln. Das Setup erkläre ich dir im Assessment."}},
     {"@type":"Question","name":"Wie viel Zeit muss ich investieren?","acceptedAnswer":{"@type":"Answer","text":"Drei Einheiten pro Woche, jeweils 60 bis 75 Minuten, dazu ein paar Minuten Morgenroutine."}},
@@ -357,6 +358,40 @@ section{position:relative}
 .nolist .x{color:var(--red);font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;line-height:1.5;flex:none}
 .notfor-close{margin-top:2.4rem;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--bone);font-size:clamp(0.95rem,0.9rem + 0.4vw,1.15rem);letter-spacing:0.04em;text-transform:uppercase;border-left:2px solid var(--red);padding-left:1.2rem;line-height:1.5}
 @media (max-width:860px){.notfor-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Trigger-Momente */
+.trigger{background:var(--ink-2);border-block:1px solid var(--line)}
+.tlist{list-style:none;margin-top:2.8rem;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.tlist li{background:var(--ink);padding:1.5rem clamp(1.2rem,2.5vw,2rem);display:flex;gap:1.2rem;align-items:flex-start;font-size:clamp(1.05rem,1rem + 0.55vw,1.3rem);line-height:1.5}
+.tlist .dot{width:7px;height:7px;background:var(--red);border-radius:50%;flex:none;margin-top:0.65em}
+.tclose{margin-top:2.6rem;font-size:clamp(1.05rem,1rem + 0.5vw,1.3rem);color:var(--bone);max-width:56ch;line-height:1.55}
+.tclose b{color:var(--red);font-weight:900}
+
+/* Weak Things Break */
+.wtb{background:var(--ink);border-block:1px solid var(--line);text-align:center;padding-block:clamp(4rem,10vh,7rem)}
+.wtb .words{font-family:'Archivo';font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:0.92;font-size:clamp(2.6rem,1.8rem + 7vw,7rem)}
+.wtb .words span{display:block}
+.wtb .words span:last-child{color:var(--red)}
+.wtb .src{margin-top:2rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--bone-dim)}
+.wtb .line{color:var(--bone-dim);margin-top:1.6rem;max-width:52ch;margin-inline:auto;font-size:clamp(1rem,0.97rem + 0.4vw,1.18rem)}
+
+/* Wertanker */
+.stack{border:1px solid var(--line);margin-top:3rem;max-width:76ch}
+.srow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;padding:1.25rem clamp(1.2rem,2.5vw,1.8rem);border-bottom:1px solid var(--line);align-items:baseline}
+.srow .item{color:var(--bone)}
+.srow .item small{display:block;color:var(--bone-dim);font-size:0.88rem;margin-top:0.25rem}
+.srow .val{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--bone);white-space:nowrap}
+.srow.sum{background:var(--ink-2);border-bottom:0}
+.srow.sum .item{font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;font-size:1.1rem}
+.srow.sum .val{font-size:1.25rem}
+.stack-pay{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;padding:1.5rem clamp(1.2rem,2.5vw,1.8rem);background:var(--red);color:#fff;align-items:baseline}
+.stack-pay .item{font-weight:900;text-transform:uppercase;font-size:clamp(1.05rem,1rem + 0.5vw,1.3rem);letter-spacing:-0.01em}
+.stack-pay .val{font-family:'Archivo';font-weight:900;font-size:clamp(1.5rem,1.3rem + 1.2vw,2.2rem);white-space:nowrap;line-height:1}
+.stack-note{margin-top:1.2rem;font-family:'JetBrains Mono',monospace;font-size:0.76rem;letter-spacing:0.04em;color:var(--bone-dim);line-height:1.8;max-width:70ch}
+@media (max-width:620px){
+  .srow,.stack-pay{grid-template-columns:minmax(0,1fr)}
+  .srow .val,.stack-pay .val{justify-self:start}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -428,6 +463,25 @@ section{position:relative}
         </button>
         <p class="vidnote">Mit dem Start wird eine Verbindung zu YouTube hergestellt und Daten an Google übertragen. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
       </div>
+    </div>
+  </section>
+
+
+  <section class="trigger pad" aria-label="Der Moment">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Der Moment</span>
+        <h2>Die meisten melden sich nach einem dieser Momente.</h2>
+      </div>
+      <ul class="tlist">
+        <li class="reveal"><span class="dot" aria-hidden="true"></span><span>Du stehst morgens vor dem Spiegel und siehst nicht den Menschen, der du mal warst. Du siehst den, der vorsichtig geworden ist.</span></li>
+        <li class="reveal"><span class="dot" aria-hidden="true"></span><span>Dein Kind will hochgenommen werden, und du rechnest kurz durch, ob dein Rücken das heute mitmacht.</span></li>
+        <li class="reveal"><span class="dot" aria-hidden="true"></span><span>Beim Spielen bist du der Erste, der Stopp sagt. Nicht weil du nicht willst, sondern weil du nicht kannst.</span></li>
+        <li class="reveal"><span class="dot" aria-hidden="true"></span><span>Du hebst eine Getränkekiste und hörst dich selbst dabei ächzen wie jemand, der dreißig Jahre älter ist.</span></li>
+        <li class="reveal"><span class="dot" aria-hidden="true"></span><span>Du planst deinen Tag um deinen Rücken herum, ohne dass du es noch merkst.</span></li>
+        <li class="reveal"><span class="dot" aria-hidden="true"></span><span>Jemand fragt, ob du mitkommst, und du sagst ab, bevor du überhaupt überlegt hast.</span></li>
+      </ul>
+      <p class="tclose reveal">Das ist der Punkt, an dem es nicht mehr um Schmerz geht. Es geht darum, wer du in deiner Familie sein willst. <b>Und darum, dass du nicht der Schwächste im Raum sein willst.</b></p>
     </div>
   </section>
 
@@ -551,6 +605,15 @@ section{position:relative}
     </div>
   </section>
 
+
+  <section class="wtb" aria-label="Weak things break">
+    <div class="wrap">
+      <p class="words"><span>Weak</span><span>Things</span><span>Break.</span></p>
+      <p class="src">Westside Barbell</p>
+      <p class="line">Ein Rücken, der nachgibt, ist kein Schicksal. Er ist ein Rücken, der nie gelernt hat zu tragen.</p>
+    </div>
+  </section>
+
   <section class="pad" id="ablauf" aria-label="Ablauf">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -574,8 +637,9 @@ section{position:relative}
       </div>
       <div class="guarantee reveal">
         <h3>Die 4-Wochen-Zusage</h3>
-        <p>Wenn du nach vier Wochen keinen Unterschied spürst, mache ich die komplette Analyse neu. Auf meine Kosten. Du zahlst nicht dafür, dass ich mich geirrt habe.</p>
-        <p style="margin-top:1.2rem">In der Praxis kommt die spürbare Veränderung meist nach drei bis vier Wochen, auch bei Leuten, die seit Jahren Schmerzen haben. Aber du musst mir das nicht glauben, bevor du es selbst gemerkt hast.</p>
+        <p style="color:var(--bone);font-size:clamp(1.1rem,1rem + 0.6vw,1.4rem);line-height:1.5">Spürst du nach vier Wochen keinen Unterschied, mache ich die komplette Analyse neu. Auf meine Kosten.</p>
+        <p style="margin-top:1.3rem">Du zahlst nicht dafür, dass ich mich geirrt habe. In der Praxis kommt die spürbare Veränderung meist nach drei bis vier Wochen, auch bei Leuten, die seit Jahren Schmerzen haben. Aber du musst mir das nicht glauben, bevor du es selbst gemerkt hast.</p>
+        <p style="margin-top:1.3rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.04em;line-height:1.8">Was dafür gilt, steht offen in den <a href="#fragen" class="red" style="text-decoration:underline">häufigen Fragen</a>.</p>
       </div>
     </div>
   </section>
@@ -584,8 +648,23 @@ section{position:relative}
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="eyebrow">Investition</span>
-        <h2>90 Tage. Zwei Wege zu zahlen.</h2>
-        <p class="lead" style="margin-top:1.4rem">Verbindliche Laufzeit von drei Monaten, weil ein Rücken, der seit Jahren wehtut, in vier Wochen nicht fertig ist.</p>
+        <h2>Was das einzeln kosten würde.</h2>
+        <p class="lead" style="margin-top:1.4rem">Rechne selbst nach. Alle Einzelpreise stehen öffentlich auf dieser Website.</p>
+      </div>
+
+      <div class="stack reveal">
+        <div class="srow"><div class="item">Assessment, 90 Minuten<small>Bewegungsanalyse plus Kraftmessplatten-Diagnostik</small></div><div class="val">300 €</div></div>
+        <div class="srow"><div class="item">6 PT-Sessions über 90 Tage<small>2 pro Monat, bis zu 90 Minuten, online oder vor Ort</small></div><div class="val">1.800 €</div></div>
+        <div class="srow"><div class="item">3 Monate Betreuung<small>Individuelle Programmierung, Loom-Videoanalyse, Support, Wissenstransfer</small></div><div class="val">1.350 €</div></div>
+        <div class="srow sum"><div class="item">Einzeln zusammen</div><div class="val">3.450 €</div></div>
+        <div class="stack-pay"><div class="item">Im Rücken-Reset zahlst du</div><div class="val">1.900 €</div></div>
+      </div>
+      <p class="stack-note reveal">Die Einzelpreise sind keine erfundenen Vergleichswerte. Personal Training kostet bei mir 200 € pro Stunde, eine Session dauert bis zu 90 Minuten. Die Betreuung entspricht dem Functional Coaching mit 450 € im Monat. Beides steht offen auf dieser Website.</p>
+
+      <div class="sec-head reveal" style="margin-top:4rem">
+        <span class="eyebrow">Zwei Wege zu zahlen</span>
+        <h2 style="font-size:clamp(1.6rem,1.3rem + 2vw,2.8rem)">Einmal oder monatlich.</h2>
+        <p class="lead" style="margin-top:1.2rem">Verbindliche Laufzeit von drei Monaten, weil ein Rücken, der seit Jahren wehtut, in vier Wochen nicht fertig ist.</p>
       </div>
       <div class="pricebox">
         <div class="pricecard best reveal">
@@ -630,7 +709,7 @@ section{position:relative}
     </div>
   </section>
 
-  <section class="befunde pad" aria-label="Häufige Fragen">
+  <section class="befunde pad" id="fragen" aria-label="Häufige Fragen">
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="eyebrow">Häufige Fragen</span>
@@ -638,6 +717,7 @@ section{position:relative}
       </div>
       <div class="faq reveal">
         <details><summary>Ich habe schon alles probiert. Warum sollte das hier funktionieren?</summary><p class="fa">Weil alles, was du bisher probiert hast, passiv war. Massage, Einrenken, Spritze, Schonen: Da wird etwas mit dir gemacht, das Symptom beruhigt sich, die Ursache bleibt. Deshalb kam es zurück. Hier findest du zuerst heraus, warum dein Rücken so reagiert, und dann baust du ihn aktiv um. Das ist ein anderer Weg, kein besseres Pflaster.</p></details>
+        <details><summary>Was gilt für die 4-Wochen-Zusage?</summary><p class="fa">Ganz einfach: Du hast die Einheiten gemacht und mir deine Rückmeldungen und Videos geschickt. Ohne deine Umsetzung kann ich nicht beurteilen, woran es liegt, und nichts anpassen. Wenn du dabei warst und trotzdem nach vier Wochen kein Unterschied da ist, mache ich die komplette Analyse neu, ohne dass es dich etwas kostet.</p></details>
         <details><summary>Ersetzt das meine Physio oder meinen Arzt?</summary><p class="fa">Nein. Ich stelle keine Diagnosen und ersetze keine medizinische Behandlung. Ich baue dich mit Training und Biomechanik auf, oft genau da weiter, wo klassische Ansätze aufhören. Wenn eine ärztliche Abklärung nötig ist, sage ich dir das offen.</p></details>
         <details><summary>Funktioniert das online wirklich?</summary><p class="fa">Ja, und in einem Punkt sogar besser als vor Ort: Bei einer Videoaufnahme sehe ich deine Bewegung mehrfach, in Zeitlupe und aus mehreren Winkeln. Fünf Minuten Draufschauen im Studio leisten das nicht. Das Setup erkläre ich dir im Assessment, du musst nichts können außer dein Handy hinstellen.</p></details>
         <details><summary>Wie viel Zeit muss ich investieren?</summary><p class="fa">Drei Einheiten pro Woche, jeweils 60 bis 75 Minuten, dazu ein paar Minuten Morgenroutine. Mehr nicht. Wer sechsmal pro Woche trainieren will, ist hier falsch.</p></details>
