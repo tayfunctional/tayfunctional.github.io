@@ -256,10 +256,8 @@ section{position:relative}
 .care .fine{margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.05em;color:var(--bone-dim);line-height:1.7}
 @media (max-width:860px){.care-grid{grid-template-columns:minmax(0,1fr)}}
 
-/* Preisankündigung */
-.pricenote{background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:clamp(1.2rem,2.4vw,1.6rem) clamp(1.3rem,2.6vw,1.9rem);margin-top:2.6rem;max-width:78ch}
-.pricenote .pn-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:0.7rem}
-.pricenote p{color:var(--bone-dim);font-size:0.99rem;line-height:1.6}
+/* MwSt-Hinweis */
+.vat{margin-top:1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--bone-dim);line-height:1.7}
 </style>
 <script type="application/ld+json">
 {
@@ -268,7 +266,7 @@ section{position:relative}
   "provider":{"@type":"Person","name":"Tayfun Ertural"},
   "areaServed":"DACH",
   "description":"Individuelles Functional- und Performance-Coaching über eine App mit Video-Feedback und WhatsApp-Support.",
-  "offers":{"@type":"Offer","price":"450","priceCurrency":"EUR","description":"pro Monat, ab 6 Monate Laufzeit; alternativ 5000 EUR als Einmalzahlung pro Jahr"}
+  "offers":{"@type":"Offer","price":"490","priceCurrency":"EUR","valueAddedTaxIncluded":true,"description":"pro Monat inkl. MwSt., ab 6 Monate Laufzeit; alternativ 5390 EUR als Einmalzahlung pro Jahr (12. Monat geschenkt)"}
 }
 </script>
 <script type="application/ld+json">
@@ -382,26 +380,23 @@ section{position:relative}
         <li class="reveal"><span class="mk">→</span><span>Ein Coach, der nachhakt statt nur Pläne schickt</span></li>
       </ul>
 
-      <div class="pricenote reveal">
-        <span class="pn-tag">Preisänderung zum 1. Januar 2027</span>
-        <p>Ab Januar bin ich umsatzsteuerpflichtig. Das Functional Coaching steigt deshalb von 450 auf 490 € im Monat. Wer vorher startet, behält seinen Preis.</p>
-      </div>
       <div class="saver reveal">
-        <span class="s-big">Spar dir 400 €, wenn du das Jahrespaket nimmst</span>
-        <span class="s-sub">Einmalig 5.000 € statt 12x 450 €</span>
+        <span class="s-big">Zahl elf Monate, trainier zwölf</span>
+        <span class="s-sub">Einmalig 5.390 € statt 12x 490 €</span>
       </div>
 
       <div class="priceblock reveal">
         <div>
-          <div class="pb-price">450 € / Monat</div>
+          <div class="pb-price">490 € / Monat</div>
           <div class="pb-term">Ab 6 Monate Laufzeit, danach monatlich kündbar</div>
-          <p class="pb-note">Oder einmalig 5.000 € für ein volles Jahr. Ob wir zusammenpassen, klären wir vorher in Ruhe. Kein Risiko, kein Verkaufsdruck.</p>
+          <p class="pb-note">Oder einmalig 5.390 € für ein volles Jahr. Ob wir zusammenpassen, klären wir vorher in Ruhe. Kein Risiko, kein Verkaufsdruck.</p>
         </div>
         <div class="pb-cta">
           <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=perf_price" target="_blank" rel="noopener">Erstgespräch buchen <span class="ico">↗</span></a>
           <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM auf Instagram</a>
         </div>
       </div>
+      <p class="vat reveal">Alle Preise inkl. 19 % MwSt.</p>
     </div>
   </section>
 

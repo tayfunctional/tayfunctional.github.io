@@ -27,7 +27,7 @@
   "provider":{"@type":"Person","name":"Tayfun Ertural"},
   "areaServed":"DACH",
   "description":"90-Tage Rehab-Programm bei chronischen Rückenschmerzen: Assessment, Kraftmessplatten-Diagnostik, individuelle Programmierung, PT-Sessions und Wissenstransfer.",
-  "offers":{"@type":"AggregateOffer","lowPrice":"1900","highPrice":"2100","priceCurrency":"EUR","offerCount":"2","description":"1.900 EUR Einmalzahlung oder 3 x 700 EUR"}
+  "offers":{"@type":"AggregateOffer","lowPrice":"1900","highPrice":"2100","priceCurrency":"EUR","offerCount":"2","valueAddedTaxIncluded":true,"description":"inkl. MwSt.: 1.900 EUR Einmalzahlung oder 3 x 700 EUR"}
 }
 </script>
 <script type="application/ld+json">
@@ -392,6 +392,9 @@ section{position:relative}
   .srow,.stack-pay{grid-template-columns:minmax(0,1fr)}
   .srow .val,.stack-pay .val{justify-self:start}
 }
+
+/* MwSt-Hinweis */
+.vat{margin-top:1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--bone-dim);line-height:1.7}
 </style>
 <script type="application/ld+json">
 {
@@ -663,11 +666,11 @@ section{position:relative}
       <div class="stack reveal">
         <div class="srow"><div class="item">Assessment, 90 Minuten<small>Bewegungsanalyse plus Kraftmessplatten-Diagnostik</small></div><div class="val">300 €</div></div>
         <div class="srow"><div class="item">6 PT-Sessions über 90 Tage<small>2 pro Monat, bis zu 90 Minuten, online oder vor Ort</small></div><div class="val">1.800 €</div></div>
-        <div class="srow"><div class="item">3 Monate Betreuung<small>Individuelle Programmierung, Loom-Videoanalyse, Support, Wissenstransfer</small></div><div class="val">1.350 €</div></div>
-        <div class="srow sum"><div class="item">Einzeln zusammen</div><div class="val">3.450 €</div></div>
+        <div class="srow"><div class="item">3 Monate Betreuung<small>Individuelle Programmierung, Loom-Videoanalyse, Support, Wissenstransfer</small></div><div class="val">1.470 €</div></div>
+        <div class="srow sum"><div class="item">Einzeln zusammen</div><div class="val">3.570 €</div></div>
         <div class="stack-pay"><div class="item">Im Rücken-Reset zahlst du</div><div class="val">1.900 €</div></div>
       </div>
-      <p class="stack-note reveal">Die Einzelpreise sind keine erfundenen Vergleichswerte. Personal Training kostet bei mir 200 € pro Stunde, eine Session dauert bis zu 90 Minuten. Die Betreuung entspricht dem Functional Coaching mit 450 € im Monat. Beides steht offen auf dieser Website.</p>
+      <p class="stack-note reveal">Die Einzelpreise sind keine erfundenen Vergleichswerte. Personal Training kostet bei mir 200 € pro Stunde, eine Session dauert bis zu 90 Minuten. Die Betreuung entspricht dem Functional Coaching mit 490 € im Monat. Beides steht offen auf dieser Website.</p>
 
       <div class="sec-head reveal" style="margin-top:4rem">
         <span class="eyebrow">Zwei Wege zu zahlen</span>
@@ -686,7 +689,8 @@ section{position:relative}
           <p class="sub">Gesamt 2.100 €. Rechnung zu Monatsbeginn.</p>
         </div>
       </div>
-      <p class="lead reveal" style="margin-top:2.2rem">Danach entscheidest du frei: Wenn du auf Leistung gehen willst, wechseln wir ins <a href="performance.html" class="red" style="text-decoration:underline">Functional Coaching</a> für 450 € im Monat, monatlich kündbar. Wenn nicht, gehst du mit dem Wissen raus, das du brauchst.</p>
+      <p class="vat reveal">Alle Preise inkl. 19 % MwSt.</p>
+      <p class="lead reveal" style="margin-top:2.2rem">Danach entscheidest du frei: Wenn du auf Leistung gehen willst, wechseln wir ins <a href="performance.html" class="red" style="text-decoration:underline">Functional Coaching</a> für 490 € im Monat, monatlich kündbar. Wenn nicht, gehst du mit dem Wissen raus, das du brauchst.</p>
       <div class="hero-cta reveal" style="margin-top:2.2rem">
         <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&amp;utm_medium=referral&amp;utm_content=reset_price" target="_blank" rel="noopener">Erstgespräch buchen <span class="ico">↗</span></a>
       </div>
