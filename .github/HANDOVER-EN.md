@@ -6,7 +6,7 @@ Die englische Version der Site ist fertig gebaut und QA-geprüft. Enthalten:
 
 - `en/` mit 8 Seiten, 1:1 parallel zur deutschen Site
 - Die 8 DE-Seiten ergänzt um Sprachschalter, Locale-Skript und hreflang
-- `sitemap.xml` mit 15 URLs (8 DE inkl. `/pace-calculator/`, 7 EN)
+- `sitemap.xml` mit 17 URLs (9 DE inkl. `/pace-calculator/`, 8 EN)
 
 Assets, Bilder, `favicon.svg`, `robots.txt` und `CNAME` sind unverändert. Die
 EN-Seiten greifen über `../assets/` auf die vorhandenen Bilder zu.
