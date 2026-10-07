@@ -256,10 +256,8 @@ section{position:relative}
 .care .fine{margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.05em;color:var(--bone-dim);line-height:1.7}
 @media (max-width:860px){.care-grid{grid-template-columns:minmax(0,1fr)}}
 
-/* Preisankündigung */
-.pricenote{background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:clamp(1.2rem,2.4vw,1.6rem) clamp(1.3rem,2.6vw,1.9rem);margin-top:2.6rem;max-width:78ch}
-.pricenote .pn-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:0.7rem}
-.pricenote p{color:var(--bone-dim);font-size:0.99rem;line-height:1.6}
+/* MwSt-Hinweis */
+.vat{margin-top:1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--bone-dim);line-height:1.7}
 
 /* Sprachumschalter */
 .langsw{display:inline-flex;align-items:center;gap:0.35rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;font-weight:700;letter-spacing:0.08em;white-space:nowrap}
@@ -279,7 +277,7 @@ section{position:relative}
   "areaServed":"DACH",
   "inLanguage":"en",
   "description":"Individual functional and performance coaching through an app, with video feedback and WhatsApp support.",
-  "offers":{"@type":"Offer","price":"450","priceCurrency":"EUR","description":"per month, minimum term 6 months; alternatively 5000 EUR as a single annual payment"}
+  "offers":{"@type":"Offer","price":"490","priceCurrency":"EUR","valueAddedTaxIncluded":true,"description":"per month incl. VAT, minimum term 6 months; alternatively 5390 EUR as a single annual payment (12th month free)"}
 }
 </script>
 <script type="application/ld+json">
@@ -395,26 +393,23 @@ section{position:relative}
         <li class="reveal"><span class="mk">→</span><span>A coach who follows up instead of just sending plans</span></li>
       </ul>
 
-      <div class="pricenote reveal">
-        <span class="pn-tag">Price change as of 1 January 2027</span>
-        <p>From January I become liable for VAT. Functional Coaching therefore goes from 450 to 490 € per month. Anyone who starts before then keeps their price.</p>
-      </div>
       <div class="saver reveal">
-        <span class="s-big">Save 400 € with the annual plan</span>
-        <span class="s-sub">One payment of 5,000 € instead of 12x 450 €</span>
+        <span class="s-big">Pay for eleven months, train for twelve</span>
+        <span class="s-sub">One payment of 5,390 € instead of 12x 490 €</span>
       </div>
 
       <div class="priceblock reveal">
         <div>
-          <div class="pb-price">450 € / month</div>
+          <div class="pb-price">490 € / month</div>
           <div class="pb-term">Minimum term 6 months, then cancellable monthly</div>
-          <p class="pb-note">Or a single payment of 5,000 € for a full year. Whether we fit is something we work out calmly beforehand. No risk, no sales pressure.</p>
+          <p class="pb-note">Or a single payment of 5,390 € for a full year. Whether we fit is something we work out calmly beforehand. No risk, no sales pressure.</p>
         </div>
         <div class="pb-cta">
           <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=perf_price" target="_blank" rel="noopener">Book an intro call <span class="ico">↗</span></a>
           <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM me on Instagram</a>
         </div>
       </div>
+      <p class="vat reveal">All prices include 19 % VAT.</p>
     </div>
   </section>
 

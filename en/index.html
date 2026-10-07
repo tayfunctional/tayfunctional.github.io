@@ -300,10 +300,8 @@ section{position:relative}
 .wtb .src{margin-top:2rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--bone-dim)}
 .wtb .line{color:var(--bone-dim);margin-top:1.6rem;max-width:54ch;margin-inline:auto;font-size:clamp(1rem,0.97rem + 0.4vw,1.18rem)}
 
-/* Preisankündigung */
-.pricenote{background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:clamp(1.2rem,2.4vw,1.6rem) clamp(1.3rem,2.6vw,1.9rem);margin-top:2.6rem;max-width:78ch}
-.pricenote .pn-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:0.7rem}
-.pricenote p{color:var(--bone-dim);font-size:0.99rem;line-height:1.6}
+/* MwSt-Hinweis */
+.vat{margin-top:1.5rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--bone-dim);line-height:1.7}
 
 /* Sprachumschalter */
 .langsw{display:inline-flex;align-items:center;gap:0.35rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;font-weight:700;letter-spacing:0.08em;white-space:nowrap}
@@ -479,17 +477,13 @@ section{position:relative}
         <h2>How we work together.</h2>
         <p class="lead" style="margin-top:1.2rem">Three routes, one principle: find the cause, build performance, stay with it. Which one fits you is what the intro call is for.</p>
       </div>
-      <div class="pricenote reveal">
-        <span class="pn-tag">Price change as of 1 January 2027</span>
-        <p>From January I become liable for VAT. Functional Coaching therefore goes from 450 to 490 € per month. Rehab Coaching and the Back Reset stay as they are. Anyone who starts before then keeps their price.</p>
-      </div>
       <div class="offer-grid">
         <article class="offer reveal">
           <span class="label">Performance</span>
           <h3>Functional Coaching</h3>
-          <div class="price">450 € / month</div>
+          <div class="price">490 € / month</div>
           <div class="term">Minimum term 6 months</div>
-          <span class="save-tag">Save 400 € with the annual plan</span>
+          <span class="save-tag">Pay for 11 months, train for 12</span>
           <p>Starts with a full assessment, then individual training 3 to 6 times a week through an app. Loom video feedback on your technique and WhatsApp support when it matters. For anyone who wants real progress again.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="performance.html">Learn more →</a></div>
         </article>
@@ -510,6 +504,7 @@ section{position:relative}
           <div class="offer-cta"><a class="btn btn-ghost" href="mailto:apex.performance.official@gmail.com?subject=Anfrage%20Speaking%20%26%20Weiterbildung">Send an enquiry</a></div>
         </article>
       </div>
+      <p class="vat reveal">All prices include 19 % VAT.</p>
     </div>
   </section>
 
