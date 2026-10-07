@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Über mich | Tayfun Ertural, Coach aus Ingolstadt | Tayfunctional</title>
-<meta name="description" content="Tayfun Ertural: aus dem Viertel, über zehn Jahre Kampfsport, heute Rehab- und Performance-Coach aus Ingolstadt. Jedes Coaching startet mit vollem Assessment. Die Geschichte hinter Tayfunctional.">
+<title>Save With Me | Discount Codes &amp; Recommendations | Tayfunctional</title>
+<meta name="description" content="My discount codes for supplements, weightlifting gear and coach education. Only brands I use myself.">
 <meta name="theme-color" content="#0A0A0A">
-<link rel="canonical" href="https://www.tayfunctional.de/ueber.html">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.tayfunctional.de/en/discounts.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <meta name="robots" content="index, follow">
-<meta property="og:type" content="profile">
-<meta property="og:locale" content="de_DE">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Tayfunctional">
-<meta property="og:title" content="Über mich | Tayfun Ertural, Coach aus Ingolstadt">
-<meta property="og:description" content="Aus dem Viertel. Über den Kampfsport. In die Biomechanik. Die Geschichte hinter Tayfunctional.">
-<meta property="og:url" content="https://www.tayfunctional.de/ueber.html">
-<meta property="og:image" content="https://www.tayfunctional.de/assets/img/portrait.jpg">
+<meta property="og:title" content="Save With Me | Discount Codes & Recommendations">
+<meta property="og:description" content="My codes for supplements, gear and coach education. Only brands I use myself.">
+<meta property="og:url" content="https://www.tayfunctional.de/en/discounts.html">
+<meta property="og:image" content="https://www.tayfunctional.de/assets/img/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+
 :root{
   --ink:#0A0A0A; --ink-2:#111110; --ink-3:#181715;
   --bone:#F2EFE9; --bone-dim:#A6A199; --line:rgba(242,239,233,0.13);
@@ -73,6 +74,17 @@ h1,h2,h3{font-weight:900;line-height:0.98;letter-spacing:-0.02em;text-transform:
 .hero-lead{margin-top:1.6rem;max-width:46ch;color:var(--bone-dim);font-size:clamp(1rem,0.95rem + 0.35vw,1.18rem)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:0.9rem;margin-top:2.2rem}
 .scroll-hint{position:absolute;bottom:1.4rem;right:clamp(1.25rem,5vw,3.5rem);z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--bone-dim);writing-mode:vertical-rl}
+
+/* proof strip */
+.proof{background:var(--red);border-block:1px solid var(--red)}
+.proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(10,10,10,0.18)}
+.proof-item{background:var(--red);padding:clamp(1.6rem,3vw,2.6rem) clamp(1rem,2vw,1.6rem);text-align:center}
+.proof-num{font-family:'Archivo';font-weight:900;font-size:clamp(2.2rem,1.6rem + 3.4vw,4.2rem);line-height:0.95;letter-spacing:-0.03em;color:#fff}
+.proof-label{font-family:'JetBrains Mono',monospace;font-size:clamp(0.68rem,0.62rem + 0.25vw,0.78rem);font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.88);margin-top:0.8rem;line-height:1.45}
+@media (max-width:640px){
+  .proof-grid{grid-template-columns:minmax(0,1fr)}
+  .proof-item{padding-block:1.4rem}
+}
 
 section{position:relative}
 .pad{padding-block:clamp(4.5rem,11vh,9rem)}
@@ -232,13 +244,49 @@ section{position:relative}
 .tier .tterm{margin-top:auto;padding-top:1.3rem;font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--bone-dim)}
 @media (max-width:760px){.tiers{grid-template-columns:minmax(0,1fr)}}
 
-/* values */
-.values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin-top:3rem}
-.value{background:var(--ink);border:1px solid var(--line);padding:clamp(1.6rem,2.5vw,2.2rem)}
-.value .vn{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
-.value h3{font-size:clamp(1.3rem,1.1rem + 1vw,1.8rem);margin:0.8rem 0 0.6rem;line-height:1.05}
-.value p{color:var(--bone-dim);font-size:0.97rem}
-@media (max-width:760px){.values{grid-template-columns:minmax(0,1fr)}}
+/* saver badge in offer card */
+.save-tag{display:inline-block;background:var(--red);color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.45em 0.75em;margin-top:0.8rem}
+
+/* reviews */
+.reviews{background:var(--ink-2);border-block:1px solid var(--line)}
+.rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.2rem 2rem}
+.rev-badge{display:flex;align-items:center;gap:0.7rem;flex-wrap:wrap}
+.rev-score{font-family:'Archivo';font-weight:900;font-size:clamp(2rem,1.6rem + 1.6vw,2.8rem);line-height:1;letter-spacing:-0.02em}
+.rev-stars{color:var(--red);font-size:clamp(1rem,0.9rem + 0.5vw,1.25rem);letter-spacing:0.1em}
+.rev-count{font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--bone-dim)}
+.rev-pages{margin-top:2.6rem;position:relative}
+.rev-page{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.rev-page[hidden]{display:none}
+.rev-page.fade{animation:revIn .5s ease}
+@keyframes revIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.rev{background:var(--ink);border:1px solid var(--line);padding:clamp(1.5rem,2.5vw,2rem);display:flex;flex-direction:column}
+.rev .r-stars{color:var(--red);font-size:0.95rem;letter-spacing:0.12em;margin-bottom:1rem}
+.rev p{color:var(--bone-dim);font-size:0.98rem;flex:1;margin-bottom:1.3rem}
+.rev .r-name{font-family:'JetBrains Mono',monospace;font-size:0.74rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--bone)}
+.rev-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.rev-dots{display:flex;gap:0.5rem}
+.rev-dots button{width:2.2rem;height:3px;border:0;padding:0;background:var(--line);cursor:pointer;transition:background .25s}
+.rev-dots button[aria-current="true"]{background:var(--red)}
+@media (max-width:860px){.rev-page{grid-template-columns:minmax(0,1fr)}}
+
+/* deals page */
+.deals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:3rem}
+.deal{background:var(--ink-2);border:1px solid var(--line);padding:clamp(1.7rem,3vw,2.4rem);display:flex;flex-direction:column;transition:border-color .25s ease,transform .25s ease}
+.deal:hover{border-color:var(--red);transform:translateY(-4px)}
+.deal .d-cat{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.deal h3{font-size:clamp(1.4rem,1.2rem + 1vw,1.9rem);margin:0.9rem 0 0.6rem;line-height:1.03}
+.deal p{color:var(--bone-dim);font-size:0.97rem;margin-bottom:1.5rem;flex:1}
+.code{display:flex;flex-wrap:wrap;align-items:center;gap:0.6rem 0.9rem;background:var(--ink);border:1px dashed var(--line);padding:0.9rem 1.1rem;margin-bottom:1.2rem}
+.code .c-key{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(1rem,0.95rem + 0.4vw,1.2rem);color:var(--bone);letter-spacing:0.06em}
+.code .c-val{font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);font-weight:700}
+.code.no-code{border-style:solid}
+.deal .btn{width:100%;justify-content:center}
+.toolbox{background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:clamp(1.8rem,3.5vw,2.8rem);margin-top:3rem;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:1.6rem 2.5rem;align-items:center}
+.toolbox h3{font-size:clamp(1.4rem,1.2rem + 1.1vw,2rem);margin:0.8rem 0 0.6rem;line-height:1.03}
+.toolbox p{color:var(--bone-dim);font-size:0.99rem}
+.toolbox .btn{width:100%;justify-content:center}
+.adnote{margin-top:2.4rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;line-height:1.7;letter-spacing:0.03em;color:var(--bone-dim);border-top:1px solid var(--line);padding-top:1.4rem}
+@media (max-width:780px){.deals{grid-template-columns:minmax(0,1fr)}.toolbox{grid-template-columns:minmax(0,1fr)}}
 
 /* Mittelgrosse Bildschirme: Menue enger statt Burger */
 @media (min-width:921px) and (max-width:1180px){
@@ -259,146 +307,95 @@ section{position:relative}
 .mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
 .mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
 </style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"Person",
-  "name":"Tayfun Ertural",
-  "jobTitle":"Rehab- & Performance-Coach",
-  "url":"https://www.tayfunctional.de/ueber.html",
-  "image":"https://www.tayfunctional.de/assets/img/portrait.jpg",
-  "worksFor":{"@type":"Organization","name":"Tayfunctional"},
-  "address":{"@type":"PostalAddress","addressLocality":"Ingolstadt","addressCountry":"DE"},
-  "sameAs":["https://www.instagram.com/tayfunctional/"]
-}
-</script>
 
-<link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/ueber.html">
-<link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/about.html">
-<link rel="alternate" hreflang="x-default" href="https://www.tayfunctional.de/ueber.html">
+<link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/rabatte.html">
+<link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/discounts.html">
+<link rel="alternate" hreflang="x-default" href="https://www.tayfunctional.de/rabatte.html">
 </head>
 <body>
 
 <header class="site-head" id="head">
-  <a href="index.html" class="brand" aria-label="Tayfunctional Startseite">TAYFUNCTIONAL<span>.</span></a>
-  <nav class="nav" aria-label="Hauptnavigation">
+  <a href="index.html" class="brand" aria-label="Tayfunctional home">TAYFUNCTIONAL<span>.</span></a>
+  <nav class="nav" aria-label="Main navigation">
     <a class="navlink" href="index.html#angebote">Coaching</a>
-    <a class="navlink" href="ruecken-reset.html">Rücken-Reset</a>
-    <a class="navlink" href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener">Programme</a>
-    <a class="navlink" href="https://www.tayfunctional.de/pace-calculator/">Pace-Rechner</a>
-    <a class="navlink" href="ueber.html">Über mich</a>
-    <span class="langsw" role="group" aria-label="Sprache"><a href="/ueber.html" data-lang="de" class="on">DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/about.html" data-lang="en">EN</a></span>
-    <a class="btn btn-primary desktop-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=ueber_nav" target="_blank" rel="noopener">Erstgespräch</a>
-    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    <a class="navlink" href="back-reset.html">Back Reset</a>
+    <a class="navlink" href="about.html">About</a>
+    <span class="langsw" role="group" aria-label="Language"><a href="/rabatte.html" data-lang="de">DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/discounts.html" data-lang="en" class="on">EN</a></span>
+    <a class="btn btn-primary desktop-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=deals_nav" target="_blank" rel="noopener">Intro call</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </nav>
 </header>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html#angebote" data-close>Coaching</a>
-  <a href="ruecken-reset.html" data-close>Rücken-Reset</a>
-  <a href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener" data-close>Programme</a>
-  <a href="https://www.tayfunctional.de/pace-calculator/" data-close>Pace-Rechner</a>
-  <a href="rabatte.html" data-close>Spare mit mir</a>
-  <a href="ueber.html" data-close>Über mich</a>
-  <a href="index.html#kontakt" data-close>Kontakt</a>
-  <a class="mm-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=ueber_mobile" target="_blank" rel="noopener" data-close>Erstgespräch buchen →</a>
-  <span class="langsw" role="group" aria-label="Sprache"><a href="/ueber.html" data-lang="de" class="on" data-close>DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/about.html" data-lang="en" data-close>EN</a></span>
+  <a href="back-reset.html" data-close>Back Reset</a>
+  <a href="discounts.html" data-close>Save with me</a>
+  <a href="about.html" data-close>About</a>
+  <a href="index.html#kontakt" data-close>Contact</a>
+  <a class="mm-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=deals_mobile" target="_blank" rel="noopener" data-close>Book an intro call →</a>
+  <span class="langsw" role="group" aria-label="Language"><a href="/rabatte.html" data-lang="de" data-close>DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/discounts.html" data-lang="en" class="on" data-close>EN</a></span>
 </div>
 
 <main>
 
-  <section class="subhero" aria-label="Über mich">
-    <div class="subhero-media">
-      <picture>
-        <source srcset="assets/img/portrait.webp" type="image/webp">
-        <img src="assets/img/portrait.jpg" alt="Porträt von Tayfun Ertural" width="1100" height="1649" fetchpriority="high" style="object-position:50% 22%">
-      </picture>
-    </div>
-    <div class="subhero-inner wrap">
-      <p class="crumb"><a href="index.html">Start</a> <span class="sep">/</span> Über mich</p>
-      <span class="eyebrow" style="margin-top:1rem">Über mich</span>
-      <h1>Aus dem Viertel. Über den Kampfsport. In die Biomechanik.</h1>
-      <p class="sublead">Ich bin Tayfun Ertural. Coach für die, die es ernst meinen, und einer der lieber die Wahrheit sagt als das Angenehme.</p>
-    </div>
-  </section>
-
-  <section class="pad">
-    <div class="wrap intro-grid">
-      <div class="prose reveal">
-        <span class="eyebrow" style="margin-bottom:1.2rem">Mein Weg</span>
-        <p>Groß geworden bin ich in Ingolstadt, aus dem Viertel. Mit neunzehn habe ich angefangen, ernsthaft zu kämpfen, Kickboxen und K1, über zehn Jahre lang. Der Ring vergibt nichts. Er hat mir beigebracht, was Disziplin wirklich heißt, was Loyalität wert ist und dass Ehrlichkeit meistens unbequem, aber immer besser ist.</p>
-        <p>Irgendwann wollte ich verstehen, warum Körper halten oder brechen. Ich habe mich in Biomechanik reingearbeitet, seit fünf Jahren coache ich Functional Fitness, habe Zertifikate gesammelt, auch wenn die für sich genommen nichts beweisen. Der einzige Beweis, der zählt, sind über fünfzig Athleten, die ich zurück zur Leistung begleitet habe.</p>
-        <p>Und ja, ich habe auf dem Weg dorthin fast jeden Fehler selbst gemacht. Genau deshalb kann ich dir heute den kürzeren Weg zeigen.</p>
-      </div>
-      <div class="reveal" style="align-self:center">
-        <p class="pull">Nicht der Coach, der deine Hand hält. Der, der dir die Wahrheit sagt.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="human" aria-label="Statement">
-    <img src="assets/img/perf1.webp" alt="Tayfun Ertural beim Training am Battle Rope" loading="lazy" width="1200" height="1800">
-    <div class="wrap human-copy">
-      <span class="eyebrow">Kein Umweg ausgelassen</span>
-      <p class="big">Ich musste alles falsch machen, damit ich dir den schnellen Weg zeigen kann.</p>
-    </div>
-  </section>
-
-  <section class="pad befunde" aria-label="Werte">
+  <section class="pad" style="padding-top:9rem" aria-label="Save with me">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Wofür ich stehe</span>
-        <h2>Drei Dinge, auf die du dich verlassen kannst.</h2>
+      <p class="crumb"><a href="index.html">Home</a> <span class="sep">/</span> Save with me</p>
+      <span class="eyebrow" style="margin-top:1.2rem">Codes &amp; recommendations</span>
+      <h1 style="font-size:clamp(2.4rem,1.8rem + 5vw,5rem);margin:1.2rem 0 0;max-width:16ch">Save with me.</h1>
+      <p class="lead" style="margin-top:1.4rem">Here are the brands I actually use myself, and my codes for them. Not a list I padded out so it looks full. Only what is genuinely in use with me.</p>
+
+      <div class="deals">
+
+        <article class="deal reveal">
+          <span class="d-cat">Supplements</span>
+          <h3>Fjuled</h3>
+          <p>My base for everyday life and around training. Clean formulas, no marketing magic.</p>
+          <div class="code"><span class="c-key">TAYFUN10</span><span class="c-val">10 % off</span></div>
+          <a class="btn btn-ghost" href="https://fjuled.com/" target="_blank" rel="sponsored noopener">Go to Fjuled <span class="ico">↗</span></a>
+        </article>
+
+        <article class="deal reveal">
+          <span class="d-cat">Supplements</span>
+          <h3>Prozis</h3>
+          <p>A wide range of supplements and sports nutrition. My code gets you the maximum discount.</p>
+          <div class="code"><span class="c-key">TAYFUN10</span><span class="c-val">Maximum discount</span></div>
+          <a class="btn btn-ghost" href="https://www.prozis.com/de" target="_blank" rel="sponsored noopener">Go to Prozis <span class="ico">↗</span></a>
+        </article>
+
+        <article class="deal reveal">
+          <span class="d-cat">Equipment</span>
+          <h3>Warm Body Cold Mind</h3>
+          <p>Weightlifting gear that lasts. Belts, wrist wraps and accessories for heavy days.</p>
+          <div class="code"><span class="c-key">TAYFUNCTIONAL</span><span class="c-val">Get the discount</span></div>
+          <a class="btn btn-ghost" href="https://eu.warmbody-coldmind.com/" target="_blank" rel="sponsored noopener">Go to Warm Body Cold Mind <span class="ico">↗</span></a>
+        </article>
+
+        <article class="deal reveal">
+          <span class="d-cat">For coaches</span>
+          <h3>King Coach Consulting</h3>
+          <p>You are a coach yourself and want to move your business forward? This is the community I develop in. For anyone who is serious.</p>
+          <div class="code no-code"><span class="c-key">No code needed</span><span class="c-val">Through my link</span></div>
+          <a class="btn btn-ghost" href="https://www.skool.com/kingcoachconsulting/about?ref=a5252485346344d38c1d04a14a78b0a2" target="_blank" rel="sponsored noopener">Go to the community <span class="ico">↗</span></a>
+        </article>
+
       </div>
-      <div class="values">
-        <article class="value reveal">
-          <span class="vn">01</span>
-          <h3>Loyalität</h3>
-          <p>Wer mit mir arbeitet, hat mich an seiner Seite. Ich ziehe mit, auch wenn es zäh wird, und lasse niemanden auf halbem Weg stehen.</p>
-        </article>
-        <article class="value reveal">
-          <span class="vn">02</span>
-          <h3>Disziplin</h3>
-          <p>Ergebnisse kommen nicht vom Reden. Ich halte den Kurs und sorge dafür, dass du ihn auch hältst, an den Tagen an denen es leicht ist und an denen es das nicht ist.</p>
-        </article>
-        <article class="value reveal">
-          <span class="vn">03</span>
-          <h3>Ehrlichkeit</h3>
-          <p>Ich sage dir, was ist, nicht was du hören willst. Das ist unbequemer, aber es ist der einzige Weg, der wirklich weiterbringt.</p>
-        </article>
-      </div>
+
+      
+
+      <p class="adnote">Note: this page contains advertising. The links above are referral and affiliate links. If you buy through them, I may receive a commission or you get a discount through my code. Nothing becomes more expensive for you. I only recommend brands I use myself.</p>
     </div>
   </section>
 
-  <section class="pad">
+  <section class="pad final" id="kontakt" aria-label="Contact">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Wie ich arbeite</span>
-        <h2>Science-backed. Street-tested.</h2>
-        <p class="lead" style="margin-top:1.2rem">Ich verbinde das, was in der Wissenschaft stimmt, mit dem, was unter echter Belastung hält. Biomechanik trifft Kampfsport, Theorie trifft Straße. So sieht mein Coaching aus, ob wir an deinem Schmerz oder an deiner Leistung arbeiten.</p>
-        <p class="lead" style="margin-top:1.4rem">Deshalb fängt bei mir jeder an derselben Stelle an: mit einem vollen Assessment. Eine Bewegungsanalyse von den Füßen bis zur Schulter, egal ob du wegen Schmerzen kommst oder weil du stärker werden willst. Wenn wir vor Ort arbeiten, kommen die Kraftmessplatten dazu und machen sichtbar, was das Auge nicht sieht. Erst wenn ich weiß, wie dein Körper wirklich arbeitet, schreibe ich eine einzige Übung auf.</p>
-      </div>
-      <p class="pull reveal" style="margin-top:2.4rem;max-width:52ch">Was hier steht, ist ein Bruchteil. Den Rest zeige ich dir, wenn wir arbeiten.</p>
-
-      <div class="crosslink reveal" style="margin-top:3rem">
-        <p>Zurück zum Sport?</p>
-        <a class="btn btn-ghost" href="rehab.html">Rehab-Coaching →</a>
-      </div>
-      <div class="crosslink reveal" style="margin-top:1.25rem">
-        <p>Wieder in echte Leistung?</p>
-        <a class="btn btn-ghost" href="performance.html">Performance-Coaching →</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="pad final" id="kontakt" aria-label="Kontakt">
-    <div class="wrap">
-      <span class="eyebrow reveal" style="justify-content:center">Kontakt</span>
-      <h2 class="reveal">Lern mich im Erstgespräch kennen.</h2>
-      <p class="lead reveal">30 Minuten, ehrlich und ohne Verkaufsmasche. Wir schauen, wo du stehst und ob wir zusammenpassen.</p>
+      <span class="eyebrow reveal" style="justify-content:center">Contact</span>
+      <h2 class="reveal">Want more than just discounts?</h2>
+      <p class="lead reveal">Then let us talk. Thirty minutes, honest and without a sales act.</p>
       <div class="final-cta reveal">
-        <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=ueber_final" target="_blank" rel="noopener">Erstgespräch buchen <span class="ico">↗</span></a>
-        <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM auf Instagram</a>
+        <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&amp;utm_medium=referral&amp;utm_content=deals_final" target="_blank" rel="noopener">Book an intro call <span class="ico">↗</span></a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM me on Instagram</a>
       </div>
-      <p class="micro reveal">30 Min · unverbindlich · online</p>
+      <p class="micro reveal">30 min · no obligation · online</p>
     </div>
   </section>
 
@@ -409,29 +406,27 @@ section{position:relative}
     <div class="foot-grid">
       <div class="foot-brand">
         <div class="brand">TAYFUNCTIONAL<span>.</span></div>
-        <p>Rehab- und Performance-Coaching aus Ingolstadt. Pain <span class="arrow">→</span> Performance. Provide. Protect. Love.</p>
+        <p>Rehab and performance coaching from Ingolstadt. Pain <span class="arrow">→</span> Performance. Provide. Protect. Love.</p>
       </div>
       <div class="foot-col">
         <h4>Coaching</h4>
-        <a href="performance.html">Performance-Coaching</a>
-        <a href="rehab.html">Rehab-Coaching</a>
-        <a href="ruecken-reset.html">90-Tage Rücken-Reset</a>
-        <a href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener">Programme</a>
-        <a href="ueber.html">Über mich</a>
-        <a href="index.html#kontakt">Kontakt</a>
+        <a href="performance.html">Performance Coaching</a>
+        <a href="rehab.html">Rehab Coaching</a>
+        <a href="back-reset.html">90-Day Back Reset</a>
+        <a href="about.html">About</a>
+        <a href="index.html#kontakt">Contact</a>
       </div>
       <div class="foot-col">
-        <h4>Mehr</h4>
-        <a href="https://www.tayfunctional.de/pace-calculator/">Pace-Rechner</a>
-        <a href="rabatte.html">Spare mit mir</a>
+        <h4>More</h4>
+<a href="discounts.html">Save with me</a>
         <a href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">Instagram</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="privacy.html">Privacy</a>
       </div>
     </div>
     <div class="foot-bottom">
       <p>© 2026 Tayfun Ertural · Tayfunctional</p>
-      <p>Fotos: @Mehmetguezl</p>
+      <p>Photos: @Mehmetguezl</p>
     </div>
   </div>
 </footer>
@@ -443,12 +438,12 @@ section{position:relative}
   onScroll();window.addEventListener('scroll',onScroll,{passive:true});
   var burger=document.getElementById('burger');
   var menu=document.getElementById('mobileMenu');
-  function setMenu(open){menu.classList.toggle('open',open);burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');document.body.style.overflow=open?'hidden':''}
+  function setMenu(open){menu.classList.toggle('open',open);burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Close menu':'Open menu');document.body.style.overflow=open?'hidden':''}
   burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'))});
   menu.querySelectorAll('[data-close]').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
   var mq=window.matchMedia('(prefers-reduced-motion: reduce)');
   if('IntersectionObserver' in window && !mq.matches){
-    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
   }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
 })();
