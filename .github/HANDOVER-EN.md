@@ -65,9 +65,19 @@ Betroffen: `en/index.html`, `en/performance.html`, `en/rehab.html`,
 | Vorher | Nachher |
 |---|---|
 | Hybrid Coaching 450 € / Monat | 490 € / Monat |
-| Jahrespaket 5.000 € | 5.390 € (11 × 490, der 12. Monat ist geschenkt) |
+| Jahrespaket 5,000 € | 5,390 € (11 × 490, der 12. Monat ist geschenkt) |
 | kein MwSt.-Hinweis | "All prices include 19 % VAT" |
-| Wertanker (alte Summe) | 300 + 1.800 + 1.470 = 3.570 |
+| Wertanker 300 + 1,800 + 1,350 = 3,450 | 300 + 1,800 + 1,470 = 3,570 |
+| Ankündigungsblock `class="pricenote"` | ersatzlos entfernen |
+
+Der Ankündigungsblock steht in `en/index.html` und `en/performance.html`. Text:
+"Price change as of 1 January 2027 / From January I become liable for VAT …".
+Ab dem 1. Januar ist er falsch und muss raus, genau wie auf den DE-Seiten. Die
+zugehörigen `.pricenote`-CSS-Regeln können stehen bleiben, die stören nicht.
+
+**Zahlenformat:** auf den EN-Seiten ist das Tausendertrennzeichen ein Komma,
+nicht der deutsche Punkt. Also `5,390 €` und `3,570 €`, nicht `5.390 €`. Das
+Dezimalkomma kommt in den Preisen nicht vor, alle Beträge sind ganzzahlig.
 
 Der Jahrespaket-Text lautet auf Deutsch sinngemäß "Zahl elf Monate, trainier
 zwölf", die Ersparnis sind 490 € bzw. 8,3 %. Auf Englisch entsprechend.
