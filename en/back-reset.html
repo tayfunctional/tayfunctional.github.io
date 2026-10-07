@@ -862,7 +862,7 @@ section{position:relative}
   try{ if(sessionStorage.getItem('tf_redir')) return; }catch(e){}
   var l = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
   var wantsEn = String(l[0] || '').toLowerCase().indexOf('en') === 0;
-  if(wantsEn === (LANG === 'en')) return;
+  if(LANG === 'en' || !wantsEn) return;
   var target = counterpart();
   if(!target) return;
   try{ sessionStorage.setItem('tf_redir','1'); }catch(e){}
