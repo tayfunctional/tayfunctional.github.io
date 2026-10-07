@@ -296,7 +296,21 @@ section{position:relative}
   .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em}
   .brand{font-size:1rem}
 }
+
+/* Sprachumschalter */
+.langsw{display:inline-flex;align-items:center;gap:0.35rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;font-weight:700;letter-spacing:0.08em;white-space:nowrap}
+.langsw a{color:var(--bone-dim);transition:color .2s ease;text-decoration:none}
+.langsw a:hover,.langsw a.on{color:var(--bone)}
+.langsw a.on{border-bottom:1px solid var(--red);padding-bottom:1px}
+.langsw .sep{color:var(--bone-dim);opacity:0.4}
+.mobile-menu .langsw{margin-top:1.8rem;font-size:1rem;letter-spacing:0.16em;gap:0.6rem}
+.mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
+.mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
 </style>
+
+<link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/rabatte.html">
+<link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/discounts.html">
+<link rel="alternate" hreflang="x-default" href="https://www.tayfunctional.de/rabatte.html">
 </head>
 <body>
 
@@ -308,6 +322,7 @@ section{position:relative}
     <a class="navlink" href="https://tayfunctional.fitr.training/t/thehybrid/" target="_blank" rel="noopener">Programme</a>
     <a class="navlink" href="https://www.tayfunctional.de/pace-calculator/">Pace-Rechner</a>
     <a class="navlink" href="ueber.html">Über mich</a>
+    <span class="langsw" role="group" aria-label="Sprache"><a href="/rabatte.html" data-lang="de" class="on">DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/discounts.html" data-lang="en">EN</a></span>
     <a class="btn btn-primary desktop-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=deals_nav" target="_blank" rel="noopener">Erstgespräch</a>
     <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </nav>
@@ -321,6 +336,7 @@ section{position:relative}
   <a href="ueber.html" data-close>Über mich</a>
   <a href="index.html#kontakt" data-close>Kontakt</a>
   <a class="mm-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=deals_mobile" target="_blank" rel="noopener" data-close>Erstgespräch buchen →</a>
+  <span class="langsw" role="group" aria-label="Sprache"><a href="/rabatte.html" data-lang="de" class="on" data-close>DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/discounts.html" data-lang="en" data-close>EN</a></span>
 </div>
 
 <main>
@@ -445,6 +461,46 @@ section{position:relative}
     var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
   }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+<script>
+(function(){
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html"};
+  var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
+  var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
+  function norm(p){ return p.replace(/index\.html$/,''); }
+  function counterpart(){
+    var p = norm(location.pathname);
+    return (LANG==='de' ? MAP[p] : RMAP[p]) || null;
+  }
+  function read(){
+    try{ var v = localStorage.getItem('tf_lang'); if(v==='de'||v==='en') return v; }catch(e){}
+    var m = document.cookie.match(/(?:^|;\s*)tf_lang=(de|en)/);
+    return m ? m[1] : null;
+  }
+  function write(v){
+    try{ localStorage.setItem('tf_lang', v); }catch(e){}
+    try{ document.cookie='tf_lang='+v+';path=/;max-age=31536000;SameSite=Lax'; }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var el = e.target;
+    while(el && el.nodeType===1 && !el.hasAttribute('data-lang')) el = el.parentNode;
+    if(!el || el.nodeType!==1) return;
+    var want = el.getAttribute('data-lang');
+    write(want);
+    if(want === LANG){ e.preventDefault(); return; }
+    var t = counterpart();
+    if(t){ e.preventDefault(); location.href = t + location.hash; }
+  }, true);
+  if(read()) return;
+  try{ if(sessionStorage.getItem('tf_redir')) return; }catch(e){}
+  var l = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
+  var wantsEn = String(l[0] || '').toLowerCase().indexOf('en') === 0;
+  if(wantsEn === (LANG === 'en')) return;
+  var target = counterpart();
+  if(!target) return;
+  try{ sessionStorage.setItem('tf_redir','1'); }catch(e){}
+  location.replace(target + location.hash);
 })();
 </script>
 </body>
