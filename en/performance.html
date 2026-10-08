@@ -270,6 +270,34 @@ section{position:relative}
 .mobile-menu .langsw{margin-top:1.8rem;font-size:1rem;letter-spacing:0.16em;gap:0.6rem}
 .mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
 .mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
+
+.meth-cmp{margin-top:3.6rem}
+.meth-cmp .eyebrow{display:block;margin-bottom:0.8rem}
+.meth-cmp h3{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.05;letter-spacing:-0.01em}
+.cmp{margin-top:1.8rem;border:1px solid var(--line);background:var(--ink-2)}
+.cmp-row{display:grid;grid-template-columns:minmax(130px,0.7fr) 1fr 1fr;border-bottom:1px solid var(--line)}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row>div{padding:1.05rem 1.25rem;font-size:0.95rem;line-height:1.55}
+.cmp-head>div{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding-top:1.2rem;padding-bottom:1.2rem}
+.cmp-head .c-them{color:var(--bone-dim)}
+.cmp-head .c-us{color:var(--red)}
+.cmp-k{font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--bone)}
+.cmp-them{color:var(--bone-dim)}
+.cmp-us{color:var(--bone);border-left:1px solid var(--line)}
+.cmp-lbl{display:none}
+.cmp-note{margin-top:1.4rem;color:var(--bone-dim);font-size:0.95rem}
+.pt-note{margin-top:2.2rem;max-width:62ch;color:var(--bone-dim);font-size:0.99rem;line-height:1.6;border-left:2px solid var(--red);padding-left:1.1rem}
+@media(max-width:760px){
+.cmp-row{grid-template-columns:1fr;border-bottom:2px solid var(--line)}
+.cmp-head{display:none}
+.cmp-row>div{padding:0.5rem 1.1rem}
+.cmp-k{padding-top:1.1rem}
+.cmp-them{padding-bottom:0.9rem}
+.cmp-us{border-left:0;padding-bottom:1.1rem}
+.cmp-lbl{display:block;font-family:'JetBrains Mono',monospace;font-size:0.64rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.25rem}
+.cmp-them .cmp-lbl{color:var(--bone-dim)}
+.cmp-us .cmp-lbl{color:var(--red)}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -292,6 +320,8 @@ section{position:relative}
     {"@type":"Question","name":"Will I be left alone at the start?","acceptedAnswer":{"@type":"Answer","text":"No. Before the first session we go through the setup together: setting up the app, explaining RPE and load management, showing you how to film. That applies online exactly as in person."}},
     {"@type":"Question","name":"How fast do I get an answer?","acceptedAnswer":{"@type":"Answer","text":"Within 24 hours on weekdays, within 48 hours at weekends."}},
     {"@type":"Question","name":"What if I have pain or an old injury?","acceptedAnswer":{"@type":"Answer","text":"Then we look at that first. If pain is the real issue, my Rehab Coaching is often the better starting point. In the intro call we find out what fits you."}}
+  ,
+    {"@type":"Question","name":"Why does this cost more than other online coaching?","acceptedAnswer":{"@type":"Answer","text":"Because there is more in it. A lot of providers run pre-built programs that get adjusted on a fixed cycle. Here your week is decided again every week, based on your feedback, inside a phase plan that is yours alone. Cheaper usually means looser. Whether it is worth it for you is something we work out honestly on the intro call."}}
   ]
 }
 </script>
@@ -418,7 +448,64 @@ section{position:relative}
     </div>
   </section>
 
-  <section class="pad" aria-label="Support">
+    <section class="pad" aria-label="How I work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How I work</span>
+        <h2>Everyone writes individual. Here is what it means.</h2>
+        <p class="lead" style="margin-top:1.2rem">The word is free. What counts is how often your training gets decided again, and on what. The difference is depth, not wording.</p>
+      </div>
+      <div class="care-grid">
+        <article class="care reveal">
+          <span class="c-tag">Rhythm</span>
+          <h3>Decided again every week</h3>
+          <p>Next week is built on the one behind you. I read your feedback and your comments on the sessions, and that is what the next week comes out of.</p>
+          <span class="fine">No monthly cycle where calls made three weeks ago still run your training.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Structure</span>
+          <h3>A phase plan of your own</h3>
+          <p>You have your own phase plan: when a phase starts, where the deloads sit, which exit criteria have to be met before you move on.</p>
+          <span class="fine">You know when something changes, and why.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Data</span>
+          <h3>Measured, not guessed</h3>
+          <p>If it can be measured, it does not get guessed. Field tests when endurance matters for your goal. Force plate diagnostics when we work on site.</p>
+          <span class="fine">Decisions on numbers, not on a feeling.</span>
+        </article>
+      </div>
+      <div class="meth-cmp reveal">
+        <span class="eyebrow">For context</span>
+        <h3>Why this costs more.</h3>
+        <div class="cmp">
+          <div class="cmp-row cmp-head">
+            <div></div>
+            <div class="c-them">Usual online coaching</div>
+            <div class="c-us">Tayfunctional</div>
+          </div>
+        <div class="cmp-row">
+          <div class="cmp-k">Adjustment</div>
+          <div class="cmp-them"><span class="cmp-lbl">Usual</span>On a fixed cycle, often once a month</div>
+          <div class="cmp-us"><span class="cmp-lbl">Here</span>Every week, based on your feedback</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-k">Phase plan</div>
+          <div class="cmp-them"><span class="cmp-lbl">Usual</span>Pre-built program, written for many</div>
+          <div class="cmp-us"><span class="cmp-lbl">Here</span>Yours, with phase starts, deloads and exit criteria</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-k">Measurement</div>
+          <div class="cmp-them"><span class="cmp-lbl">Usual</span>Self-report and experience</div>
+          <div class="cmp-us"><span class="cmp-lbl">Here</span>Field tests, force plates when on site</div>
+        </div>
+        </div>
+        <p class="cmp-note">Cheaper is always available. The question is how often someone actually looks.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="pad" aria-label="Support">
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="eyebrow">The support</span>
@@ -491,7 +578,8 @@ section{position:relative}
         <details><summary>Will I be left alone at the start?</summary><p class="fa">No. Before the first session we go through the setup together: setting up the app, explaining RPE and load management, showing you how to film. I do this for online clients exactly as in person. You only start once you know how everything works.</p></details>
         <details><summary>How fast do I get an answer?</summary><p class="fa">Within 24 hours on weekdays, within 48 hours at weekends. So you are never stuck on a question for days.</p></details>
         <details><summary>What if I have pain or an old injury?</summary><p class="fa">Then we look at that first. If pain is the real issue, my <a href="rehab.html">Rehab Coaching</a> <a href="back-reset.html">90-Day Back Reset</a> <a href="back-reset.html">90-Day Back Reset</a> is often the better starting point. In the intro call we find out what fits you.</p></details>
-      </div>
+              <details><summary>Why does this cost more than other online coaching?</summary><p class="fa">Because there is more in it. A lot of providers run pre-built programs that get adjusted on a fixed cycle. Here your week is decided again every week, based on your feedback, inside a phase plan that is yours alone. Cheaper usually means looser. Whether it is worth it for you is something we work out honestly on the intro call.</p></details>
+</div>
 
       <div class="crosslink reveal">
         <p>Is pain the issue, not performance?</p>

@@ -270,6 +270,34 @@ section{position:relative}
 .mobile-menu .langsw{margin-top:1.8rem;font-size:1rem;letter-spacing:0.16em;gap:0.6rem}
 .mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
 .mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
+
+.meth-cmp{margin-top:3.6rem}
+.meth-cmp .eyebrow{display:block;margin-bottom:0.8rem}
+.meth-cmp h3{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.05;letter-spacing:-0.01em}
+.cmp{margin-top:1.8rem;border:1px solid var(--line);background:var(--ink-2)}
+.cmp-row{display:grid;grid-template-columns:minmax(130px,0.7fr) 1fr 1fr;border-bottom:1px solid var(--line)}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row>div{padding:1.05rem 1.25rem;font-size:0.95rem;line-height:1.55}
+.cmp-head>div{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding-top:1.2rem;padding-bottom:1.2rem}
+.cmp-head .c-them{color:var(--bone-dim)}
+.cmp-head .c-us{color:var(--red)}
+.cmp-k{font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--bone)}
+.cmp-them{color:var(--bone-dim)}
+.cmp-us{color:var(--bone);border-left:1px solid var(--line)}
+.cmp-lbl{display:none}
+.cmp-note{margin-top:1.4rem;color:var(--bone-dim);font-size:0.95rem}
+.pt-note{margin-top:2.2rem;max-width:62ch;color:var(--bone-dim);font-size:0.99rem;line-height:1.6;border-left:2px solid var(--red);padding-left:1.1rem}
+@media(max-width:760px){
+.cmp-row{grid-template-columns:1fr;border-bottom:2px solid var(--line)}
+.cmp-head{display:none}
+.cmp-row>div{padding:0.5rem 1.1rem}
+.cmp-k{padding-top:1.1rem}
+.cmp-them{padding-bottom:0.9rem}
+.cmp-us{border-left:0;padding-bottom:1.1rem}
+.cmp-lbl{display:block;font-family:'JetBrains Mono',monospace;font-size:0.64rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.25rem}
+.cmp-them .cmp-lbl{color:var(--bone-dim)}
+.cmp-us .cmp-lbl{color:var(--red)}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -291,6 +319,8 @@ section{position:relative}
     {"@type":"Question","name":"Werde ich am Anfang allein gelassen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Vor der ersten Einheit gehen wir gemeinsam durch das Setup: App einrichten, RPE und Belastungssteuerung erklaeren, Videoaufnahme zeigen. Das gilt online genauso wie vor Ort."}},
     {"@type":"Question","name":"Wie schnell bekomme ich eine Antwort?","acceptedAnswer":{"@type":"Answer","text":"Werktags innerhalb von 24 Stunden, am Wochenende innerhalb von 48 Stunden."}},
     {"@type":"Question","name":"Und wenn ich Schmerzen oder eine alte Verletzung habe?","acceptedAnswer":{"@type":"Answer","text":"Dann schauen wir uns das zuerst an. Wenn Schmerz das eigentliche Thema ist, ist mein Rehab-Coaching oft der bessere Startpunkt. Im Erstgespräch finden wir heraus, was für dich passt."}}
+  ,
+    {"@type":"Question","name":"Warum kostet das mehr als andere Online-Angebote?","acceptedAnswer":{"@type":"Answer","text":"Weil mehr drinsteckt. Viele Anbieter arbeiten mit vorstrukturierten Programmen, die in festen Abständen angepasst werden. Bei mir wird deine Woche jede Woche neu entschieden, auf Basis deines Feedbacks, in einem Phasenplan, der dir gehört. Was günstiger ist, ist meistens auch weniger eng begleitet. Ob sich das für dich lohnt, klären wir ehrlich im Erstgespräch."}}
   ]
 }
 </script>
@@ -421,7 +451,64 @@ section{position:relative}
     </div>
   </section>
 
-  <section class="pad" aria-label="Betreuung">
+    <section class="pad" aria-label="So arbeite ich">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">So arbeite ich</span>
+        <h2>Individuell schreiben alle. Hier steht, was es heißt.</h2>
+        <p class="lead" style="margin-top:1.2rem">Das Wort kostet nichts. Was zählt, ist wie oft dein Training neu entschieden wird und worauf. Der Unterschied liegt in der Tiefe, nicht im Wort.</p>
+      </div>
+      <div class="care-grid">
+        <article class="care reveal">
+          <span class="c-tag">Rhythmus</span>
+          <h3>Jede Woche neu entschieden</h3>
+          <p>Deine nächste Woche entsteht aus der, die hinter dir liegt. Ich lese dein Feedback und deine Kommentare zu den Einheiten und baue darauf auf.</p>
+          <span class="fine">Kein Monatsrhythmus, in dem Entscheidungen von vor drei Wochen weiterlaufen.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Struktur</span>
+          <h3>Dein eigener Phasenplan</h3>
+          <p>Du hast einen Phasenplan, der dir gehört: wann eine Phase startet, wo die Deloads liegen, welche Exit-Kriterien erfüllt sein müssen, bevor es weitergeht.</p>
+          <span class="fine">Du weißt, wann sich etwas ändert und warum.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Daten</span>
+          <h3>Gemessen statt geschätzt</h3>
+          <p>Was sich messen lässt, wird nicht geschätzt. Field Tests, wenn Ausdauer für dein Ziel zählt. Kraftmessplatten-Diagnostik, wenn wir vor Ort arbeiten.</p>
+          <span class="fine">Entscheidungen auf Zahlen, nicht auf Bauchgefühl.</span>
+        </article>
+      </div>
+      <div class="meth-cmp reveal">
+        <span class="eyebrow">Zum Einordnen</span>
+        <h3>Warum das hier mehr kostet.</h3>
+        <div class="cmp">
+          <div class="cmp-row cmp-head">
+            <div></div>
+            <div class="c-them">Übliches Online-Coaching</div>
+            <div class="c-us">Tayfunctional</div>
+          </div>
+        <div class="cmp-row">
+          <div class="cmp-k">Anpassung</div>
+          <div class="cmp-them"><span class="cmp-lbl">Üblich</span>In festen Abständen, oft einmal im Monat</div>
+          <div class="cmp-us"><span class="cmp-lbl">Hier</span>Jede Woche, auf Basis deines Feedbacks</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-k">Phasenplan</div>
+          <div class="cmp-them"><span class="cmp-lbl">Üblich</span>Vorstrukturiertes Programm, für viele gebaut</div>
+          <div class="cmp-us"><span class="cmp-lbl">Hier</span>Deiner, mit Phasenstart, Deloads und Exit-Kriterien</div>
+        </div>
+        <div class="cmp-row">
+          <div class="cmp-k">Messungen</div>
+          <div class="cmp-them"><span class="cmp-lbl">Üblich</span>Selbstauskunft und Erfahrungswerte</div>
+          <div class="cmp-us"><span class="cmp-lbl">Hier</span>Field Tests, vor Ort zusätzlich Kraftmessplatten</div>
+        </div>
+        </div>
+        <p class="cmp-note">Günstiger geht immer. Die Frage ist, wie oft jemand hinschaut.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="pad" aria-label="Betreuung">
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="eyebrow">Die Betreuung</span>
@@ -494,7 +581,8 @@ section{position:relative}
         <details><summary>Werde ich am Anfang allein gelassen?</summary><p class="fa">Nein. Vor der ersten Einheit gehen wir gemeinsam durch das Setup: App einrichten, RPE und Belastungssteuerung erklären, Videoaufnahme zeigen. Das mache ich bei Online-Kunden genauso wie vor Ort. Du startest erst, wenn du weißt, wie alles läuft.</p></details>
         <details><summary>Wie schnell bekomme ich eine Antwort?</summary><p class="fa">Werktags innerhalb von 24 Stunden, am Wochenende innerhalb von 48 Stunden. Du sitzt also nie tagelang auf einer Frage fest.</p></details>
         <details><summary>Und wenn ich Schmerzen oder eine alte Verletzung habe?</summary><p class="fa">Dann schauen wir uns das zuerst an. Wenn Schmerz das eigentliche Thema ist, ist mein <a href="rehab.html">Rehab-Coaching</a> <a href="ruecken-reset.html">90-Tage Rücken-Reset</a> <a href="ruecken-reset.html">90-Tage Rücken-Reset</a> oft der bessere Startpunkt. Im Erstgespräch finden wir heraus, was für dich passt.</p></details>
-      </div>
+              <details><summary>Warum kostet das mehr als andere Online-Angebote?</summary><p class="fa">Weil mehr drinsteckt. Viele Anbieter arbeiten mit vorstrukturierten Programmen, die in festen Abständen angepasst werden. Bei mir wird deine Woche jede Woche neu entschieden, auf Basis deines Feedbacks, in einem Phasenplan, der dir gehört. Was günstiger ist, ist meistens auch weniger eng begleitet. Ob sich das für dich lohnt, klären wir ehrlich im Erstgespräch.</p></details>
+</div>
 
       <div class="crosslink reveal">
         <p>Schmerz ist das Thema, nicht Leistung?</p>
