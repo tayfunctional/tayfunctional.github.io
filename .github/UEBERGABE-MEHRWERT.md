@@ -19,7 +19,8 @@ der jeweiligen Seite.
 **2. Ein zusätzlicher FAQ-Eintrag pro Seite**
 Zum Preis-Einwand, hinten angehängt. Sichtbar als `<details>` und zusätzlich
 als `Question` im bestehenden FAQPage-Schema. Es wurde kein bestehender
-Eintrag entfernt. Vorher sieben, jetzt acht, auf allen vier Seiten.
+Eintrag entfernt. Vorher sechs, jetzt sieben, sichtbar wie im Schema, auf
+allen vier Seiten.
 
 **3. Neue Seite `personal-training-ingolstadt.html`**
 Lokale Landingpage für "Personal Trainer Ingolstadt" und "Personal Training
