@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Running Coaching with a Personalised Plan | Tayfunctional</title>
+<meta name="description" content="Online running coaching with Tayfun Ertural: a personalised plan for running and strength in TrainingPeaks, synced straight to your Garmin. Adjusted from your feedback, 199 € a month. For 10K, half marathon and marathon.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://www.tayfunctional.de/en/running-coaching.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Tayfunctional">
+<meta property="og:title" content="Online Running Coaching with a Personalised Plan | Tayfunctional">
+<meta property="og:description" content="Your running plan gets written, not downloaded. Personalised online coaching for running and strength in TrainingPeaks.">
+<meta property="og:url" content="https://www.tayfunctional.de/en/running-coaching.html">
+<meta property="og:image" content="https://www.tayfunctional.de/assets/img/perf3.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0A0A; --ink-2:#111110; --ink-3:#181715;
+  --bone:#F2EFE9; --bone-dim:#A6A199; --line:rgba(242,239,233,0.13);
+  --red:#E03030; --red-deep:#B01E1E; --maxw:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{max-width:100%;overflow-x:hidden}
+body{background:var(--ink);color:var(--bone);font-family:'Archivo',system-ui,sans-serif;font-size:clamp(1rem,0.95rem + 0.3vw,1.12rem);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+::selection{background:var(--red);color:#fff}
+
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3.5rem)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:clamp(0.68rem,0.62rem + 0.3vw,0.8rem);letter-spacing:0.22em;text-transform:uppercase;color:var(--bone-dim);display:inline-flex;align-items:center;gap:0.7em}
+.eyebrow::before{content:"";width:1.6rem;height:1px;background:var(--red)}
+h1,h2,h3{font-weight:900;line-height:0.98;letter-spacing:-0.02em;text-transform:uppercase}
+.red{color:var(--red)} .arrow{color:var(--red);font-weight:700}
+
+.btn{display:inline-flex;align-items:center;gap:0.6em;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;padding:1.05em 1.6em;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .2s ease,color .2s ease,border-color .2s ease}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--bone);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--bone);transform:translateY(-2px)}
+.btn .ico{transition:transform .2s ease}
+.btn:hover .ico{transform:translate(3px,-3px)}
+
+.site-head{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem clamp(1.25rem,5vw,3.5rem);transition:background .3s ease,padding .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+.site-head.scrolled{background:rgba(10,10,10,0.86);backdrop-filter:blur(10px);border-bottom-color:var(--line);padding-top:0.85rem;padding-bottom:0.85rem}
+.brand{font-family:'Archivo';font-weight:900;font-size:1.15rem;letter-spacing:-0.01em;text-transform:uppercase;white-space:nowrap}
+.brand span{color:var(--red)}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a.navlink{font-family:'JetBrains Mono',monospace;font-size:0.78rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--bone-dim);transition:color .2s ease}
+.nav a.navlink:hover{color:var(--bone)}
+.nav .btn{padding:0.75em 1.15em}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger span{width:26px;height:2px;background:var(--bone);transition:.25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.96) 0%,rgba(10,10,10,0.55) 38%,rgba(10,10,10,0.25) 68%,rgba(10,10,10,0.55) 100%),linear-gradient(to right,rgba(10,10,10,0.75) 0%,rgba(10,10,10,0.1) 55%,rgba(10,10,10,0) 100%)}
+.hero-inner{position:relative;z-index:1;width:100%;padding-bottom:clamp(3rem,7vh,6rem);padding-top:8rem}
+.hero h1{font-size:clamp(2.7rem,2rem + 7vw,7rem);margin:1.4rem 0 0;max-width:16ch}
+.hero .kicker{display:block;font-size:clamp(1.05rem,0.9rem + 1.1vw,1.9rem);font-weight:700;letter-spacing:-0.01em;text-transform:none;color:var(--bone);margin-top:0.6rem;max-width:30ch;line-height:1.15}
+.hero .kicker b{color:var(--red);font-weight:900}
+.hero-lead{margin-top:1.6rem;max-width:46ch;color:var(--bone-dim);font-size:clamp(1rem,0.95rem + 0.35vw,1.18rem)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:0.9rem;margin-top:2.2rem}
+.scroll-hint{position:absolute;bottom:1.4rem;right:clamp(1.25rem,5vw,3.5rem);z-index:1;font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--bone-dim);writing-mode:vertical-rl}
+
+section{position:relative}
+.pad{padding-block:clamp(4.5rem,11vh,9rem)}
+.sec-head{max-width:60ch}
+.sec-head h2{font-size:clamp(2rem,1.5rem + 3.5vw,4.4rem);margin-top:1.1rem}
+.lead{color:var(--bone-dim);font-size:clamp(1.05rem,1rem + 0.5vw,1.3rem);max-width:52ch}
+
+.truth{background:var(--ink-2);border-block:1px solid var(--line)}
+.truth-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.85fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.truth-copy .big{font-size:clamp(1.7rem,1.2rem + 3vw,3.4rem);font-weight:900;line-height:1.02;letter-spacing:-0.02em;text-transform:uppercase;margin:1.2rem 0 1.4rem}
+.truth-media{position:relative;aspect-ratio:4/5;overflow:hidden}
+.truth-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.truth-tag{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;padding:0.6em 1em;text-transform:uppercase}
+
+.checklist{list-style:none;margin-top:2.4rem;display:grid;gap:0}
+.checklist li{display:flex;gap:1.1rem;align-items:flex-start;padding:1.25rem 0;border-top:1px solid var(--line);font-size:clamp(1.05rem,1rem + 0.5vw,1.25rem)}
+.checklist li:last-child{border-bottom:1px solid var(--line)}
+.checklist .n{font-family:'JetBrains Mono',monospace;color:var(--red);font-size:0.8rem;font-weight:700;padding-top:0.35em;white-space:nowrap}
+
+.befunde{background:var(--ink-2);border-block:1px solid var(--line)}
+.befund-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);margin-top:3rem;border:1px solid var(--line)}
+.befund{background:var(--ink);padding:clamp(1.8rem,3vw,2.8rem)}
+.befund .tag{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.4rem}
+.befund .code{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red)}
+.befund .idx{font-family:'JetBrains Mono',monospace;font-size:2.2rem;font-weight:700;color:var(--line);line-height:1}
+.befund h3{font-size:clamp(1.25rem,1.1rem + 0.9vw,1.7rem);line-height:1.05;margin-bottom:0.8rem}
+.befund p{color:var(--bone-dim);font-size:1rem}
+
+.offer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin-top:3rem}
+.offer{background:var(--ink-3);border:1px solid var(--line);padding:clamp(1.7rem,2.5vw,2.4rem);display:flex;flex-direction:column;transition:border-color .25s ease,transform .25s ease}
+.offer:hover{border-color:var(--red);transform:translateY(-4px)}
+.offer .label{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.offer h3{font-size:clamp(1.4rem,1.2rem + 1vw,1.9rem);margin:0.9rem 0 0.4rem;line-height:1.02}
+.offer .price{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.35rem;color:var(--bone);margin:0.4rem 0 0.2rem}
+.offer .term{font-family:'JetBrains Mono',monospace;font-size:0.74rem;color:var(--bone-dim);letter-spacing:0.05em;text-transform:uppercase}
+.offer p{color:var(--bone-dim);font-size:0.98rem;margin:1.1rem 0 1.6rem;flex:1}
+.offer .offer-cta{margin-top:auto}
+.offer .btn{width:100%;justify-content:center;padding:0.9em 1rem}
+
+.about{background:var(--ink-2);border-block:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.about-media{position:relative;aspect-ratio:4/5;overflow:hidden}
+.about-media img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.about h2{font-size:clamp(1.9rem,1.4rem + 3vw,3.8rem);margin:1.1rem 0 1.4rem}
+.about p{color:var(--bone-dim);margin-bottom:1.1rem}
+.about .stmt{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--bone);font-size:0.95rem;letter-spacing:0.06em;text-transform:uppercase;border-left:2px solid var(--red);padding-left:1rem;margin:1.6rem 0}
+
+.human{position:relative;min-height:60vh;display:flex;align-items:flex-end;overflow:hidden}
+.human img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;z-index:0}
+.human::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.94),rgba(10,10,10,0.35) 55%,rgba(10,10,10,0.55));z-index:0}
+.human .human-copy{position:relative;z-index:1;padding-block:clamp(3rem,7vh,5rem)}
+.human .big{font-size:clamp(1.6rem,1.2rem + 2.6vw,3rem);font-weight:900;text-transform:uppercase;line-height:1.02;letter-spacing:-0.02em;max-width:20ch}
+
+.final{text-align:center}
+.final h2{font-size:clamp(2.2rem,1.6rem + 4.5vw,5.5rem);margin-bottom:1.4rem}
+.final .lead{margin-inline:auto;margin-bottom:2.4rem}
+.final-cta{display:flex;flex-wrap:wrap;gap:0.9rem;justify-content:center}
+.final .micro{margin-top:1.6rem;font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;color:var(--bone-dim);text-transform:uppercase}
+
+.site-foot{background:var(--ink-2);border-top:1px solid var(--line);padding-block:clamp(3rem,6vh,4.5rem)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem}
+.foot-brand .brand{font-size:1.4rem;margin-bottom:1rem}
+.foot-brand p{color:var(--bone-dim);max-width:34ch;font-size:0.95rem}
+.foot-col h4{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--bone-dim);text-transform:uppercase;margin-bottom:1.1rem}
+.foot-col a{display:block;padding:0.35rem 0;font-size:0.95rem;color:var(--bone);transition:color .2s}
+.foot-col a:hover{color:var(--red)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:0.8rem 1.5rem;justify-content:space-between;align-items:center;margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.foot-bottom p{font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;color:var(--bone-dim);text-transform:uppercase}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:920px){
+  .nav .navlink,.nav .btn.desktop-cta{display:none}
+  .burger{display:flex} .nav{gap:0}
+  .mobile-menu{position:fixed;inset:0;z-index:99;background:var(--ink);display:flex;flex-direction:column;justify-content:center;gap:0.5rem;padding:2rem clamp(1.25rem,5vw,3.5rem);transform:translateX(100%);transition:transform .3s ease}
+  .mobile-menu.open{transform:none}
+  .mobile-menu a{font-family:'Archivo';font-weight:900;font-size:2rem;text-transform:uppercase;padding:0.5rem 0;border-bottom:1px solid var(--line)}
+  .mobile-menu a.mm-cta{color:var(--red)}
+  .truth-grid,.about-grid{grid-template-columns:minmax(0,1fr)}
+  .about-media{order:-1}
+  .offer-grid{grid-template-columns:minmax(0,1fr)}
+  .foot-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+  .befund-grid{grid-template-columns:minmax(0,1fr)}
+  .scroll-hint{display:none}
+  .hero-inner{padding-top:6.5rem}
+}
+@media (min-width:921px){.mobile-menu{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.offer{transition:none}
+}
+
+/* ===== subpage components ===== */
+.subhero{position:relative;min-height:72svh;display:flex;align-items:flex-end;overflow:hidden}
+.subhero-media{position:absolute;inset:0;z-index:0}
+.subhero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.subhero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.97) 0%,rgba(10,10,10,0.55) 42%,rgba(10,10,10,0.35) 100%),linear-gradient(to right,rgba(10,10,10,0.8),rgba(10,10,10,0.05) 65%)}
+.subhero-inner{position:relative;z-index:1;width:100%;padding-block:clamp(2.5rem,7vh,5rem) clamp(2.5rem,6vh,4rem);padding-top:7rem}
+.subhero h1{font-size:clamp(2.4rem,1.8rem + 6vw,6rem);margin:1.2rem 0 0;max-width:18ch}
+.subhero .sublead{margin-top:1.4rem;max-width:48ch;color:var(--bone-dim);font-size:clamp(1.05rem,1rem + 0.4vw,1.25rem)}
+.crumb{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--bone-dim)}
+.crumb a:hover{color:var(--bone)}
+.crumb .sep{color:var(--red);margin:0 0.5em}
+
+.intro-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.prose p{color:var(--bone-dim);margin-bottom:1.1rem;max-width:56ch}
+.prose p:last-child{margin-bottom:0}
+.pull{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--bone);font-size:clamp(1.05rem,1rem + 0.6vw,1.4rem);line-height:1.35;letter-spacing:0.01em;border-left:2px solid var(--red);padding-left:1.2rem}
+
+.steps{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.step{background:var(--ink);padding:clamp(1.5rem,3vw,2.4rem);display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.4rem;align-items:start}
+.step .sn{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--red);line-height:1;padding-top:0.2em}
+.step h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.6rem);margin-bottom:0.5rem;line-height:1.05}
+.step p{color:var(--bone-dim);font-size:1rem;max-width:60ch}
+
+.includes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:3rem;border-top:1px solid var(--line)}
+.includes li{display:flex;gap:0.9rem;align-items:flex-start;padding:1.15rem 1.2rem 1.15rem 0;border-bottom:1px solid var(--line);font-size:1.02rem}
+.includes li .mk{color:var(--red);font-weight:900;line-height:1.3}
+
+.priceblock{background:var(--ink-2);border:1px solid var(--line);padding:clamp(1.8rem,4vw,3rem);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:2rem;align-items:center;margin-top:3rem}
+.priceblock .pb-price{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(1.8rem,1.4rem + 2vw,2.8rem);color:var(--bone);line-height:1}
+.priceblock .pb-term{font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--bone-dim);margin-top:0.6rem}
+.priceblock .pb-note{color:var(--bone-dim);font-size:0.95rem;margin-top:0.9rem;max-width:40ch}
+.priceblock .pb-cta{display:flex;flex-direction:column;gap:0.7rem}
+.priceblock .pb-cta .btn{justify-content:center}
+
+.faq{border-top:1px solid var(--line);margin-top:3rem}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:1.4rem 2.5rem 1.4rem 0;position:relative;font-family:'Archivo';font-weight:700;font-size:clamp(1.05rem,1rem + 0.5vw,1.3rem);text-transform:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0.4rem;top:1.25rem;color:var(--red);font-weight:700;font-size:1.5rem;transition:transform .2s}
+.faq details[open] summary::after{content:"–"}
+.faq .fa{color:var(--bone-dim);padding:0 0 1.5rem;max-width:62ch}
+
+.crosslink{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;background:var(--ink-2);border:1px solid var(--line);padding:clamp(1.4rem,3vw,2rem);margin-top:3rem}
+.crosslink p{font-family:'Archivo';font-weight:700;font-size:clamp(1.1rem,1rem + 0.6vw,1.5rem);text-transform:uppercase;letter-spacing:-0.01em}
+
+@media (max-width:760px){
+  .intro-grid{grid-template-columns:minmax(0,1fr)}
+  .includes{grid-template-columns:minmax(0,1fr)}
+  .priceblock{grid-template-columns:minmax(0,1fr)}
+}
+
+/* pricing tiers */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin-top:3rem}
+.tier{background:var(--ink-2);border:1px solid var(--line);padding:clamp(1.6rem,2.5vw,2.2rem);display:flex;flex-direction:column}
+.tier{transition:border-color .25s ease,transform .25s ease}
+.tier:hover{border-color:var(--red);transform:translateY(-4px)}
+.tier .tprice{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(1.7rem,1.4rem + 1vw,2.3rem);color:var(--bone);line-height:1}
+.tier .tprice small{font-size:0.82rem;font-weight:500;color:var(--bone-dim);letter-spacing:0.02em}
+.tier .tsub{font-family:'JetBrains Mono',monospace;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-top:0.9rem}
+.tier p{color:var(--bone-dim);font-size:0.95rem;margin-top:0.7rem}
+.tier .tterm{margin-top:auto;padding-top:1.3rem;font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--bone-dim)}
+@media (max-width:760px){.tiers{grid-template-columns:minmax(0,1fr)}}
+
+/* save highlight */
+.saver{background:var(--red);color:#fff;padding:clamp(1.1rem,2.2vw,1.5rem) clamp(1.3rem,2.5vw,2rem);margin-top:3rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:0.5rem 1.1rem}
+.saver .s-big{font-family:'Archivo';font-weight:900;font-size:clamp(1.25rem,1.05rem + 1.2vw,1.9rem);text-transform:uppercase;letter-spacing:-0.02em;line-height:1.05}
+.saver .s-sub{font-family:'JetBrains Mono',monospace;font-size:clamp(0.74rem,0.7rem + 0.2vw,0.85rem);letter-spacing:0.06em;color:rgba(255,255,255,0.9);text-transform:uppercase}
+.saver + .priceblock{margin-top:0;border-top:0}
+
+/* Mittelgrosse Bildschirme: Menue enger statt Burger */
+@media (min-width:921px) and (max-width:1180px){
+  .site-head{padding-inline:1.5rem}
+  .nav{gap:1.15rem}
+  .nav a.navlink{font-size:0.72rem;letter-spacing:0.05em}
+  .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em}
+  .brand{font-size:1rem}
+}
+
+/* Betreuungs-Bausteine */
+.care-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.care{background:var(--ink);padding:clamp(1.7rem,3vw,2.4rem);display:flex;flex-direction:column}
+.care .c-tag{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.care h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.6rem);margin:0.9rem 0 0.7rem;line-height:1.05}
+.care p{color:var(--bone-dim);font-size:0.99rem}
+.care .fine{margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.05em;color:var(--bone-dim);line-height:1.7}
+@media (max-width:860px){.care-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Preisankündigung */
+.pricenote{background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:clamp(1.2rem,2.4vw,1.6rem) clamp(1.3rem,2.6vw,1.9rem);margin-top:2.6rem;max-width:78ch}
+.pricenote .pn-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:0.7rem}
+.pricenote p{color:var(--bone-dim);font-size:0.99rem;line-height:1.6}
+
+/* Sprachumschalter */
+.langsw{display:inline-flex;align-items:center;gap:0.35rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;font-weight:700;letter-spacing:0.08em;white-space:nowrap}
+.langsw a{color:var(--bone-dim);transition:color .2s ease;text-decoration:none}
+.langsw a:hover,.langsw a.on{color:var(--bone)}
+.langsw a.on{border-bottom:1px solid var(--red);padding-bottom:1px}
+.langsw .sep{color:var(--bone-dim);opacity:0.4}
+.mobile-menu .langsw{margin-top:1.8rem;font-size:1rem;letter-spacing:0.16em;gap:0.6rem}
+.mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
+.mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
+
+.meth-cmp{margin-top:3.6rem}
+.meth-cmp .eyebrow{display:block;margin-bottom:0.8rem}
+.meth-cmp h3{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.05;letter-spacing:-0.01em}
+.cmp{margin-top:1.8rem;border:1px solid var(--line);background:var(--ink-2)}
+.cmp-row{display:grid;grid-template-columns:minmax(130px,0.7fr) 1fr 1fr;border-bottom:1px solid var(--line)}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row>div{padding:1.05rem 1.25rem;font-size:0.95rem;line-height:1.55}
+.cmp-head>div{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding-top:1.2rem;padding-bottom:1.2rem}
+.cmp-head .c-them{color:var(--bone-dim)}
+.cmp-head .c-us{color:var(--red)}
+.cmp-k{font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--bone)}
+.cmp-them{color:var(--bone-dim)}
+.cmp-us{color:var(--bone);border-left:1px solid var(--line)}
+.cmp-lbl{display:none}
+.cmp-note{margin-top:1.4rem;color:var(--bone-dim);font-size:0.95rem}
+.pt-note{margin-top:2.2rem;max-width:62ch;color:var(--bone-dim);font-size:0.99rem;line-height:1.6;border-left:2px solid var(--red);padding-left:1.1rem}
+@media(max-width:760px){
+.cmp-row{grid-template-columns:1fr;border-bottom:2px solid var(--line)}
+.cmp-head{display:none}
+.cmp-row>div{padding:0.5rem 1.1rem}
+.cmp-k{padding-top:1.1rem}
+.cmp-them{padding-bottom:0.9rem}
+.cmp-us{border-left:0;padding-bottom:1.1rem}
+.cmp-lbl{display:block;font-family:'JetBrains Mono',monospace;font-size:0.64rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.25rem}
+.cmp-them .cmp-lbl{color:var(--bone-dim)}
+.cmp-us .cmp-lbl{color:var(--red)}
+}
+
+/* Navigation mit Laufcoaching: Stauchbereich erweitert */
+@media (min-width:921px) and (max-width:1280px){
+  .site-head{padding-inline:1.5rem}
+  .nav{gap:1.05rem}
+  .nav a.navlink{font-size:0.72rem;letter-spacing:0.05em;white-space:nowrap}
+  .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em;white-space:nowrap}
+  .brand{font-size:1rem}
+}
+@media (min-width:921px) and (max-width:1040px){
+  .nav{gap:0.75rem}
+  .nav a.navlink{font-size:0.66rem;letter-spacing:0.03em}
+  .nav .btn{padding:0.65em 0.8em;font-size:0.66rem}
+}
+
+.res-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.res{background:var(--ink);padding:clamp(1.6rem,3vw,2.2rem);display:flex;flex-direction:column}
+.res-top{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.res-time{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1;letter-spacing:-0.02em}
+.res-pace{font-family:'JetBrains Mono',monospace;font-size:0.84rem;letter-spacing:0.08em;color:var(--red)}
+.res p{color:var(--bone-dim);font-size:0.97rem;line-height:1.6;margin-top:0.9rem}
+.res-who{margin-top:auto;padding-top:1.2rem;font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--bone-dim)}
+.excl{list-style:none;margin-top:2.4rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.excl li{background:var(--ink-2);padding:1.3rem 1.5rem}
+.excl b{display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:1.02rem;letter-spacing:-0.01em}
+.excl span{display:block;margin-top:0.4rem;color:var(--bone-dim);font-size:0.93rem;line-height:1.55}
+.nextup{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.nextup article{background:var(--ink);padding:clamp(1.7rem,3vw,2.3rem)}
+.nextup .c-tag{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.nextup h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.6rem);margin:0.8rem 0 0.7rem;line-height:1.05}
+.nextup p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
+.nextup .btn{margin-top:1.4rem}
+@media (max-width:820px){
+.res-grid{grid-template-columns:minmax(0,1fr)}
+.excl{grid-template-columns:minmax(0,1fr)}
+.nextup{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Iron & Miles Online Running Coaching",
+  "serviceType": "Online running coaching",
+  "description": "Personalised running and strength plan in TrainingPeaks, adjusted from the athlete's feedback.",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Tayfunctional",
+    "url": "https://www.tayfunctional.de/"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Online"
+  },
+  "url": "https://www.tayfunctional.de/en/running-coaching.html",
+  "offers": {
+    "@type": "Offer",
+    "price": "199",
+    "priceCurrency": "EUR",
+    "description": "per month, three-month minimum term, then cancel monthly"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does the running coaching cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The running coaching costs 199 € a month. There is a three-month minimum term, after that you can cancel monthly. Three months is not a sales trick, it is how long a change in your running takes before you can actually measure it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is this online running coaching for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For runners with a goal and a full life. Whether you are working towards your first half marathon, have been stuck on the same time for years or want to step up from 10K to the marathon makes no difference. The plan is built around where you are, not around an average."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is TrainingPeaks and do I need my own account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TrainingPeaks is the platform your plan runs on. You see every session with its duration, pace and purpose, tick it off and leave your feedback. You get access through my coach account, there is nothing extra to book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the sessions sync to my Garmin automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. TrainingPeaks sends your sessions to Garmin and most other smartwatches. You do not have to type in intervals. Start the workout on your watch and it guides you through, your data flows back automatically afterwards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do runners really need strength training?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two strength sessions a week are a fixed part of the plan and included in the price. Running on its own does not make you more robust, it just makes you tired. Strength is what carries the load running creates. No gym? Then we build it so it works at home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is my training plan adjusted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weekly or every two weeks, depending on the phase and on what your feedback shows. Not by a fixed schedule, but by how your body handled the last week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I reach you? Is there WhatsApp support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, no WhatsApp. You leave your questions directly on the session in TrainingPeaks and I answer them within 72 hours. That clear boundary is the reason the running coaching costs 199 € and not as much as Performance Coaching."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I am a beginner runner. Is it too early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We start where you are. If walk breaks belong in the build-up, there will be walk breaks in the plan. What will not happen: being squeezed into a plan written for someone else."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be signed up for a race?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A fixed date makes the planning sharper, but you can start without one and sign up later. Then we build your base first and set the target once it is fixed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I join in the middle of my race build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. On the intro call we look at where you are and what you have already done, and we build from there. We do not start from zero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which distances do you cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From 5K and 10K through the half marathon to the marathon. Hybrid goals like Hyrox work too, because strength is already part of the plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I get pain when I run. Is this for me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Then this is the wrong place to start. If pain is the real issue, it needs a proper look at the cause first, and that is what Rehab Coaching with a full assessment is for. Tell me on the intro call and we will sort it out honestly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference to Performance Coaching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Performance Coaching gives you a full assessment to start, Loom video feedback on your technique and WhatsApp access with replies within 24 hours on weekdays. Here you get the same individually written plan, but all communication runs through TrainingPeaks and there is no video analysis."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/laufcoaching.html">
+<link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/running-coaching.html">
+<link rel="alternate" hreflang="x-default" href="https://www.tayfunctional.de/laufcoaching.html">
+</head>
+<body>
+
+<header class="site-head" id="head">
+  <a href="index.html" class="brand" aria-label="Tayfunctional home">TAYFUNCTIONAL<span>.</span></a>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="navlink" href="index.html#angebote">Coaching</a>
+    <a class="navlink" href="back-reset.html">Back Reset</a>
+    <a class="navlink" href="running-coaching.html">Running</a>
+    <a class="navlink" href="about.html">About</a>
+    <span class="langsw" role="group" aria-label="Language"><a href="/laufcoaching.html" data-lang="de">DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/running-coaching.html" data-lang="en" class="on">EN</a></span>
+    <a class="btn btn-primary desktop-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=perf_nav" target="_blank" rel="noopener">Intro call</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#angebote" data-close>Coaching</a>
+  <a href="back-reset.html" data-close>Back Reset</a>
+  <a href="running-coaching.html" data-close>Running coaching</a>
+  <a href="discounts.html" data-close>Save with me</a>
+  <a href="about.html" data-close>About</a>
+  <a href="index.html#kontakt" data-close>Contact</a>
+  <a class="mm-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=perf_mobile" target="_blank" rel="noopener" data-close>Book an intro call →</a>
+  <span class="langsw" role="group" aria-label="Language"><a href="/laufcoaching.html" data-lang="de" data-close>DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/running-coaching.html" data-lang="en" class="on" data-close>EN</a></span>
+</div>
+
+<main>
+  <section class="subhero" aria-label="Running coaching">
+    <div class="subhero-media">
+      <picture>
+        <source srcset="../assets/img/perf3.webp" type="image/webp">
+        <img src="../assets/img/perf3.webp" alt="Tayfun Ertural training" width="1200" height="1800" fetchpriority="high" style="object-position:50% 30%">
+      </picture>
+    </div>
+    <div class="subhero-inner wrap">
+      <p class="crumb"><a href="index.html">Home</a> <span class="sep">/</span> Running coaching</p>
+      <span class="eyebrow" style="margin-top:1rem">Iron &amp; Miles &middot; Online running coaching</span>
+      <h1>Run faster. With a plan written for you.</h1>
+      <p class="sublead">Personalised running and strength training in TrainingPeaks, straight to your watch. Adjusted to what your body tells us after every week.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=lauf_hero" target="_blank" rel="noopener">Book an intro call <span class="ico">&#8599;</span></a>
+        <a class="btn btn-ghost" href="#ablauf">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap intro-grid">
+      <div class="prose reveal">
+        <span class="eyebrow" style="margin-bottom:1.2rem">What this is about</span>
+        <p>Most running plans are written for nobody. They do not know your goal, your work week, your knee or the Tuesday you can never make. You stick with them for three weeks and think it is on you.</p>
+        <p>Here it works the other way round. After our intro call I write your plan, running and strength in one build. It lives in TrainingPeaks, goes straight to your watch and gets adjusted as soon as your feedback says it should.</p>
+        <p>Two strength sessions a week are part of it. Not as an extra, but because without them the part that carries the running load is missing.</p>
+      </div>
+      <div class="reveal" style="align-self:center">
+        <p class="pull">A plan that does not fit your week will not get followed. That is not a discipline problem.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad" aria-label="Your plan, your coach, your progress">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What you get</span>
+        <h2>Your plan. Your coach. Your progress.</h2>
+        <p class="lead" style="margin-top:1.2rem">Three things a downloaded plan cannot do.</p>
+      </div>
+      <div class="care-grid">
+        <article class="care reveal">
+          <span class="c-tag">Your plan</span>
+          <h3>Written, not downloaded</h3>
+          <p>After our call I build your plan. Running and strength in one, laid over your week and worked back from your goal.</p>
+          <span class="fine">No template with your name dropped in.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Your coach</span>
+          <h3>A person reads your feedback</h3>
+          <p>After your sessions you write what happened. I read it and decide where we go next. Not an algorithm that only sees your pace.</p>
+          <span class="fine">Reply within 72 hours.</span>
+        </article>
+        <article class="care reveal">
+          <span class="c-tag">Your progress</span>
+          <h3>Measured, not hoped for</h3>
+          <p>We start with a field test and set your pace zones from it. After that the numbers show you whether it is working.</p>
+          <span class="fine">Decisions on data, not gut feeling.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad befunde" aria-label="Results">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Results</span>
+        <h2>Half marathons, run by people I have coached.</h2>
+      </div>
+      <div class="res-grid">
+        <article class="res reveal">
+          <div class="res-top"><span class="res-time">1:46 h</span><span class="res-pace">4:59 /km</span></div>
+          <p>Ten weeks earlier she was at 5:00 pace for 30 minutes. On race day: 4:59 over the full half marathon, 15 minutes faster than her old time.</p>
+          <span class="res-who">L. H.</span>
+        </article>
+        <article class="res reveal">
+          <div class="res-top"><span class="res-time">1:27 h</span><span class="res-pace">4:07 /km</span></div>
+          <p>Sub-1:30 half marathon, averaging 4:07 per kilometre.</p>
+          <span class="res-who">M. S.</span>
+        </article>
+        <article class="res reveal">
+          <div class="res-top"><span class="res-time">1:43 h</span><span class="res-pace">4:52 /km</span></div>
+          <p>New half marathon personal best.</p>
+          <span class="res-who">P. W.</span>
+        </article>
+        <article class="res reveal">
+          <div class="res-top"><span class="res-time">1:51 h</span><span class="res-pace">4:58 /km</span></div>
+          <p>Sub-two-hour half marathon, evenly paced.</p>
+          <span class="res-who">M. F.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad" id="ablauf" aria-label="Process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Four steps to your watch.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="sn">01</span><div><h3>Intro call</h3><p>Thirty minutes, free, no strings. I ask about your goal, your week, your history and what has hurt before. If I think you would be better off somewhere else, I will tell you.</p></div></div>
+        <div class="step reveal"><span class="sn">02</span><div><h3>Your plan gets written</h3><p>Then I write your plan. Running and strength in one build, set on the days you can actually train. No template with your name dropped in.</p></div></div>
+        <div class="step reveal"><span class="sn">03</span><div><h3>Your TrainingPeaks invite</h3><p>You get your access and connect your watch. From then on every session is there, with its purpose, duration and pace zone.</p></div></div>
+        <div class="step reveal"><span class="sn">04</span><div><h3>Run, feedback, adjust</h3><p>You train and leave feedback on the session. I read it and shape the next weeks around it. The plan grows with you instead of past you.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad befunde" aria-label="Included">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What is included</span>
+        <h2>Everything your training needs.</h2>
+      </div>
+      <ul class="includes">
+        <li class="reveal"><span class="mk">&rarr;</span><span>Personalised plan for running and strength, written after your intro call</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Two strength sessions a week, built into the plan rather than sold as an add-on</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>TrainingPeaks, synced to Garmin and most smartwatches</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Intervals run on your watch, nothing to type in</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Adjusted from your feedback, weekly or every two weeks depending on the phase</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Field test at the start, so your pace zones are measured, not guessed</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Questions right on the session in TrainingPeaks, reply within 72 hours</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Every distance from 5K to the marathon, hybrid goals included</span></li>
+        <li class="reveal"><span class="mk">&rarr;</span><span>Three-month minimum term, then cancel monthly</span></li>
+      </ul>
+
+      <div class="sec-head reveal" style="margin-top:4.2rem">
+        <span class="eyebrow">What is not included</span>
+        <h2>And what you deliberately do not get here.</h2>
+        <p class="lead" style="margin-top:1.2rem">So you do not start with the wrong expectations. These limits are exactly what keep the price at 199 &euro;.</p>
+      </div>
+      <ul class="excl">
+        <li class="reveal"><b>No WhatsApp support</b><span>All communication runs through TrainingPeaks.</span></li>
+        <li class="reveal"><b>No Loom video analysis</b><span>Video technique feedback is part of Performance Coaching.</span></li>
+        <li class="reveal"><b>No 24-hour replies</b><span>Here it is 72 hours, and I stick to it.</span></li>
+        <li class="reveal"><b>No in-person assessment</b><span>No movement screen, no force plates.</span></li>
+      </ul>
+
+      <div class="priceblock reveal">
+        <div>
+          <div class="pb-price">199 &euro; / month</div>
+          <div class="pb-term">Three-month minimum, then cancel monthly</div>
+          <p class="pb-note">Three months, because that is how long a change in your running needs before it shows up in the numbers. Whether we are a good fit, we work out calmly beforehand. No risk, no sales pressure.</p>
+        </div>
+        <div class="pb-cta">
+          <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=lauf_price" target="_blank" rel="noopener">Book an intro call <span class="ico">&#8599;</span></a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad" aria-label="Other options">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">If you need more</span>
+        <h2>Want closer support?</h2>
+      </div>
+      <div class="nextup">
+        <article class="reveal">
+          <span class="c-tag">Performance</span>
+          <h3>Functional &amp; Performance Coaching</h3>
+          <p>A full assessment to start, Loom video feedback on your technique and WhatsApp access with replies within 24 hours on weekdays. For people who want more than a plan: someone in their corner.</p>
+          <a class="btn btn-ghost" href="performance.html">See Performance Coaching &rarr;</a>
+        </article>
+        <article class="reveal">
+          <span class="c-tag">Rehab</span>
+          <h3>Rehab Coaching</h3>
+          <p>When pain is the real reason you are not running. Starts with a full movement assessment, looks for the cause instead of treating symptoms, with in-person sessions in the package.</p>
+          <a class="btn btn-ghost" href="rehab.html">See Rehab Coaching &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad befunde" aria-label="Questions">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Frequently asked</span>
+        <h2>Before you ask.</h2>
+      </div>
+      <div class="faq reveal">
+        <details><summary>How much does the running coaching cost?</summary><p class="fa">The running coaching costs 199 € a month. There is a three-month minimum term, after that you can cancel monthly. Three months is not a sales trick, it is how long a change in your running takes before you can actually measure it.</p></details>
+        <details><summary>Who is this online running coaching for?</summary><p class="fa">For runners with a goal and a full life. Whether you are working towards your first half marathon, have been stuck on the same time for years or want to step up from 10K to the marathon makes no difference. The plan is built around where you are, not around an average.</p></details>
+        <details><summary>What is TrainingPeaks and do I need my own account?</summary><p class="fa">TrainingPeaks is the platform your plan runs on. You see every session with its duration, pace and purpose, tick it off and leave your feedback. You get access through my coach account, there is nothing extra to book.</p></details>
+        <details><summary>Will the sessions sync to my Garmin automatically?</summary><p class="fa">Yes. TrainingPeaks sends your sessions to Garmin and most other smartwatches. You do not have to type in intervals. Start the workout on your watch and it guides you through, your data flows back automatically afterwards.</p></details>
+        <details><summary>Do runners really need strength training?</summary><p class="fa">Two strength sessions a week are a fixed part of the plan and included in the price. Running on its own does not make you more robust, it just makes you tired. Strength is what carries the load running creates. No gym? Then we build it so it works at home.</p></details>
+        <details><summary>How often is my training plan adjusted?</summary><p class="fa">Weekly or every two weeks, depending on the phase and on what your feedback shows. Not by a fixed schedule, but by how your body handled the last week.</p></details>
+        <details><summary>How do I reach you? Is there WhatsApp support?</summary><p class="fa">No, no WhatsApp. You leave your questions directly on the session in TrainingPeaks and I answer them within 72 hours. That clear boundary is the reason the running coaching costs 199 € and not as much as Performance Coaching.</p></details>
+        <details><summary>I am a beginner runner. Is it too early?</summary><p class="fa">No. We start where you are. If walk breaks belong in the build-up, there will be walk breaks in the plan. What will not happen: being squeezed into a plan written for someone else.</p></details>
+        <details><summary>Do I need to be signed up for a race?</summary><p class="fa">No. A fixed date makes the planning sharper, but you can start without one and sign up later. Then we build your base first and set the target once it is fixed.</p></details>
+        <details><summary>Can I join in the middle of my race build?</summary><p class="fa">Yes. On the intro call we look at where you are and what you have already done, and we build from there. We do not start from zero.</p></details>
+        <details><summary>Which distances do you cover?</summary><p class="fa">From 5K and 10K through the half marathon to the marathon. Hybrid goals like Hyrox work too, because strength is already part of the plan.</p></details>
+        <details><summary>I get pain when I run. Is this for me?</summary><p class="fa">Then this is the wrong place to start. If pain is the real issue, it needs a proper look at the cause first, and that is what Rehab Coaching with a full assessment is for. Tell me on the intro call and we will sort it out honestly.</p></details>
+        <details><summary>What is the difference to Performance Coaching?</summary><p class="fa">Performance Coaching gives you a full assessment to start, Loom video feedback on your technique and WhatsApp access with replies within 24 hours on weekdays. Here you get the same individually written plan, but all communication runs through TrainingPeaks and there is no video analysis.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad final" id="kontakt" aria-label="Contact">
+    <div class="wrap">
+      <span class="eyebrow reveal" style="justify-content:center">Contact</span>
+      <h2 class="reveal">Ready for a new personal best?</h2>
+      <p class="lead reveal">Book a free intro call. 30 minutes, honest, no sales tricks.</p>
+      <div class="final-cta reveal">
+        <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=lauf_final" target="_blank" rel="noopener">Book an intro call <span class="ico">&#8599;</span></a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM on Instagram</a>
+      </div>
+      <p class="micro reveal">30 min &middot; no obligation &middot; online</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">TAYFUNCTIONAL<span>.</span></div>
+        <p>Rehab and performance coaching from Ingolstadt. Pain <span class="arrow">→</span> Performance. Provide. Protect. Love.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Coaching</h4>
+        <a href="performance.html">Performance Coaching</a>
+        <a href="rehab.html">Rehab Coaching</a>
+        <a href="back-reset.html">90-Day Back Reset</a>
+        <a href="running-coaching.html">Running Coaching</a>
+        <a href="about.html">About</a>
+        <a href="index.html#kontakt">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>More</h4>
+<a href="discounts.html">Save with me</a>
+        <a href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">Instagram</a>
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Tayfun Ertural · Tayfunctional</p>
+      <p>Photos: @Mehmetguezl</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var head=document.getElementById('head');
+  var onScroll=function(){head.classList.toggle('scrolled',window.scrollY>30)};
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  var burger=document.getElementById('burger');
+  var menu=document.getElementById('mobileMenu');
+  function setMenu(open){menu.classList.toggle('open',open);burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Close menu':'Open menu');document.body.style.overflow=open?'hidden':''}
+  burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'))});
+  menu.querySelectorAll('[data-close]').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+  var mq=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if('IntersectionObserver' in window && !mq.matches){
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+<script>
+(function(){
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
+  var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
+  var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
+  function norm(p){ return p.replace(/index\.html$/,''); }
+  function counterpart(){
+    var p = norm(location.pathname);
+    return (LANG==='de' ? MAP[p] : RMAP[p]) || null;
+  }
+  function read(){
+    try{ var v = localStorage.getItem('tf_lang'); if(v==='de'||v==='en') return v; }catch(e){}
+    var m = document.cookie.match(/(?:^|;\s*)tf_lang=(de|en)/);
+    return m ? m[1] : null;
+  }
+  function write(v){
+    try{ localStorage.setItem('tf_lang', v); }catch(e){}
+    try{ document.cookie='tf_lang='+v+';path=/;max-age=31536000;SameSite=Lax'; }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var el = e.target;
+    while(el && el.nodeType===1 && !el.hasAttribute('data-lang')) el = el.parentNode;
+    if(!el || el.nodeType!==1) return;
+    var want = el.getAttribute('data-lang');
+    write(want);
+    if(want === LANG){ e.preventDefault(); return; }
+    var t = counterpart();
+    if(t){ e.preventDefault(); location.href = t + location.hash; }
+  }, true);
+  if(read()) return;
+  try{ if(sessionStorage.getItem('tf_redir')) return; }catch(e){}
+  var l = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
+  var wantsEn = String(l[0] || '').toLowerCase().indexOf('en') === 0;
+  if(LANG === 'en' || !wantsEn) return;
+  var target = counterpart();
+  if(!target) return;
+  try{ sessionStorage.setItem('tf_redir','1'); }catch(e){}
+  location.replace(target + location.hash);
+})();
+</script>
+</body>
+</html>

@@ -312,6 +312,20 @@ section{position:relative}
 .mobile-menu .langsw{margin-top:1.8rem;font-size:1rem;letter-spacing:0.16em;gap:0.6rem}
 .mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
 .mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
+
+/* Navigation mit Laufcoaching: Stauchbereich erweitert */
+@media (min-width:921px) and (max-width:1280px){
+  .site-head{padding-inline:1.5rem}
+  .nav{gap:1.05rem}
+  .nav a.navlink{font-size:0.72rem;letter-spacing:0.05em;white-space:nowrap}
+  .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em;white-space:nowrap}
+  .brand{font-size:1rem}
+}
+@media (min-width:921px) and (max-width:1040px){
+  .nav{gap:0.75rem}
+  .nav a.navlink{font-size:0.66rem;letter-spacing:0.03em}
+  .nav .btn{padding:0.65em 0.8em;font-size:0.66rem}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -341,6 +355,7 @@ section{position:relative}
   <nav class="nav" aria-label="Main navigation">
     <a class="navlink" href="#angebote">Coaching</a>
     <a class="navlink" href="back-reset.html">Back Reset</a>
+    <a class="navlink" href="running-coaching.html">Running</a>
     <a class="navlink" href="about.html">About</a>
     <span class="langsw" role="group" aria-label="Language"><a href="/" data-lang="de">DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/" data-lang="en" class="on">EN</a></span>
     <a class="btn btn-primary desktop-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=nav" target="_blank" rel="noopener">Intro call</a>
@@ -351,6 +366,7 @@ section{position:relative}
 <div class="mobile-menu" id="mobileMenu">
   <a href="#angebote" data-close>Coaching</a>
   <a href="back-reset.html" data-close>Back Reset</a>
+  <a href="running-coaching.html" data-close>Running coaching</a>
   <a href="discounts.html" data-close>Save with me</a>
   <a href="about.html" data-close>About</a>
   <a href="#kontakt" data-close>Contact</a>
@@ -494,6 +510,14 @@ section{position:relative}
           <div class="term">Minimum term 3 months</div>
           <p>Begins with the full assessment, then back to your sport with science and biomechanics. Your plan is reverse engineered: we define the goal, the duration and the timeframe, and your plan grows out of that. I work your feedback in faster than in Functional Coaching. And I share what I know, so you still know exactly what to do after the Rehab Coaching ends.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="rehab.html">Learn more →</a></div>
+        </article>
+        <article class="offer reveal">
+          <span class="label">Running</span>
+          <h3>Running Coaching</h3>
+          <div class="price">199 &euro; / month</div>
+          <div class="term">Three-month minimum</div>
+          <p>Your running plan gets written after an intro call, not downloaded. Running plus two strength sessions a week in one build, straight to your watch via TrainingPeaks. Adjusted from your feedback. No WhatsApp support and no video analysis, which keeps the price lower.</p>
+          <div class="offer-cta"><a class="btn btn-ghost" href="running-coaching.html">Learn more →</a></div>
         </article>
         <article class="offer reveal">
           <span class="label">Business</span>
@@ -684,6 +708,7 @@ section{position:relative}
         <h4>Navigation</h4>
         <a href="#angebote">Coaching</a>
         <a href="back-reset.html">90-Day Back Reset</a>
+        <a href="running-coaching.html">Running Coaching</a>
         <a href="about.html">About</a>
         <a href="#kontakt">Contact</a>
         <a href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=footer" target="_blank" rel="noopener">Book an intro call</a>
@@ -759,7 +784,7 @@ section{position:relative}
 </script>
 <script>
 (function(){
-  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html"};
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
   var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
   var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
   function norm(p){ return p.replace(/index\.html$/,''); }

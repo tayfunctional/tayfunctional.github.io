@@ -382,6 +382,20 @@ section{position:relative}
 .mobile-menu .langsw{margin-top:1.8rem;font-size:1rem;letter-spacing:0.16em;gap:0.6rem}
 .mobile-menu .langsw a{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:700;text-transform:none;border-bottom:0;padding:0;display:inline}
 .mobile-menu .langsw a.on{border-bottom:1px solid var(--red);padding-bottom:2px}
+
+/* Navigation mit Laufcoaching: Stauchbereich erweitert */
+@media (min-width:921px) and (max-width:1280px){
+  .site-head{padding-inline:1.5rem}
+  .nav{gap:1.05rem}
+  .nav a.navlink{font-size:0.72rem;letter-spacing:0.05em;white-space:nowrap}
+  .nav .btn{padding:0.7em 0.95em;font-size:0.72rem;letter-spacing:0.06em;white-space:nowrap}
+  .brand{font-size:1rem}
+}
+@media (min-width:921px) and (max-width:1040px){
+  .nav{gap:0.75rem}
+  .nav a.navlink{font-size:0.66rem;letter-spacing:0.03em}
+  .nav .btn{padding:0.65em 0.8em;font-size:0.66rem}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -430,6 +444,7 @@ section{position:relative}
   <nav class="nav" aria-label="Main navigation">
     <a class="navlink" href="index.html#angebote">Coaching</a>
     <a class="navlink" href="back-reset.html">Back Reset</a>
+    <a class="navlink" href="running-coaching.html">Running</a>
     <a class="navlink" href="about.html">About</a>
     <span class="langsw" role="group" aria-label="Language"><a href="/ruecken-reset.html" data-lang="de">DE</a><span class="sep" aria-hidden="true">|</span><a href="/en/back-reset.html" data-lang="en" class="on">EN</a></span>
     <a class="btn btn-primary desktop-cta" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&amp;utm_medium=referral&amp;utm_content=reset_nav" target="_blank" rel="noopener">Intro call</a>
@@ -439,6 +454,7 @@ section{position:relative}
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html#angebote" data-close>Coaching</a>
   <a href="back-reset.html" data-close>Back Reset</a>
+  <a href="running-coaching.html" data-close>Running coaching</a>
   <a href="discounts.html" data-close>Save with me</a>
   <a href="about.html" data-close>About</a>
   <a href="index.html#kontakt" data-close>Contact</a>
@@ -780,6 +796,7 @@ section{position:relative}
         <a href="performance.html">Performance Coaching</a>
         <a href="rehab.html">Rehab Coaching</a>
         <a href="back-reset.html">90-Day Back Reset</a>
+        <a href="running-coaching.html">Running Coaching</a>
         <a href="about.html">About</a>
       </div>
       <div class="foot-col">
@@ -831,7 +848,7 @@ section{position:relative}
 </script>
 <script>
 (function(){
-  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html"};
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
   var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
   var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
   function norm(p){ return p.replace(/index\.html$/,''); }
