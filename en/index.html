@@ -328,6 +328,16 @@ section{position:relative}
   .nav a.navlink{font-size:0.66rem;letter-spacing:0.03em}
   .nav .btn{padding:0.65em 0.8em;font-size:0.66rem}
 }
+
+/* Speaking als eigener Block unter den drei Saeulen */
+.offer h3{overflow-wrap:break-word;hyphens:manual}
+.speak{max-width:760px;margin:3.5rem auto 0;text-align:center;background:var(--ink-3);border:1px solid var(--line);padding:clamp(2rem,4vw,3.2rem) clamp(1.4rem,4vw,3rem)}
+.speak .label{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.speak h3{font-size:clamp(1.5rem,1.2rem + 1.4vw,2.2rem);margin:0.9rem 0 0.9rem;line-height:1.02}
+.speak p{color:var(--bone-dim);max-width:52ch;margin:0 auto}
+.speak .btn{margin-top:1.8rem}
+.speak .speak-mail{margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.04em;color:var(--bone-dim);overflow-wrap:anywhere}
+.speak .speak-mail a{color:var(--bone);border-bottom:1px solid var(--line)}
 </style>
 <script type="application/ld+json">
 {
@@ -502,7 +512,7 @@ section{position:relative}
       <div class="offer-grid">
         <article class="offer reveal">
           <span class="label">Performance</span>
-          <h3>Functional Coaching</h3>
+          <h3>Hybrid Coaching</h3>
           <div class="price">450 € / month</div>
           <div class="term">Minimum term 6 months</div>
           <span class="save-tag">Save 400 € with the annual plan</span>
@@ -514,7 +524,7 @@ section{position:relative}
           <h3>Rehab Coaching</h3>
           <div class="price">from 600 € / month</div>
           <div class="term">Minimum term 3 months</div>
-          <p>Begins with the full assessment, then back to your sport with science and biomechanics. Your plan is reverse engineered: we define the goal, the duration and the timeframe, and your plan grows out of that. I work your feedback in faster than in Functional Coaching. And I share what I know, so you still know exactly what to do after the Rehab Coaching ends.</p>
+          <p>Begins with the full assessment, then back to your sport with science and biomechanics. Your plan is reverse engineered: we define the goal, the duration and the timeframe, and your plan grows out of that. I work your feedback in faster than in Hybrid Coaching. And I share what I know, so you still know exactly what to do after the Rehab Coaching ends.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="rehab.html">Learn more →</a></div>
         </article>
         <article class="offer reveal">
@@ -525,14 +535,13 @@ section{position:relative}
           <p>Your running plan gets written after an intro call, not downloaded. Running plus two strength sessions a week in one build, straight to your watch via TrainingPeaks. Adjusted from your feedback. No WhatsApp support and no video analysis, which keeps the price lower.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="running-coaching.html">Learn more →</a></div>
         </article>
-        <article class="offer reveal">
-          <span class="label">Business</span>
-          <h3>Speaking &amp; education</h3>
-          <div class="price">On request</div>
-          <div class="term">For teams &amp; coaches</div>
-          <p>Talks and education for gyms, teams and coaches. Biomechanics, rehab thinking and an honest training philosophy, straight from practice instead of a textbook.</p>
-          <div class="offer-cta"><a class="btn btn-ghost" href="mailto:apex.performance.official@gmail.com?subject=Anfrage%20Speaking%20%26%20Weiterbildung">Send an enquiry</a></div>
-        </article>
+      </div>
+      <div class="speak reveal">
+        <span class="label">Business</span>
+        <h3>Speaking &amp; education</h3>
+        <p>Talks and education for gyms, teams and coaches. Biomechanics, rehab thinking and an honest training philosophy, straight from practice instead of a textbook.</p>
+        <a class="btn btn-primary" href="mailto:apex.performance.official@gmail.com?subject=Speaking%20%26%20education%20enquiry">Send an enquiry by email <span class="ico">&#8599;</span></a>
+        <p class="speak-mail">Or write directly to <a href="mailto:apex.performance.official@gmail.com?subject=Speaking%20%26%20education%20enquiry">apex.performance.official@gmail.com</a></p>
       </div>
     </div>
   </section>
