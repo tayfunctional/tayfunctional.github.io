@@ -352,6 +352,26 @@ section{position:relative}
 .speak .btn{margin-top:1.8rem}
 .speak .speak-mail{margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.04em;color:var(--bone-dim);overflow-wrap:anywhere}
 .speak .speak-mail a{color:var(--bone);border-bottom:1px solid var(--line)}
+
+/* Oktober-Update Startseite */
+.hero-what{margin-top:1.15rem;font-weight:700;color:var(--bone);font-size:clamp(1.02rem,0.96rem + 0.45vw,1.24rem);line-height:1.45;max-width:46ch}
+.webinar-hint{display:inline-block;margin-top:1.3rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.05em;color:var(--bone-dim);border-bottom:1px solid var(--line);padding-bottom:0.15rem;transition:color .2s ease,border-color .2s ease}
+.webinar-hint b{color:var(--bone);font-weight:700}
+.webinar-hint:hover{color:var(--bone);border-color:var(--red)}
+.final .webinar-hint{margin-top:1.6rem}
+@media (min-width:921px){.offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.offer .where{margin-top:0.55rem;font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--red)}
+.teaser-foot{margin-top:2.2rem;color:var(--bone-dim);font-size:0.97rem;max-width:70ch}
+.teaser-foot a{color:var(--bone);border-bottom:1px solid var(--red)}
+.remote-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.remote{background:var(--ink);padding:clamp(1.6rem,3vw,2.3rem)}
+.remote .r-tag{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.remote h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.55rem);margin:0.85rem 0 0.7rem;line-height:1.05}
+.remote p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
+.onsite{margin-top:1.6rem;background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:1.25rem 1.5rem;max-width:78ch}
+.onsite .o-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase;margin-bottom:0.5rem}
+.onsite p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
+@media (max-width:920px){.remote-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
 
 <link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/">
@@ -401,11 +421,13 @@ section{position:relative}
       <span class="eyebrow">Rehab- &amp; Performance-Coaching · Ingolstadt</span>
       <h1>Nicht der Coach, der deine Hand hält.</h1>
       <span class="kicker">Der, der dir <b>die Wahrheit</b> sagt.</span>
+      <p class="hero-what">Rehab- und Performance-Coaching vor Ort in Ingolstadt und online im ganzen DACH-Raum. F&uuml;r alle, bei denen der &uuml;bliche Weg nicht weitergeholfen hat.</p>
       <p class="hero-lead">Ich fixe nicht nur deinen Schmerz. Ich zeige dir, warum er entstanden ist, und sorge dafür, dass er nicht wiederkommt.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=hero" target="_blank" rel="noopener">Erstgespräch buchen <span class="ico">↗</span></a>
         <a class="btn btn-ghost" href="#angebote">Angebote ansehen</a>
       </div>
+      <a class="webinar-hint" href="webinar.html">Noch nicht bereit f&uuml;r ein Gespr&auml;ch? <b>Starte mit dem kostenlosen R&uuml;cken-Webinar &rarr;</b></a>
     </div>
     <span class="scroll-hint" aria-hidden="true">Scroll ↓</span>
   </section>
@@ -505,7 +527,7 @@ section{position:relative}
       <div class="sec-head reveal">
         <span class="eyebrow">Angebote</span>
         <h2>So arbeiten wir zusammen.</h2>
-        <p class="lead" style="margin-top:1.2rem">Drei Wege, ein Prinzip: Ursache finden, Leistung aufbauen, dranbleiben. Welcher zu dir passt, klären wir im Erstgespräch.</p>
+        <p class="lead" style="margin-top:1.2rem">Ein Prinzip, egal welcher Weg: Ursache finden, Leistung aufbauen, dranbleiben. Welcher zu dir passt, klären wir im Erstgespräch.</p>
       </div>
       <div class="offer-grid">
         <article class="offer reveal">
@@ -513,6 +535,7 @@ section{position:relative}
           <h3>Functional &amp; Perfor&shy;mance Coaching</h3>
           <div class="price">490 € / Monat</div>
           <div class="term">Ab 6 Monate Laufzeit</div>
+          <div class="where">Vor Ort in Ingolstadt und online</div>
           <span class="save-tag">Zahl 11 Monate, trainier 12</span>
           <p>Startet mit einem vollen Assessment, danach individuelles Training 3 bis 6x pro Woche über eine App. Loom-Video-Feedback zu deiner Technik und WhatsApp-Support, wenn es drauf ankommt. Für alle, die wieder echten Fortschritt wollen.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="performance.html">Mehr erfahren →</a></div>
@@ -522,14 +545,25 @@ section{position:relative}
           <h3>Rehab-Coaching</h3>
           <div class="price">ab 600 € / Monat</div>
           <div class="term">Ab 3 Monate Laufzeit</div>
+          <div class="where">Vor Ort in Ingolstadt und online</div>
           <p>Beginnt mit dem vollen Assessment, dann mit Wissenschaft und Biomechanik zurück zum Sport. Dein Plan wird reverse engineered: Wir definieren Ziel, Dauer und Zeitraum, daraus entsteht dein Plan. Feedback arbeite ich schneller ein als im Functional &amp; Performance Coaching. Und ich teile mein Wissen mit dir, damit du auch nach dem Rehab-Coaching genau weißt, was zu tun ist.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="rehab.html">Mehr erfahren →</a></div>
+        </article>
+        <article class="offer reveal">
+          <span class="label">R&uuml;cken</span>
+          <h3>90-Tage R&uuml;cken-Reset</h3>
+          <div class="price">1.900 &euro; einmalig</div>
+          <div class="term">oder 3 &times; 700 &euro; &middot; 90 Tage</div>
+          <div class="where">Vor Ort in Ingolstadt und online</div>
+          <p>F&uuml;r alle, die seit Jahren mit dem R&uuml;cken k&auml;mpfen. Assessment, sechs PT-Sessions und drei Monate Betreuung in einem festen 90-Tage-Programm, mit 4-Wochen-Zusage. Am Ende wei&szlig;t du selbst, warum dein R&uuml;cken so reagiert hat.</p>
+          <div class="offer-cta"><a class="btn btn-ghost" href="ruecken-reset.html">Mehr erfahren &rarr;</a></div>
         </article>
         <article class="offer reveal">
           <span class="label">Laufen</span>
           <h3>Lauf&shy;coaching</h3>
           <div class="price">199 &euro; / Monat</div>
           <div class="term">Mindestlaufzeit 3 Monate</div>
+          <div class="where">Komplett online</div>
           <p>Dein Laufplan wird nach einem Erstgespr&auml;ch geschrieben, nicht heruntergeladen. Laufen und zweimal pro Woche Kraft in einem Aufbau, &uuml;ber TrainingPeaks direkt auf deine Uhr. Angepasst nach deinem Feedback. Ohne WhatsApp-Support und ohne Videoanalyse, daf&uuml;r zum kleineren Preis.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="laufcoaching.html">Mehr erfahren →</a></div>
         </article>
@@ -544,6 +578,54 @@ section{position:relative}
     </div>
   </section>
 
+  <section class="pad befunde" id="ablauf-kurz" aria-label="Ablauf">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Der Ablauf</span>
+        <h2>Vier Schritte. Kein R&auml;tselraten.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="sn">01</span><div><h3>Assessment</h3><p>Wir schauen uns an, wo du wirklich stehst: Bewegung, Vorgeschichte, Alltag und Ziel. Vor Ort mit Kraftmessplatten, online im Videocall.</p></div></div>
+        <div class="step reveal"><span class="sn">02</span><div><h3>Dein Plan</h3><p>Daraus entsteht dein individueller Phasenplan, mit Phasenstart, Deloads und Exit-Kriterien. Kein Programm von der Stange.</p></div></div>
+        <div class="step reveal"><span class="sn">03</span><div><h3>Umsetzung</h3><p>Du trainierst nach Plan in der App und gibst mir Feedback per Kommentar und Video.</p></div></div>
+        <div class="step reveal"><span class="sn">04</span><div><h3>Anpassen und steigern</h3><p>Ich passe die n&auml;chste Woche an dein Feedback an. Wir steigern, wenn du bereit bist, und nehmen zur&uuml;ck, wenn das Leben dazwischenkommt.</p></div></div>
+      </div>
+      <p class="teaser-foot reveal">Beim Laufcoaching l&auml;uft das schlanker: Erstgespr&auml;ch statt Assessment, Feedback per Kommentar, ohne Video. Den ausf&uuml;hrlichen Ablauf findest du beim <a href="performance.html#ablauf">Functional &amp; Performance Coaching</a> und beim <a href="rehab.html#ablauf">Rehab-Coaching</a>.</p>
+    </div>
+  </section>
+
+  <section class="pad" id="vor-ort-online" aria-label="Vor Ort und online">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Vor Ort und online</span>
+        <h2>Ingolstadt oder irgendwo im DACH-Raum. Gleicher Anspruch.</h2>
+        <p class="lead" style="margin-top:1.2rem">Ich arbeite vor Ort in Ingolstadt und online mit Athleten im ganzen DACH-Raum. So l&auml;uft das Coaching auf Distanz.</p>
+      </div>
+      <div class="remote-grid">
+        <article class="remote reveal">
+          <span class="r-tag">Functional &amp; Performance &middot; Rehab</span>
+          <h3>Dein Phasenplan in TrainHeroic</h3>
+          <p>Jeder Athlet bekommt seinen individuellen Phasenplan in der TrainHeroic-App. Du gibst Feedback per Kommentar und schickst Videos deiner Technik, ich passe die n&auml;chste Woche danach an.</p>
+        </article>
+        <article class="remote reveal">
+          <span class="r-tag">Laufcoaching</span>
+          <h3>Direkt auf deine Uhr</h3>
+          <p>Dein Plan kommt &uuml;ber TrainingPeaks direkt auf Garmin oder Smartwatch. Du gibst Feedback zu jeder Einheit, ich passe an. Ohne Videoanalyse.</p>
+        </article>
+        <article class="remote reveal">
+          <span class="r-tag">Messen</span>
+          <h3>Gemessen, wo es Sinn ergibt</h3>
+          <p>Feldtests f&uuml;r Tempo- und Herzfrequenzbereiche, wenn sie f&uuml;r dein Ziel z&auml;hlen. Kraftmessplatten-Diagnostik, wenn wir vor Ort arbeiten. Nicht jeder braucht jede Messung.</p>
+        </article>
+      </div>
+      <div class="onsite reveal">
+        <span class="o-tag">Nur vor Ort in Ingolstadt</span>
+        <p>Kraftmessplatten-Diagnostik und Personal-Training-Termine im Studio. Alles andere funktioniert online genauso.</p>
+      </div>
+    </div>
+  </section>
+
+
 
   <section class="notfor pad" aria-label="Für wen das nichts ist">
     <div class="wrap notfor-grid">
@@ -551,6 +633,7 @@ section{position:relative}
         <span class="eyebrow">Ehrlichkeit vorab</span>
         <h2 style="font-size:clamp(1.9rem,1.4rem + 3vw,3.6rem);margin-top:1.1rem">Ich arbeite nicht mit jedem.</h2>
         <p>Ich stecke in jeden Klienten echte Zeit. Deshalb sortiere ich lieber vorher aus, als später Energie in jemanden zu stecken, der gar nicht will. Das schützt deine Ergebnisse und meine.</p>
+        <p>Deshalb nehme ich auch nur eine begrenzte Zahl neuer Klienten auf. Ist gerade kein Platz frei, sage ich dir das im Erstgespr&auml;ch offen.</p>
         <p>Lies die Liste ehrlich. Wenn du dich darin wiedererkennst, spar dir das Erstgespräch.</p>
       </div>
       <div class="reveal">
@@ -703,6 +786,7 @@ section{position:relative}
         <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website&utm_medium=referral&utm_content=final" target="_blank" rel="noopener">Erstgespräch buchen <span class="ico">↗</span></a>
         <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM auf Instagram</a>
       </div>
+      <a class="webinar-hint reveal" href="webinar.html">Noch nicht bereit f&uuml;r ein Gespr&auml;ch? <b>Starte mit dem kostenlosen R&uuml;cken-Webinar &rarr;</b></a>
       <p class="micro reveal">30 Min · unverbindlich · online</p>
     </div>
   </section>
@@ -729,6 +813,7 @@ section{position:relative}
       </div>
       <div class="foot-col">
         <h4>Mehr</h4>
+        <a href="webinar.html">Kostenloses Webinar</a>
         <a href="https://www.tayfunctional.de/pace-calculator/">Pace-Rechner</a>
         <a href="rabatte.html">Spare mit mir</a>
         <a href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">Instagram</a>
@@ -799,7 +884,7 @@ section{position:relative}
 </script>
 <script>
 (function(){
-  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html", "/webinar.html": "/en/webinar.html", "/webinar-danke.html": "/en/webinar-thanks.html"};
   var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
   var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
   function norm(p){ return p.replace(/index\.html$/,''); }

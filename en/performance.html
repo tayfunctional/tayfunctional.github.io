@@ -310,6 +310,12 @@ section{position:relative}
   .nav a.navlink{font-size:0.66rem;letter-spacing:0.03em}
   .nav .btn{padding:0.65em 0.8em;font-size:0.66rem}
 }
+
+/* Vor Ort und online */
+.where-sec{padding-block:clamp(2.2rem,5vh,3.6rem)}
+.where-note{border:1px solid var(--line);border-left:2px solid var(--red);background:var(--ink-2);padding:1.3rem 1.6rem;max-width:78ch}
+.where-note .wn-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase;margin-bottom:0.5rem}
+.where-note p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
 </style>
 <script type="application/ld+json">
 {
@@ -326,7 +332,7 @@ section{position:relative}
 {
   "@context":"https://schema.org","@type":"FAQPage","inLanguage":"en",
   "mainEntity":[
-    {"@type":"Question","name":"Which app does this run on?","acceptedAnswer":{"@type":"Answer","text":"You get your plan structured through an app where you see every session, tick it off and log your weights and times. Which one exactly I show you in the intro call. The tool is not what matters, what is in it is."}},
+    {"@type":"Question","name":"Which app does this run on?","acceptedAnswer":{"@type":"Answer","text":"You get your plan structured through an app where you see every session, tick it off and log your weights and times. It is TrainHeroic. The tool is not what matters, what is in it is."}},
     {"@type":"Question","name":"How much time do I need each week?","acceptedAnswer":{"@type":"Answer","text":"That depends on your goal and your daily life. Three to six sessions a week is the frame, and we set the volume together so it fits into your life rather than beside it."}},
     {"@type":"Question","name":"Am I too unfit to start?","acceptedAnswer":{"@type":"Answer","text":"No. I build the training on where you actually are, not on an ideal. Whether you have been out for years or already train, we start where you really stand."}},
     {"@type":"Question","name":"Will I be left alone at the start?","acceptedAnswer":{"@type":"Answer","text":"No. Before the first session we go through the setup together: setting up the app, explaining RPE and load management, showing you how to film. That applies online exactly as in person."}},
@@ -578,6 +584,15 @@ section{position:relative}
     </div>
   </section>
 
+  <section class="where-sec" aria-label="In person and online">
+    <div class="wrap">
+      <div class="where-note reveal">
+        <span class="wn-tag">In person and online</span>
+        <p>You train in person in Ingolstadt or online from anywhere in Germany, Austria and Switzerland. Either way your phase plan runs in TrainHeroic and you give feedback through comments and video. Force plate diagnostics and training at the gym are in person only.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="pad befunde" aria-label="Questions">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -585,7 +600,7 @@ section{position:relative}
         <h2>Before you ask.</h2>
       </div>
       <div class="faq reveal">
-        <details><summary>Which app does this run on?</summary><p class="fa">You get your plan structured through an app where you see every session, tick it off and log your weights and times. Which one exactly I show you in the intro call. The tool is not what matters, what is in it is.</p></details>
+        <details><summary>Which app does this run on?</summary><p class="fa">You get your plan structured through an app where you see every session, tick it off and log your weights and times. It is TrainHeroic. The tool is not what matters, what is in it is.</p></details>
         <details><summary>How much time do I need each week?</summary><p class="fa">That depends on your goal and your daily life. Three to six sessions a week is the frame, and we set the volume together so it fits into your life rather than beside it.</p></details>
         <details><summary>Am I too unfit to start?</summary><p class="fa">No. I build the training on where you actually are, not on an ideal. Whether you have been out for years or already train, we start where you really stand.</p></details>
         <details><summary>Will I be left alone at the start?</summary><p class="fa">No. Before the first session we go through the setup together: setting up the app, explaining RPE and load management, showing you how to film. I do this for online clients exactly as in person. You only start once you know how everything works.</p></details>
@@ -635,6 +650,7 @@ section{position:relative}
       </div>
       <div class="foot-col">
         <h4>More</h4>
+        <a href="webinar.html">Free webinar</a>
 <a href="discounts.html">Save with me</a>
         <a href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">Instagram</a>
         <a href="legal-notice.html">Legal notice</a>
@@ -667,7 +683,7 @@ section{position:relative}
 </script>
 <script>
 (function(){
-  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html", "/webinar.html": "/en/webinar.html", "/webinar-danke.html": "/en/webinar-thanks.html"};
   var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
   var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
   function norm(p){ return p.replace(/index\.html$/,''); }
