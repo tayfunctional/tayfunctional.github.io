@@ -327,8 +327,16 @@ section{position:relative}
 .web-about .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
 .web-about p{color:var(--bone-dim);font-size:clamp(1rem,0.97rem + 0.25vw,1.1rem);line-height:1.65;margin-top:1rem;max-width:58ch}
 .optin{max-width:760px;margin:2.6rem auto 0;background:var(--ink-3);border:1px solid var(--line);padding:clamp(1.6rem,4vw,2.8rem)}
-.ml-slot{border:2px dashed var(--red);padding:1.6rem;text-align:center;color:var(--bone-dim);font-size:0.95rem;line-height:1.6}
-.ml-slot .ml-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;color:var(--red);margin-bottom:0.6rem}
+.ml-block-form{display:grid;gap:1.1rem}
+.ml-field-group label{display:block;font-family:'JetBrains Mono',monospace;font-size:0.74rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--bone);margin-bottom:0.5rem}
+.ml-field-group label .opt{color:var(--bone-dim);font-weight:400;text-transform:none;letter-spacing:0.02em}
+.ml-field-group input{width:100%;box-sizing:border-box;background:var(--ink);color:var(--bone);border:1px solid var(--line);padding:0.95em 1em;font:inherit;font-size:1rem;border-radius:0}
+.ml-field-group input::placeholder{color:var(--bone-dim);opacity:0.7}
+.ml-field-group input:focus{outline:none;border-color:var(--red)}
+.ml-error input{border-color:var(--red)!important}
+.ml-form-embedSubmit .btn{width:100%;justify-content:center}
+.ml-form-successBody h3{font-size:clamp(1.4rem,1.2rem + 1vw,1.9rem);font-weight:800;text-transform:uppercase;letter-spacing:-0.01em}
+.ml-form-successBody p{color:var(--bone-dim);margin-top:0.8rem;line-height:1.6}
 .optin-legal{margin-top:1.4rem;font-size:0.85rem;line-height:1.65;color:var(--bone-dim)}
 .optin-legal a{color:var(--bone);text-decoration:underline}
 .thanks-cta{margin-top:3.2rem;max-width:760px}
@@ -450,17 +458,40 @@ section{position:relative}
         <p class="lead" style="margin:1.2rem auto 0">Trag dich ein, best&auml;tige deine E-Mail-Adresse, und du bekommst sofort deinen Zugang.</p>
       </div>
       <div class="optin reveal">
-        <!-- =====================================================================
-             MAILERLITE: Den Einbettungscode des Formulars aus MailerLite hier
-             einfuegen und dabei den kompletten <div class="ml-slot"> ersetzen.
-             Double-Opt-in im Formular aktivieren, Weiterleitung nach Bestaetigung:
-             https://www.tayfunctional.de/webinar-danke.html
-             ===================================================================== -->
-        <div class="ml-slot" id="mailerlite-form">
-          <span class="ml-tag">[PLATZHALTER: MAILERLITE-FORMULAR]</span>
-          <p>Hier kommt das Anmeldeformular aus MailerLite hin. Einbettungscode einf&uuml;gen, Double-Opt-in aktivieren.</p>
+        <!-- MailerLite: Formular "Webinar Ruecken DE" (Konto 2708030, Formular 201189771073029769).
+             Markup aus dem MailerLite-HTML-Code, Styling eigen. Klassen und Namen nicht aendern,
+             webforms.min.js braucht sie. Double-Opt-in und Weiterleitung auf webinar-danke.html
+             sind in MailerLite eingestellt. -->
+        <div id="mlb2-47067313" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-47067313">
+          <div class="ml-form-embedBody row-form">
+            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2708030/forms/201189771073029769/subscribe" data-code="" method="post" target="_blank">
+              <div class="ml-field-group ml-field-name">
+                <label for="ml-name">Vorname <span class="opt">(optional)</span></label>
+                <input id="ml-name" aria-label="Vorname" type="text" name="fields[name]" placeholder="Dein Vorname" autocomplete="given-name">
+              </div>
+              <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                <label for="ml-email">E-Mail</label>
+                <input id="ml-email" aria-label="E-Mail" aria-required="true" type="email" name="fields[email]" placeholder="du@beispiel.de" autocomplete="email" required>
+              </div>
+              <input type="hidden" name="ml-submit" value="1">
+              <div class="ml-form-embedSubmit">
+                <button type="submit" class="btn btn-primary primary">Webinar ansehen <span class="ico">&rarr;</span></button>
+                <button disabled="disabled" style="display:none" type="button" class="btn btn-primary loading">Wird gesendet &hellip;</button>
+              </div>
+              <input type="hidden" name="anticsrf" value="true">
+            </form>
+          </div>
+          <div class="ml-form-successBody row-success" style="display:none" role="status">
+            <h3>Fast geschafft.</h3>
+            <p>Check dein Postfach und best&auml;tige deine Adresse. Schau auch im Spam-Ordner nach.</p>
+          </div>
         </div>
-        <!-- ======================= ENDE MAILERLITE ============================ -->
+        <script>
+        function ml_webform_success_47067313(){var $=ml_jQuery||jQuery;$('.ml-subscribe-form-47067313 .row-success').show();$('.ml-subscribe-form-47067313 .row-form').hide();}
+        </script>
+        <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
+        <script>fetch("https://assets.mailerlite.com/jsonp/2708030/forms/201189771073029769/takel")</script>
+        <!-- Ende MailerLite -->
         <p class="optin-legal">Du bekommst den Link zum Webinar und in den Tagen danach vier weitere E-Mails von mir zum Thema R&uuml;cken. Du best&auml;tigst deine Anmeldung per Klick in einer E-Mail (Double-Opt-in) und kannst dich jederzeit mit einem Klick wieder abmelden. Der Versand l&auml;uft &uuml;ber MailerLite. Details findest du in der <a href="datenschutz.html">Datenschutzerkl&auml;rung</a>.</p>
       </div>
     </div>
