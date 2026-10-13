@@ -416,6 +416,12 @@ section{position:relative}
   .nav a.navlink{font-size:0.66rem;letter-spacing:0.03em}
   .nav .btn{padding:0.65em 0.8em;font-size:0.66rem}
 }
+
+/* Vor Ort und online */
+.where-sec{padding-block:clamp(2.2rem,5vh,3.6rem)}
+.where-note{border:1px solid var(--line);border-left:2px solid var(--red);background:var(--ink-2);padding:1.3rem 1.6rem;max-width:78ch}
+.where-note .wn-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase;margin-bottom:0.5rem}
+.where-note p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
 </style>
 <script type="application/ld+json">
 {
@@ -749,6 +755,15 @@ section{position:relative}
     </div>
   </section>
 
+  <section class="where-sec" aria-label="Vor Ort und online">
+    <div class="wrap">
+      <div class="where-note reveal">
+        <span class="wn-tag">Vor Ort und online</span>
+        <p>Den R&uuml;cken-Reset machst du vor Ort in Ingolstadt oder online im ganzen DACH-Raum. Nur vor Ort gibt es die Kraftmessplatten-Diagnostik und PT-Termine im Studio. Alles andere funktioniert online genauso.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="befunde pad" id="fragen" aria-label="Häufige Fragen">
     <div class="wrap">
       <div class="sec-head reveal">
@@ -801,6 +816,7 @@ section{position:relative}
       </div>
       <div class="foot-col">
         <h4>Mehr</h4>
+        <a href="webinar.html">Kostenloses Webinar</a>
         <a href="https://www.tayfunctional.de/pace-calculator/">Pace-Rechner</a>
         <a href="rabatte.html">Spare mit mir</a>
         <a href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">Instagram</a>
@@ -849,7 +865,7 @@ section{position:relative}
 </script>
 <script>
 (function(){
-  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html", "/webinar.html": "/en/webinar.html", "/webinar-danke.html": "/en/webinar-thanks.html"};
   var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
   var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
   function norm(p){ return p.replace(/index\.html$/,''); }

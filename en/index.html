@@ -338,6 +338,26 @@ section{position:relative}
 .speak .btn{margin-top:1.8rem}
 .speak .speak-mail{margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.04em;color:var(--bone-dim);overflow-wrap:anywhere}
 .speak .speak-mail a{color:var(--bone);border-bottom:1px solid var(--line)}
+
+/* Oktober-Update Startseite */
+.hero-what{margin-top:1.15rem;font-weight:700;color:var(--bone);font-size:clamp(1.02rem,0.96rem + 0.45vw,1.24rem);line-height:1.45;max-width:46ch}
+.webinar-hint{display:inline-block;margin-top:1.3rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.05em;color:var(--bone-dim);border-bottom:1px solid var(--line);padding-bottom:0.15rem;transition:color .2s ease,border-color .2s ease}
+.webinar-hint b{color:var(--bone);font-weight:700}
+.webinar-hint:hover{color:var(--bone);border-color:var(--red)}
+.final .webinar-hint{margin-top:1.6rem}
+@media (min-width:921px){.offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.offer .where{margin-top:0.55rem;font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--red)}
+.teaser-foot{margin-top:2.2rem;color:var(--bone-dim);font-size:0.97rem;max-width:70ch}
+.teaser-foot a{color:var(--bone);border-bottom:1px solid var(--red)}
+.remote-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.remote{background:var(--ink);padding:clamp(1.6rem,3vw,2.3rem)}
+.remote .r-tag{font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase}
+.remote h3{font-size:clamp(1.2rem,1.05rem + 0.8vw,1.55rem);margin:0.85rem 0 0.7rem;line-height:1.05}
+.remote p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
+.onsite{margin-top:1.6rem;background:var(--ink-2);border:1px solid var(--line);border-left:2px solid var(--red);padding:1.25rem 1.5rem;max-width:78ch}
+.onsite .o-tag{display:block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;color:var(--red);text-transform:uppercase;margin-bottom:0.5rem}
+.onsite p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6}
+@media (max-width:920px){.remote-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
 <script type="application/ld+json">
 {
@@ -399,11 +419,13 @@ section{position:relative}
       <span class="eyebrow">Rehab &amp; Performance Coaching · Ingolstadt</span>
       <h1>Not the coach who holds your hand.</h1>
       <span class="kicker">The one who tells you <b>the truth.</b> </span>
+      <p class="hero-what">Rehab and performance coaching in person in Ingolstadt and online across Germany, Austria and Switzerland. For everyone the usual route has not helped.</p>
       <p class="hero-lead">I do not just fix your pain. I show you why it started, and make sure it does not come back.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=hero" target="_blank" rel="noopener">Book an intro call <span class="ico">↗</span></a>
         <a class="btn btn-ghost" href="#angebote">See the options</a>
       </div>
+      <a class="webinar-hint" href="webinar.html">Not ready for a call yet? <b>Start with the free back webinar &rarr;</b></a>
     </div>
     <span class="scroll-hint" aria-hidden="true">Scroll ↓</span>
   </section>
@@ -503,7 +525,7 @@ section{position:relative}
       <div class="sec-head reveal">
         <span class="eyebrow">Options</span>
         <h2>How we work together.</h2>
-        <p class="lead" style="margin-top:1.2rem">Three routes, one principle: find the cause, build performance, stay with it. Which one fits you is what the intro call is for.</p>
+        <p class="lead" style="margin-top:1.2rem">One principle, whichever route: find the cause, build performance, stay with it. Which one fits you is what the intro call is for.</p>
       </div>
       <div class="pricenote reveal">
         <span class="pn-tag">Price change as of 1 January 2027</span>
@@ -515,6 +537,7 @@ section{position:relative}
           <h3>Functional &amp; Perfor&shy;mance Coaching</h3>
           <div class="price">450 € / month</div>
           <div class="term">Minimum term 6 months</div>
+          <div class="where">In person in Ingolstadt and online</div>
           <span class="save-tag">Save 400 € with the annual plan</span>
           <p>Starts with a full assessment, then individual training 3 to 6 times a week through an app. Loom video feedback on your technique and WhatsApp support when it matters. For anyone who wants real progress again.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="performance.html">Learn more →</a></div>
@@ -524,14 +547,25 @@ section{position:relative}
           <h3>Rehab Coaching</h3>
           <div class="price">from 600 € / month</div>
           <div class="term">Minimum term 3 months</div>
+          <div class="where">In person in Ingolstadt and online</div>
           <p>Begins with the full assessment, then back to your sport with science and biomechanics. Your plan is reverse engineered: we define the goal, the duration and the timeframe, and your plan grows out of that. I work your feedback in faster than in Functional &amp; Performance Coaching. And I share what I know, so you still know exactly what to do after the Rehab Coaching ends.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="rehab.html">Learn more →</a></div>
+        </article>
+        <article class="offer reveal">
+          <span class="label">Back</span>
+          <h3>90-Day Back Reset</h3>
+          <div class="price">1,900 &euro; one-off</div>
+          <div class="term">or 3 &times; 700 &euro; &middot; 90 days</div>
+          <div class="where">In person in Ingolstadt and online</div>
+          <p>For anyone who has been fighting their back for years. Assessment, six PT sessions and three months of support in one fixed 90-day programme, with a 4-week commitment. By the end you know yourself why your back reacted the way it did.</p>
+          <div class="offer-cta"><a class="btn btn-ghost" href="back-reset.html">Learn more &rarr;</a></div>
         </article>
         <article class="offer reveal">
           <span class="label">Running</span>
           <h3>Running Coaching</h3>
           <div class="price">199 &euro; / month</div>
           <div class="term">Three-month minimum</div>
+          <div class="where">Fully online</div>
           <p>Your running plan gets written after an intro call, not downloaded. Running plus two strength sessions a week in one build, straight to your watch via TrainingPeaks. Adjusted from your feedback. No WhatsApp support and no video analysis, which keeps the price lower.</p>
           <div class="offer-cta"><a class="btn btn-ghost" href="running-coaching.html">Learn more →</a></div>
         </article>
@@ -545,6 +579,54 @@ section{position:relative}
     </div>
   </section>
 
+  <section class="pad befunde" id="ablauf-kurz" aria-label="Process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Four steps. No guesswork.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="sn">01</span><div><h3>Assessment</h3><p>We look at where you really stand: movement, history, daily life and goal. In person with force plates, online on a video call.</p></div></div>
+        <div class="step reveal"><span class="sn">02</span><div><h3>Your plan</h3><p>That becomes your individual phase plan, with phase starts, deloads and exit criteria. Nothing off the shelf.</p></div></div>
+        <div class="step reveal"><span class="sn">03</span><div><h3>Execution</h3><p>You train to plan in the app and give me feedback through comments and video.</p></div></div>
+        <div class="step reveal"><span class="sn">04</span><div><h3>Adjust and progress</h3><p>I adjust the next week to your feedback. We progress when you are ready and pull back when life gets in the way.</p></div></div>
+      </div>
+      <p class="teaser-foot reveal">Running Coaching is leaner: an intro call instead of an assessment, feedback through comments, no video. The full process is on the pages for <a href="performance.html#ablauf">Functional &amp; Performance Coaching</a> and <a href="rehab.html#ablauf">Rehab Coaching</a>.</p>
+    </div>
+  </section>
+
+  <section class="pad" id="vor-ort-online" aria-label="In person and online">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">In person and online</span>
+        <h2>Ingolstadt or anywhere in the region. Same standard.</h2>
+        <p class="lead" style="margin-top:1.2rem">I coach in person in Ingolstadt and online with athletes across Germany, Austria and Switzerland. This is how coaching at a distance works.</p>
+      </div>
+      <div class="remote-grid">
+        <article class="remote reveal">
+          <span class="r-tag">Performance &middot; Rehab</span>
+          <h3>Your phase plan in TrainHeroic</h3>
+          <p>Every athlete gets an individual phase plan in the TrainHeroic app. You leave feedback in the comments and send videos of your technique, and I adjust the next week around it.</p>
+        </article>
+        <article class="remote reveal">
+          <span class="r-tag">Running</span>
+          <h3>Straight to your watch</h3>
+          <p>Your plan goes through TrainingPeaks straight to your Garmin or smartwatch. You leave feedback on every session and I adjust. No video analysis.</p>
+        </article>
+        <article class="remote reveal">
+          <span class="r-tag">Measuring</span>
+          <h3>Measured where it makes sense</h3>
+          <p>Field tests for pace and heart rate zones when they matter for your goal. Force plate diagnostics when we work in person. Not everyone needs every test.</p>
+        </article>
+      </div>
+      <div class="onsite reveal">
+        <span class="o-tag">In person in Ingolstadt only</span>
+        <p>Force plate diagnostics and personal training sessions at the gym. Everything else works online just the same.</p>
+      </div>
+    </div>
+  </section>
+
+
 
   <section class="notfor pad" aria-label="Who this is not for">
     <div class="wrap notfor-grid">
@@ -552,6 +634,7 @@ section{position:relative}
         <span class="eyebrow">Honesty up front</span>
         <h2 style="font-size:clamp(1.9rem,1.4rem + 3vw,3.6rem);margin-top:1.1rem">I do not work with everyone.</h2>
         <p>I put real time into every client. So I would rather filter early than pour energy into someone who does not actually want it. That protects your results and mine.</p>
+        <p>That is also why I only take on a limited number of new clients. If there is no space right now, I will tell you openly on the intro call.</p>
         <p>Read the list honestly. If you recognise yourself in it, save yourself the intro call.</p>
       </div>
       <div class="reveal">
@@ -704,6 +787,7 @@ section{position:relative}
         <a class="btn btn-primary" href="https://calendly.com/apex-performance-official/30min?utm_source=website_en&utm_medium=referral&utm_content=final" target="_blank" rel="noopener">Book an intro call <span class="ico">↗</span></a>
         <a class="btn btn-ghost" href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">DM me on Instagram</a>
       </div>
+      <a class="webinar-hint reveal" href="webinar.html">Not ready for a call yet? <b>Start with the free back webinar &rarr;</b></a>
       <p class="micro reveal">30 min · no obligation · online</p>
     </div>
   </section>
@@ -728,6 +812,7 @@ section{position:relative}
       </div>
       <div class="foot-col">
         <h4>More</h4>
+        <a href="webinar.html">Free webinar</a>
 <a href="discounts.html">Save with me</a>
         <a href="https://www.instagram.com/tayfunctional/" target="_blank" rel="noopener">Instagram</a>
         <a href="legal-notice.html">Legal notice</a>
@@ -797,7 +882,7 @@ section{position:relative}
 </script>
 <script>
 (function(){
-  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html"};
+  var MAP={"/": "/en/", "/performance.html": "/en/performance.html", "/rehab.html": "/en/rehab.html", "/ruecken-reset.html": "/en/back-reset.html", "/ueber.html": "/en/about.html", "/rabatte.html": "/en/discounts.html", "/impressum.html": "/en/legal-notice.html", "/datenschutz.html": "/en/privacy.html", "/laufcoaching.html": "/en/running-coaching.html", "/webinar.html": "/en/webinar.html", "/webinar-danke.html": "/en/webinar-thanks.html"};
   var RMAP={}; for(var k in MAP){ RMAP[MAP[k]]=k; }
   var LANG = document.documentElement.lang === 'en' ? 'en' : 'de';
   function norm(p){ return p.replace(/index\.html$/,''); }
