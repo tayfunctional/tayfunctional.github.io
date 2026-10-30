@@ -28,4 +28,8 @@
   <url><loc>https://www.tayfunctional.de/en/discounts.html</loc><priority>0.4</priority></url>
   <url><loc>https://www.tayfunctional.de/en/legal-notice.html</loc><priority>0.3</priority></url>
   <url><loc>https://www.tayfunctional.de/en/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://www.tayfunctional.de/brainsgains/</loc><priority>0.6</priority><xhtml:link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/brainsgains/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/brainsgains/"/></url>
+  <url><loc>https://www.tayfunctional.de/en/brainsgains/</loc><priority>0.6</priority><xhtml:link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/brainsgains/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/brainsgains/"/></url>
+  <url><loc>https://www.tayfunctional.de/brainsgains/macht-cardio-deine-gains-kaputt.html</loc><priority>0.6</priority><xhtml:link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/brainsgains/macht-cardio-deine-gains-kaputt.html"/><xhtml:link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/brainsgains/does-cardio-kill-your-gains.html"/></url>
+  <url><loc>https://www.tayfunctional.de/en/brainsgains/does-cardio-kill-your-gains.html</loc><priority>0.6</priority><xhtml:link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/brainsgains/macht-cardio-deine-gains-kaputt.html"/><xhtml:link rel="alternate" hreflang="en" href="https://www.tayfunctional.de/en/brainsgains/does-cardio-kill-your-gains.html"/></url>
 </urlset>
