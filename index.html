@@ -97,10 +97,13 @@ h1,h2,h3{font-weight:900;line-height:0.98;letter-spacing:-0.02em;text-transform:
 
 /* proof strip */
 .proof{background:var(--red);border-block:1px solid var(--red)}
-.proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(10,10,10,0.18)}
+.proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(10,10,10,0.18)}
 .proof-item{background:var(--red);padding:clamp(1.6rem,3vw,2.6rem) clamp(1rem,2vw,1.6rem);text-align:center}
 .proof-num{font-family:'Archivo';font-weight:900;font-size:clamp(2.2rem,1.6rem + 3.4vw,4.2rem);line-height:0.95;letter-spacing:-0.03em;color:#fff}
 .proof-label{font-family:'JetBrains Mono',monospace;font-size:clamp(0.68rem,0.62rem + 0.25vw,0.78rem);font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.88);margin-top:0.8rem;line-height:1.45}
+@media (max-width:980px){
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 @media (max-width:640px){
   .proof-grid{grid-template-columns:minmax(0,1fr)}
   .proof-item{padding-block:1.4rem}
@@ -478,6 +481,10 @@ section{position:relative}
       <div class="proof-item">
         <div class="proof-num">&#8734;</div>
         <p class="proof-label">Nie ausgelernt<br>immer am Weiterentwickeln</p>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">250+</div>
+        <p class="proof-label">Videoanalysen<br>allein 2026</p>
       </div>
     </div>
   </section>
