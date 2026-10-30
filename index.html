@@ -402,6 +402,29 @@ section{position:relative}
 .entry h3{font-size:clamp(1.3rem,1.1rem + 1vw,1.8rem);line-height:1.05}
 .entry p{color:var(--bone-dim);font-size:0.98rem;line-height:1.6;margin-top:0.5rem;max-width:62ch}
 @media (max-width:760px){.entry{grid-template-columns:minmax(0,1fr)}}
+
+/* client wins */
+a.proof-item{display:block;text-decoration:none;color:inherit;transition:background .2s}
+a.proof-item:hover,a.proof-item:focus-visible{background:var(--red-deep)}
+.wins{scroll-margin-top:84px}
+.wins-head{max-width:62ch;margin-bottom:clamp(2rem,5vh,3.2rem)}
+.wins-head h2{font-size:clamp(2.2rem,1.6rem + 4vw,4.6rem);margin:1rem 0 1rem}
+.wins-head p{color:var(--bone-dim)}
+.win-story{border:1px solid var(--red);background:var(--ink-2);padding:clamp(1.6rem,4vw,3rem);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(1.4rem,4vw,3rem);align-items:center}
+.win-tag{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--red)}
+.win-story h3{font-size:clamp(1.6rem,1.2rem + 2vw,2.8rem);margin:0.8rem 0 1rem;text-wrap:balance}
+.win-story p,.win-card p{color:var(--bone-dim);line-height:1.65}
+.win-who{display:block;margin-top:1rem;font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--bone)}
+.win-stats{list-style:none;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.win-stats li{background:var(--ink);padding:0.9rem 1.1rem;display:flex;justify-content:space-between;gap:1rem;align-items:baseline;flex-wrap:wrap}
+.win-stats b{font-family:'Archivo';font-weight:900;font-size:clamp(1.05rem,1rem + 0.5vw,1.3rem);color:var(--bone);white-space:nowrap}
+.win-stats span{font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--bone-dim)}
+.win-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.win-card{border:1px solid var(--line);background:var(--ink);padding:clamp(1.4rem,3vw,2rem);display:flex;flex-direction:column;gap:0.9rem}
+.win-big{font-family:'Archivo';font-weight:900;font-size:clamp(2.4rem,1.8rem + 3vw,3.8rem);line-height:0.95;letter-spacing:-0.03em;color:var(--bone)}
+.win-big small{display:block;margin-top:0.5rem;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--bone-dim)}
+.win-card .win-stats{margin-top:auto}
+@media (max-width:980px){.win-grid{grid-template-columns:minmax(0,1fr)}.win-story{grid-template-columns:minmax(0,1fr)}}
 </style>
 
 <link rel="alternate" hreflang="de" href="https://www.tayfunctional.de/">
@@ -470,24 +493,49 @@ section{position:relative}
 
   <section class="proof" aria-label="Ergebnisse in Zahlen">
     <div class="proof-grid">
-      <div class="proof-item">
+      <a class="proof-item" href="#client-wins">
         <div class="proof-num">50+</div>
         <p class="proof-label">Athleten zurück zur<br>Leistung begleitet</p>
-      </div>
-      <div class="proof-item">
+      </a>
+      <a class="proof-item" href="#client-wins">
         <div class="proof-num">10+</div>
         <p class="proof-label">Jahre im Sport</p>
-      </div>
-      <div class="proof-item">
+      </a>
+      <a class="proof-item" href="#client-wins">
         <div class="proof-num">&#8734;</div>
         <p class="proof-label">Nie ausgelernt<br>immer am Weiterentwickeln</p>
-      </div>
-      <div class="proof-item">
+      </a>
+      <a class="proof-item" href="#client-wins">
         <div class="proof-num">250+</div>
         <p class="proof-label">Videoanalysen<br>allein 2026</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="wins pad" id="client-wins" aria-label="Client Wins">
+    <div class="wrap">
+      <div class="wins-head reveal">
+        <span class="eyebrow">Client Wins</span>
+        <h2>Zahlen lügen nicht.</h2>
+        <p>Echte Werte aus der Trainings-App meiner Athleten. Kein Vorher-Nachher-Foto, sondern Kilo, Wiederholungen und Zeit.</p>
+      </div>
+      <article class="win-story reveal">
+        <div>
+          <span class="win-tag">Pain → Performance</span>
+          <h3>Vom Fußballer mit kaputtem Knie zu 210 kg Kreuzheben und Marathon unter drei Stunden.</h3>
+          <p>Gestartet mit Außenband- und Knieverletzungen aus dem Fußball. Innerhalb von zwei Jahren: Kreuzheben von 135 auf 210 kg und ein Marathon-Block mit Long Runs bis 31 km. Die Kraft blieb dabei, mitten in der Marathon-Vorbereitung noch Kreuzheben bis 190 kg.</p>
+          <span class="win-who">Michael · Hyrox und Marathon · 2 Jahre</span>
+        </div>
+        <ul class="win-stats"><li><b>135 → 210 kg</b><span>Kreuzheben, +75 kg</span></li><li><b>85 → 136 kg</b><span>Kniebeuge</span></li><li><b>31 km</b><span>Long Run</span></li><li><b>Sub 3</b><span>Marathon</span></li></ul>
+      </article>
+      <div class="win-grid">
+        <article class="win-card reveal"><span class="win-tag">Performance</span><div class="win-big">+48 %<small>Kniebeuge in 7 Monaten</small></div><p>Von 55 kg × 5 auf 89 kg × 2. Bei den Klimmzügen von Dreiersätzen auf zweimal 15.</p><span class="win-who">Anna · Kraft</span><ul class="win-stats"><li><b>55 → 89 kg</b><span>Kniebeuge</span></li><li><b>110 kg</b><span>Kreuzheben</span></li><li><b>2 × 15</b><span>Pull-ups</span></li></ul></article>
+        <article class="win-card reveal"><span class="win-tag">Performance</span><div class="win-big">+33 kg<small>Kreuzheben in 2 Monaten</small></div><p>Von 110 auf 143 kg. Gestartet mit Ring-Zügen im Sitzen, heute 10 strikte Pull-ups. Dazu ein Halbmarathon-Block.</p><span class="win-who">Julia · Kraft und Laufen</span><ul class="win-stats"><li><b>110 → 143 kg</b><span>Kreuzheben</span></li><li><b>10</b><span>strikte Pull-ups</span></li><li><b>43:00 → 42:00</b><span>8 km</span></li></ul></article>
+        <article class="win-card reveal"><span class="win-tag">Rehab</span><div class="win-big">13<small>Monate bis zum Wettkampf</small></div><p>Gestartet mit Schulter- und Sprunggelenksproblemen, dazwischen ein Rückschlag mit dem Rücken. Danach zurück in den Sport und im Oktober am Start.</p><span class="win-who">Tobias · Rehab bis Wettkampf</span><ul class="win-stats"><li><b>9 → 12</b><span>Chin-ups zu Pull-ups</span></li><li><b>5:00 → 4:35</b><span>min/km bei RPE 9, in 4 Wochen</span></li><li><b>244</b><span>Einheiten</span></li></ul></article>
       </div>
     </div>
   </section>
+
 
   <section class="truth pad" aria-label="Positionierung">
     <div class="wrap truth-grid">
